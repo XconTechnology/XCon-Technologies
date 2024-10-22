@@ -9,9 +9,6 @@ import Solutions from "@/components/OurServices/Solutions";
 import TechStack from "@/components/OurServices/TechStack";
 import Projects from "@/components/OurServices/Projects";
 import Workflow from "@/components/OurServices/Workflow";
-import FsLightbox from "fslightbox-react";
-import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import Diversity from "@/components/OurServices/Diversity";
 import Growth from "@/components/OurServices/Growth";
@@ -21,7 +18,6 @@ import ContactDetails from "@/components/Contact/ContactDetails";
 import FaqS from "@/components/faq's/Faq";
 
 function Page() {
-	// To open the lightbox change the value of the "toggler" prop.
 	const [toggler, setToggler] = useState(false);
 
 	return (
