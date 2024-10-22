@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Modal } from 'antd'; // Ant Design Modal
-// import ContactForm from '../Contact/ContactForm';
+import { Modal } from 'antd';
+import ContactForm from "@/components/Contact/ContactForm"; // Ant Design Modal
 
 const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
     const [mobileSubMenu, setMobileSubMenu] = useState('');
@@ -169,7 +169,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                 centered
             >
                 <div style={{ maxHeight: '95vh', overflowY: 'auto' }}>  {/* Ensure modal content fits */}
-                    {/*<ContactForm />*/}
+                    <ContactForm/>
                 </div>
             </Modal>
         </div>
