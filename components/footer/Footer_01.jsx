@@ -3,8 +3,8 @@ import Link from "next/link";
 import xConLogo from "../../public/assets/img_placeholder/Dark Logo.png";
 import Marquee from "react-fast-marquee";
 import "swiper/swiper-bundle.css";
-// import AWSCertificates from "@/components/AWSCertificates/AWSCertificates";
-// import SocialLinks from "@/components/SocialLinks/page";
+import AWSCertificates from "../AWSCertificates/AWSCertificates";
+import SocialLinks from "../SocialLinks/SocialLinks";
 
 const Footer_01 = () => {
   return (
@@ -66,13 +66,17 @@ const Footer_01 = () => {
               />
             </Link>
             <p className="text-xl">
-              At XCon Technologies, we’re more than just a software company in US. We are your partners in innovation. Let’s build the future together with cutting-edge IT solutions according to your business requirements. Contact us today to transform your software development ideas into reality!
+              At XCon Technologies, we’re more than just a software company in
+              US. We are your partners in innovation. Let’s build the future
+              together with cutting-edge IT solutions according to your business
+              requirements. Contact us today to transform your software
+              development ideas into reality!
             </p>
 
             <ul className="mt-4 flex flex-col gap-y-4 lg:gap-y-6 w-full">
               {/* Social Media Links */}
               <li className="flex">
-                {/*<SocialLinks />*/}
+                <SocialLinks />
               </li>
 
               {/* AWS Certificates */}
@@ -81,7 +85,7 @@ const Footer_01 = () => {
                   <div className="w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%]">
                     {" "}
                     {/* Responsive width adjustments */}
-                    {/*<AWSCertificates />*/}
+                    <AWSCertificates />
                   </div>
                 </div>
               </li>
