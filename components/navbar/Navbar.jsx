@@ -117,10 +117,10 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                         </Link>
                         <ul className={`sub-menu ${mobileSubMenu === 3 && 'active'} space-y-1 w-80`}>
                             <li className='sub-menu--item border-b border-black-100 pb-2'>
-                                <Link href='webdevelopment' className=''>Web Development</Link>
+                                <Link href='/webdevelopment' className=''>Web Development</Link>
                             </li>
                             <li className='sub-menu--item border-b border-black-100 pb-2'>
-                                <Link href='appdevelopment' className=''>App Development</Link>
+                                <Link href='/appdevelopment' className=''>App Development</Link>
                             </li>
                             <li className='sub-menu--item border-b border-black-100 pb-2'>
                                 <Link href='/services/seo' className=''>SEO</Link>

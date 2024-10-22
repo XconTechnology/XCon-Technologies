@@ -16,9 +16,9 @@ import { useState } from "react";
 import Diversity from "@/components/OurServices/Diversity";
 import Growth from "@/components/OurServices/Growth";
 import Expertise from "@/components/OurServices/Expertise";
-import FaqS from "@/components/faq's/Faq";
 import ContactForm from "@/components/Contact/ContactForm";
 import ContactDetails from "@/components/Contact/ContactDetails";
+import FaqS from "@/components/faq's/Faq";
 
 function Page() {
 	// To open the lightbox change the value of the "toggler" prop.
@@ -38,7 +38,10 @@ function Page() {
 				<Diversity   serviceType="webDevelopment"/>
 				<Growth  serviceType="webDevelopment" />
 				<Expertise  serviceType="webDevelopment" />
-				<FaqS serviceType="webDevelopment"/>
+                 <FaqS serviceType="webDevelopment" />
+
+
+
 
 
 				<section className="contact-section mt-24">
