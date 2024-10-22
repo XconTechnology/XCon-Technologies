@@ -165,11 +165,11 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                 onCancel={handleModalClose}
                 footer={null}
                 width={800}
-                bodyStyle={{ overflowY: 'hidden' }}  // Prevent internal scroll
+                styles={{ body: { overflowY: 'hidden' } }}  // Prevent internal scroll
                 centered
             >
                 <div style={{ maxHeight: '95vh', overflowY: 'auto' }}>  {/* Ensure modal content fits */}
-                    <ContactForm/>
+                    <ContactForm />
                 </div>
             </Modal>
         </div>

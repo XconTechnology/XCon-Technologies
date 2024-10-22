@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import SocialLinks from "../../components/SocialLinks/page";
-import AWSCertificates from "../../components/AWSCertificates/AWSCertificates";
+import SocialLinks from "../SocialLinks/SocialLinks";
+import AWSCertificates from "../AWSCertificates/AWSCertificates";
 
 const ContactDetails = () => {
   return (
