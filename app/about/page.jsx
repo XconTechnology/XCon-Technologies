@@ -31,13 +31,16 @@ function About() {
 
 				    <OurVision/>
 
+			     	<Projects/>
+
 				    <Values/>
 
-                     <Projects/>
+
+				    <FactsFigurers/>
 
                   <ConnectClients/>
 
-				  <FactsFigurers/>
+
 
 
 			</main >

@@ -5,7 +5,7 @@ import Link from "next/link";
 const ConnectClients = () => {
     return (
         <>
-            <section id="about-contact" className="mb-16">
+            <section id="about-contact" className="">
                 <div className="bg-black pb-40 pt-20 xl:pb-[200px] xl:pt-[130px]">
                     <div className="global-container">
                         <div className="grid grid-cols-1 items-center gap-14 md:grid-cols-[minmax(0,_1fr)_1.4fr]">
@@ -30,14 +30,20 @@ const ConnectClients = () => {
                                 data-jos_animation="fade-down"
                             >
                                 <div className="mb-6 md:max-w-max">
-                                    <h2 className="text-white text-6xl">
-                                        We always want to connect our clients
+                                    <h2 className="text-white text-5xl">
+                                        Ready to transform your vision into reality?
+                                    </h2>
+                                </div>
+
+                                <div className="mb-6 md:max-w-max">
+                                    <h2 className="text-white text-3xl">
+                                        Let’s create something amazing together.
                                     </h2>
                                 </div>
                                 <div className="text-left text-lg leading-[1.4] text-white lg:text-[21px]">
                                     <p className="mb-7 last:mb-0">
-                                        If you have an idea in mind or want to explore how we can help your project, we
-                                        would love to hear from you. Fill out the form and let&apos;s get started
+                                        XCon Technologies is more than just a software company, we are your partner in innovation. If you have any query or would like to discuss how we can bring your project whether software development, web development, or any other to life, we would love to connect with you. Simply fill out the form, and let’s start the journey together.
+
                                     </p>
                                     <Link
                                         href="/contact"

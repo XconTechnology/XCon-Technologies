@@ -12,7 +12,7 @@ const Values = () => {
                                 Values
                             </h2>
                             <p className="mt-2 text-white leading-8 tracking-tight sm:text-4xl">
-                                Core values are fundamental to the working spirit of XCon
+                                Core values are fundamental to the working spirit of XCon Technologies.
                             </p>
                         </div>
 
@@ -27,8 +27,7 @@ const Values = () => {
                                         Integrity
                                     </h3>
                                     <p className="mt-4 text-1xl text-gray-500">
-                                        We uphold the highest standards of integrity in all of our actions.
-                                        Our commitment to honesty and fairness ensures trust and reliability.
+                                        We adhere to the highest standards of integrity in all our actions. Our dedication to honesty and fairness builds trust and ensures reliability in everything we do.
                                     </p>
                                 </div>
 
@@ -40,9 +39,7 @@ const Values = () => {
                                         Transparency
                                     </h3>
                                     <p className="mt-4 text-1xl text-gray-500">
-                                        We foster transparency by ensuring clear, consistent communication at every
-                                        level,
-                                        building strong relationships with our clients and teams.
+                                        We promote transparency by maintaining open and consistent communication across all levels, strengthening our relationships with clients and within our teams.
                                     </p>
                                 </div>
 
@@ -55,9 +52,7 @@ const Values = () => {
                                         Quality Assurance
                                     </h3>
                                     <p className="mt-4 text-1xl text-gray-500">
-                                        We are committed to delivering the highest quality products and services by
-                                        continually
-                                        improving our processes and standards.
+                                        We are devoted to providing top-quality software development methodologies, constantly refining our processes to meet industry standards.
                                     </p>
                                 </div>
 
@@ -69,8 +64,8 @@ const Values = () => {
                                         Value of People
                                     </h3>
                                     <p className="mt-4 text-1xl text-gray-500">
-                                        We value our people, our greatest asset, by creating a culture of respect,
-                                        encouragement, and continuous learning.
+                                        We recognize that our people are our greatest strength, developing a culture of respect, support, and ongoing development.
+
                                     </p>
                                 </div>
 
@@ -82,8 +77,7 @@ const Values = () => {
                                         Commitment
                                     </h3>
                                     <p className="mt-4 text-1xl text-gray-500">
-                                        We are fully committed to delivering excellence in everything we do,
-                                        ensuring that every project meets or exceeds expectations.
+                                        We are committed to delivering excellence in every aspect of our work, ensuring that each project not only meets but exceeds expectations.
                                     </p>
                                 </div>
                             </div>

@@ -31,8 +31,8 @@ const OurVision = () => {
                                 {/* Section Content Block */}
                                 <div className='text-lg leading-[1.4] lg:text-[21px] text-left'>
                                     <p className='mb-7 last:mb-0'>
-                                        We&apos;re committed to shaping tomorrow&apos;s digital landscape by embracing innovation
-                                        and delivering cutting-edge solutions that drive transformation.
+                                        We are dedicated to shaping the future of technology by embracing new ideas and delivering advanced solutions that make a real difference.
+
 
                                     </p>
                                     <ul className='flex flex-col gap-y-5 font-dmSans text-base leading-tight tracking-tighter text-black lg:mt-12 lg:text-[20px]'>
@@ -46,7 +46,7 @@ const OurVision = () => {
                                                     className='h-full w-full'
                                                 />
                                             </div>
-                                            <span>Pioneering Future-Ready Technologies</span>
+                                            <span>Driving Digital Innovation</span>
                                         </li>
                                         <li className='flex items-center gap-x-3'> {/* Changed to items-center for vertical alignment */}
                                             <div className='mt-[2.5px] h-[30px] w-[30px]'>
@@ -58,7 +58,7 @@ const OurVision = () => {
                                                     className='h-full w-full'
                                                 />
                                             </div>
-                                            <span>Empowering Digital Transformation</span>
+                                            <span>Crafting Tomorrow's Technology Today</span>
                                         </li>
                                         <li className='flex items-center gap-x-3'> {/* Changed to items-center for vertical alignment */}
                                             <div className='mt-[2.5px] h-[30px] w-[30px]'>
@@ -70,7 +70,7 @@ const OurVision = () => {
                                                     className='h-full w-full'
                                                 />
                                             </div>
-                                            <span>Innovating for a Smarter Tomorrow</span>
+                                            <span>Pioneering the Future</span>
                                         </li>
                                         <li className='flex items-center gap-x-3'> {/* Changed to items-center for vertical alignment */}
                                             <div className='mt-[2.5px] h-[30px] w-[30px]'>
@@ -82,7 +82,7 @@ const OurVision = () => {
                                                     className='h-full w-full'
                                                 />
                                             </div>
-                                            <span>Leading the Way in Tech Evolution</span>
+                                            <span>Leading the Tech Revolution</span>
                                         </li>
                                     </ul>
                                 </div>

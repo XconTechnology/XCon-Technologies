@@ -36,19 +36,11 @@ const OurMission = () => {
 
                                 </div>
                                 {/* Section Content Block */}
-                                <div className='text-lg leading-[1.4] lg:text-[21px]'>
+                                <div className=' leading-[1.4]  lg:text-[21px]'>
                                     <p className='mb-7 last:mb-0'>
-                                        At XCon, we&apos;re dedicated to empowering businesses and individuals with
-                                        innovative digital solutions that drive growth and success.
-                                        Our mission is to make advanced technology accessible and affordable, helping
-                                        you navigate the complexities of the digital landscape.
+                                        Our mission is to empower businesses with modern software development that drive growth and efficiency. We specialize in crafting tailored digital tools that solve real-world challenges, streamline operations, and enhance customer experiences. Being the top IT software development company, our goal is to be a trusted partner in your digital transformation journey, delivering exceptional results through cutting-edge technology.
                                     </p>
-                                    <p className='mb-7 last:mb-0'>
-                                        We offer a wide range of tailored services, including tech services,
-                                        designed to meet your specific needs and goals.
-                                        With our expertise and commitment to excellence, we&apos;re your trusted partner in
-                                        achieving digital transformation.
-                                    </p>
+
                                 </div>
                             </div>
                             {/* Content Right Block */}
