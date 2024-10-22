@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import Link from "next/link";
 import 'animate.css';
-// import Partners from "@/app/partners/Partners";
-import Image from 'next/image'; // Import Next.js Image
+import Image from 'next/image';
+import Partners from "@/components/Home/Partners"; // Import Next.js Image
 const HeroSection = () => {
     const [index, setIndex] = useState(0);
     const [animateClass, setAnimateClass] = useState('animate__fadeInRight');
@@ -58,7 +58,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            {/*<Partners/>*/}
+            <Partners/>
         </section>
     );
 };
