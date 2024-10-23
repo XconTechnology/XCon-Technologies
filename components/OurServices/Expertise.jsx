@@ -6,11 +6,7 @@ const Expertise = () => {
             {/* Title Section */}
             <div className="container mx-auto text-center mb-12">
                 <h2 className="text-5xl font-bold text-gray-800">
-
-                    XCon&apos;s Web Development <br /> <span className="text-customGreen">Expertise</span>
-
                     XCon's Web Development <br /> <span className="text-customGreen">Expertise</span>
-
                 </h2>
                 <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
                     We do not claim to be #1, but we excel at what we do. With an experienced, full-scale in-house team,

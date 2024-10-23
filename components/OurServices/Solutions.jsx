@@ -51,7 +51,7 @@ const Solutions = ({ serviceType }) => {
 
     return (
         <section id="solutions" className="py-20 bg-gray-100">
-            <div className="container mx-auto max-w-xl px-4 text-center">
+            <div className="container mx-auto max-w-8xl px-4 text-center">
                 <h2 className="text-5xl font-bold text-[#273447] leading-tight">
                     Purpose-Built{' '}
                     <span className="text-customGreen">{selectedContent.title}</span><br />

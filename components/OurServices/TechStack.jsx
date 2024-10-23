@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-const TechStack = () => {
-  const [activeTab, setActiveTab] = useState("Frontend");
+const TechStack = ({ pageType }) => {
+  const [activeTab, setActiveTab] = useState(
+    pageType === "web" ? "Frontend" : "AppDevelopment"
+  );
   const [activeTech, setActiveTech] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -71,21 +73,26 @@ const TechStack = () => {
   };
 
   useEffect(() => {
-    const preloadImages = () => {
-      const imagePromises = [];
-      Object.values(techData).forEach((tabData) => {
-        tabData.forEach((tech) => {
-          imagePromises.push(
-            new Promise((resolve) => {
-              const img = new window.Image();
-              img.src = tech.imgSrc;
-              img.onload = resolve;
-            })
-          );
-        });
-      });
+    const preloadImages = async () => {
+      try {
+        const imagePromises = Object.values(techData).flatMap((tabData) =>
+          tabData.map(
+            (tech) =>
+              new Promise((resolve, reject) => {
+                const img = new Image();
+                img.src = tech.imgSrc;
+                img.onload = () => resolve(); // Resolved when image loads
+                img.onerror = () => reject(); // Handle errors
+              })
+          )
+        );
 
-      Promise.all(imagePromises).then(() => setLoading(false));
+        await Promise.all(imagePromises); // Wait for all images to preload
+        setLoading(false);
+      } catch (error) {
+        console.error("Error preloading images:", error);
+        setLoading(false); // Still hide loading on error
+      }
     };
 
     preloadImages();
@@ -110,9 +117,17 @@ const TechStack = () => {
     ));
   };
 
+  const availableTabs = [
+    ...(pageType === "web" ? ["Frontend"] : []),
+    "Backend",
+    "Database",
+    "Cloud",
+    ...(pageType === "app" ? ["AppDevelopment"] : []),
+  ];
+
   return (
     <section className="py-20 min-h-[40vh] bg-gray-800 text-white text-center">
-      <div className="container mx-auto max-w-xl px-4 text-center">
+      <div className="container mx-auto max-w-7xl px-4 text-center">
         <h2 className="text-5xl font-bold leading-tight">
           Tech Stack We Use for Healthcare{" "}
           <span className="text-customGreen">
@@ -130,19 +145,17 @@ const TechStack = () => {
 
       <div className="flex flex-col items-center mt-4">
         <div className="flex overflow-x-auto scrollbar-hide py-2 px-4 w-4/5">
-          {["Frontend", "Backend", "Database", "Cloud", "AppDevelopment"].map(
-            (tab) => (
-              <button
-                key={tab}
-                className={`bg-transparent border-none py-2 px-6 text-lg text-white transition-colors duration-300 hover:text-customGreen ${
-                  activeTab === tab ? "text-customGreen shadow-lg" : ""
-                }`}
-                onClick={() => setActiveTab(tab)}
-              >
-                {tab}
-              </button>
-            )
-          )}
+          {availableTabs.map((tab) => (
+            <button
+              key={tab}
+              className={`bg-transparent border-none py-2 px-6 text-lg text-white transition-colors duration-300 hover:text-customGreen ${
+                activeTab === tab ? "text-customGreen shadow-lg" : ""
+              }`}
+              onClick={() => setActiveTab(tab)}
+            >
+              {tab}
+            </button>
+          ))}
         </div>
         <div className="border-t-2 border-white w-4/5" />
       </div>
