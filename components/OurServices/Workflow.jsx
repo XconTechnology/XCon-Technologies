@@ -57,7 +57,7 @@ const Workflow = () => {
 
   return (
     <section className="workflow-section py-16 bg-gray-100 text-center">
-      <div className="container mx-auto max-w-4xl px-4 text-center">
+      <div className="container mx-auto max-w-7xl px-4 text-center">
         <h2 className="text-5xl font-bold text-[#273447] leading-tight">
           Our Simple, Frictionless Web <br />
           Development <span className="text-customGreen"> Workflow</span>
