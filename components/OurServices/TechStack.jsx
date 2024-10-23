@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-const TechStack = ({ pageType }) => {
+const TechStack = ({ serviceType }) => {
   const [activeTab, setActiveTab] = useState(
-    pageType === "web" ? "Frontend" : "AppDevelopment"
+    serviceType === "webDevelopment" ? "Frontend" : "AppDevelopment"
   );
   const [activeTech, setActiveTech] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -65,10 +65,6 @@ const TechStack = ({ pageType }) => {
         name: "Kotlin",
         imgSrc: "/assets/img_placeholder/th-1/kotlin.webp",
       },
-      {
-        name: "Objective-C",
-        imgSrc: "/assets/img_placeholder/th-1/objective-c.webp",
-      },
     ],
   };
 
@@ -117,13 +113,9 @@ const TechStack = ({ pageType }) => {
     ));
   };
 
-  const availableTabs = [
-    ...(pageType === "web" ? ["Frontend"] : []),
-    "Backend",
-    "Database",
-    "Cloud",
-    ...(pageType === "app" ? ["AppDevelopment"] : []),
-  ];
+  const availableTabs = serviceType === "webDevelopment" 
+    ? ["Frontend", "Backend", "Database", "Cloud"] 
+    : ["AppDevelopment", "Backend", "Database", "Cloud"];
 
   return (
     <section className="py-20 min-h-[40vh] bg-gray-800 text-white text-center">

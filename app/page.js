@@ -13,8 +13,7 @@ import OurSuccess from "@/components/Home/OurSuccess";
 import Expertise from "@/components/Home/Expertise";
 import EngagmentModels from "@/components/Home/EngagmentModels";
 import ServicesData from "@/components/Home/ServicesData";
-import "./styles/globals.css";
-import "./styles/vendors/menu.css"
+
 
 // Dynamically import Splash component to ensure it only renders on the client side
 const Splash = dynamic(() => import('@/components/splash/Splash'), { ssr: false });
