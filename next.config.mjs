@@ -19,6 +19,7 @@ const nextConfig = {
       "brandslogos.com",
       "img.freepik.com",
     ],
+    unoptimized: true,
   },
   output: "export",
 };
