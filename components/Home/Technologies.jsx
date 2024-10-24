@@ -229,7 +229,7 @@ const Technologies = () => {
                         </div>
                         <div className="group flex justify-center">
                             <Image
-                                src="https://brandslogos.com/wp-content/uploads/images/large/java-logo-1.png"
+                                src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png"
                                 alt="Google BigQuery Logo"
                                 width={80}
                                 height={80}

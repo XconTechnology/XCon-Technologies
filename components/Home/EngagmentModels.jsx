@@ -1,4 +1,3 @@
-"use client";
 import React from 'react';
 import Image from 'next/image';
 import Link from "next/link";
@@ -41,8 +40,11 @@ const EngagementModels = () => {
                                         className="rounded-t-lg"
                                     />
                                 </div>
-                                <div className="p-6 transition-colors duration-300 bg-white group-hover:bg-customGreen group-hover:text-white">
-                                    <h3 className="text-xl font-semibold mb-4 transition-colors duration-300">{model.title}</h3>
+                                <div
+                                    className="p-6 transition-colors duration-300  bg-white group-hover:bg-customGreen group-hover:text-white">
+                                    <h3 className="text-xl font-semibold mb-4 transition-colors duration-300 tracking-wide ">
+                                        {model.title}
+                                    </h3>
                                     <p className="text-gray-600 group-hover:text-white transition-colors duration-300">{model.description}</p>
                                 </div>
                             </div>

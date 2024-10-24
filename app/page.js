@@ -15,7 +15,7 @@ import EngagmentModels from "@/components/Home/EngagmentModels";
 import ServicesData from "@/components/Home/ServicesData";
 
 
-// Dynamically import Splash component to ensure it only renders on the client side
+
 const Splash = dynamic(() => import('@/components/splash/Splash'), { ssr: false });
 
 function Home() {
@@ -24,8 +24,8 @@ function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000); // Adjust the loading time as per your requirements
-    return () => clearTimeout(timer); // Cleanup on unmount
+    }, 2000);
+    return () => clearTimeout(timer);
   }, []);
 
   if (isLoading) {

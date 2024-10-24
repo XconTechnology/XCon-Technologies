@@ -50,7 +50,7 @@ const OurSuccess = () => {
                     logo: '/assets/img_placeholder/th-1/wordpress.svg'
                 },
             ],
-            image: '/assets/img_placeholder/th-1/ha3.png',
+            image: '/assets/img_placeholder/th-1/quality.png',
         },
     ];
 

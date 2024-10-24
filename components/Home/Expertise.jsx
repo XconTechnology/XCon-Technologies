@@ -66,7 +66,7 @@ const Expertise = () => {
                 {domains.map((domain, index) => (
                     <div key={index} className="p-4 group relative">
                         <div
-                            className="bg-white p-5 rounded-lg shadow-lg group-hover:bg-customGreen transition-all duration-300 min-h-[300px] sm:min-h-[330px] overflow-hidden relative">
+                            className="bg-white p-5 rounded-lg shadow-lg group-hover:bg-customGreen transition-all duration-300 h-[390px] overflow-hidden relative">
                             {/* Flex Column to keep logo above */}
                             <div className="flex flex-col items-start">
                                 <Image
@@ -74,9 +74,9 @@ const Expertise = () => {
                                     alt={domain.title}
                                     width={50}
                                     height={50}
-                                    className="mb-4"
+                                    className="mb-2 mt-2"
                                 />
-                                <h3 className="text-3xl font-semibold mb-2 group-hover:text-white transition-colors duration-300">
+                                <h3 className="text-3xl font-semibold mb-2 group-hover:text-white transition-colors duration-300 pt-5">
                                     {domain.title}
                                 </h3>
                                 <p className="text-gray-600 group-hover:text-white transition-colors duration-300">

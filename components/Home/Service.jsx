@@ -162,7 +162,7 @@ const PricingSection = () => {
       >
         <div className="pb-20 mb-7 pt-5 sm:pt-[180px] xl:pb-[60px] xl:pt-[100px]">
           <div className="global-container">
-            <div className="text-center lg:mb-12">
+            <div className="text-center lg:mb-10">
               <div className="mx-auto md:max-w-xs lg:max-w-xl xl:max-w-[746px] pt-20 sm:pt-20">
                 <h2 className="font-bold text-3xl sm:text-3xl md:text-4xl lg:text-4xl leading-[1.28]">
                   What <span className={"text-customGreen"}> Services</span> We Offer
@@ -173,23 +173,17 @@ const PricingSection = () => {
               </div>
             </div>
 
-            <div className="relative flex justify-center mb-8">
-              <div
-                  className="absolute w-[100px] h-[100px] bg-customGreen rounded-full border-2 border-black z-0"
-                  style={{right: "682px", bottom: "-130px"}}
-              />
-            </div>
-
-            <div className="mb-10 z-10 relative">
+            <div className="mb-10 z-10 ">
               <Slider {...settings} ref={sliderRef}>
                 {tabsData.map((tab, index) => (
-                    <div key={index} className="p-2 flex justify-center">
+                    <div key={index} className=" p-3 flex justify-center mx-14">
                       <button
-                          className={`px-3 py-4 w-[80px] h-[80px] flex items-center justify-center rounded-full border-2 ${selectedService === index
-                              ? "scale-110 bg-customGreen text-black border-gray-300 sm:bg-customGreen lg:bg-white"
-                              : "scale-90 bg-white text-black border-gray-300"
+                          className={`px-3 py-4 w-[80px] h-[80px] flex items-center justify-center rounded-full border-2 ${
+                              selectedService === index
+                                  ? "scale-110 bg-customGreen text-white border-gray-300" // Active state: green background, white text
+                                  : "scale-90 bg-white text-black border-gray-300" // Inactive state: white background, black text
                           } font-semibold transition-transform duration-300 ease-in-out`}
-                          onClick={() => handleServiceChange(index)}
+                          onClick={() => handleServiceChange(index)} // Changes the active button on click
                       >
                         {tab.icon}
                       </button>

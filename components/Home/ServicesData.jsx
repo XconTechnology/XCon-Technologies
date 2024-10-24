@@ -38,7 +38,8 @@ const ServicesSection = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {servicesData.map((service, index) => (
-                        <div key={index} className="p-8 min-h-72 bg-gray-50 border rounded-xl shadow hover:shadow-lg transition-shadow hover:bg-customGreen hover:text-white text-gray-800">
+                        <div key={index}
+                             className="group p-8 min-h-72 bg-gray-50 border rounded-xl shadow hover:shadow-lg transition-shadow hover:bg-customGreen hover:text-white text-gray-800">
                             <div className="flex flex-col gap-1">
                                 <h3 className="text-2xl font-semibold">{service.text}</h3>
                                 <h3 className="text-4xl font-semibold mb-8">{service.title}</h3>
@@ -47,7 +48,8 @@ const ServicesSection = () => {
                             <ul className="space-y-2">
                                 {service.points.map((point, i) => (
                                     <li key={i} className="flex items-center">
-                                        <AiOutlineCheckCircle className="text-customGreen hover:text-white mr-2" />
+                                        <AiOutlineCheckCircle
+                                            className="text-customGreen group-hover:text-white mr-2 transition-colors"/>
                                         {point}
                                     </li>
                                 ))}
