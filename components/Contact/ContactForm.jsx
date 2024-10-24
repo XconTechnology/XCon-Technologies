@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import Image from "next/image";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import nodemailer from "nodemailer";
 
 const ContactForm = () => {
   const formRef = useRef(null);
@@ -76,61 +75,18 @@ const ContactForm = () => {
   };
 
   // Function to send a thank-you email to the user
-  const sendFormEmail = async (formData) => {
-    try {
-      // Nodemailer transporter configuration
-      const transporter = nodemailer.createTransport({
-        host: process.env.SMTP_HOST,
-        port: process.env.SMTP_PORT,
-        secure: true, // true for port 465
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASS,
-        },
-      });
-
-      // Email options for the recipient (askforquote email)
-      const mailOptions = {
-        from: `"XCon Technologies" <${process.env.SMTP_USER}>`,
-        to: process.env.SMTP_USER, // Send to askforquote@xcontechnologies.com
-        subject: "New Contact Form Submission",
-        text: `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nCompany: ${formData.company}\nService: ${formData.service}\nMessage: ${formData.message}`,
-      };
-
-      // Send the email
-      await transporter.sendMail(mailOptions);
-
-      return { success: true };
-    } catch (error) {
-      console.error("Error sending form email:", error);
-      return { success: false };
-    }
-  };
-
   const sendThankYouEmail = async (recipientEmail) => {
     try {
-      // Reuse the same transporter
-      const transporter = nodemailer.createTransport({
-        host: process.env.SMTP_HOST,
-        port: process.env.SMTP_PORT,
-        secure: true, // true for port 465
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASS,
-        },
-      });
-
-      // Email options for the thank-you email
-      const mailOptions = {
-        from: `"XCon Technologies" <${process.env.SMTP_USER}>`,
-        to: recipientEmail, // Send to the user
+      const thankYouMessage = {
+        to: recipientEmail,
         subject: "Thank You for Contacting Us",
         text: "We have received your message. Our team will get back to you shortly.",
       };
 
-      // Send the thank-you email
-      await transporter.sendMail(mailOptions);
+      // Simulate sending an email to the user
+      await sendEmail(thankYouMessage); // Assuming `sendEmail` handles both sending and receiving emails
     } catch (error) {
+      console.error("Error submitting form:", error);
       console.error("Error sending thank you email:", error);
     }
   };
@@ -311,10 +267,15 @@ const ContactForm = () => {
                 required
               >
                 <option value="">Select a service</option>
+                <option value="Software Development">
+                  Software Development
+                </option>{" "}
                 <option value="Web Development">Web Development</option>
+                <option value="Wordpress">Wordpress</option>
                 <option value="App Development">App Development</option>
                 <option value="SEO">SEO</option>
                 <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Consultancy">Consultancy</option>
               </select>
             </div>
 
