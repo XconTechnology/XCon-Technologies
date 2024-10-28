@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 
 const AWSCertificates = () => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 4, // Display 4 logos at a time
