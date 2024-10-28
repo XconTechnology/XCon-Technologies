@@ -120,13 +120,16 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                                 <Link href='/webdevelopment' className=''>Web Development</Link>
                             </li>
                             <li className='sub-menu--item border-b border-black-100 pb-2'>
+                                <Link href='/softwaredevelopment' className=''>Software Development</Link>
+                            </li>
+                            <li className='sub-menu--item border-b border-black-100 pb-2'>
                                 <Link href='/appdevelopment' className=''>App Development</Link>
                             </li>
                             <li className='sub-menu--item border-b border-black-100 pb-2'>
-                                <Link href='/services/seo' className=''>SEO</Link>
+                                <Link href='/DigitalMarketing' className=''>Digital Marketing Services</Link>
                             </li>
                             <li className='sub-menu--item border-b border-black-100 pb-2'>
-                                <Link href='/services/video-editing' className=''>Video Editing</Link>
+                                <Link href='/VideoEditing' className=''>Video Editing</Link>
                             </li>
                             <li className='sub-menu--item border-b border-black-100 pb-2'>
                                 <Link href='/services/graphic-design' className=''>Graphic Designing</Link>

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaGlobe, FaShoppingBag, FaMobileAlt, FaFileAlt } from "react-icons/fa";
+import { FaGlobe, FaShoppingBag, FaMobileAlt, FaFileAlt,FaLaptopCode,FaDatabase,FaLock,FaCogs,FaBullhorn,FaSearchDollar,FaEnvelope,FaChartLine,FaCut,FaMagic,FaVolumeUp,FaVideo } from "react-icons/fa";
 
 // Define the service data
 const servicesData = {
@@ -26,6 +26,29 @@ const servicesData = {
       description: "Custom, headless CMS for automated content staging and accelerated time-to-market using intuitive workflows and templates."
     }
   ],
+  softwareDevelopment: [
+    {
+      icon: <FaLaptopCode />,
+      title: "Custom Web Applications",
+      description: "Tailored web applications designed to address specific business requirements with high scalability and performance.",
+    },
+    {
+      icon: <FaDatabase />,
+      title: "Database Design & Management",
+      description: "Efficient database solutions for structured storage, retrieval, and management of complex data.",
+    },
+    {
+      icon: <FaLock />,
+      title: "Security & Compliance",
+      description: "Robust security protocols and compliance with industry standards to safeguard sensitive data.",
+    },
+    {
+      icon: <FaCogs />,
+      title: "System Integrations",
+      description: "Seamless integration with third-party systems, enhancing functionality and enabling smooth data exchange.",
+    },
+
+  ],
   appDevelopment: [
     {
       icon: <FaMobileAlt />,
@@ -47,7 +70,52 @@ const servicesData = {
       title: "Post-Launch Support",
       description: "Ongoing support and updates to keep your mobile application relevant and fully functional."
     }
+  ],
+  digitalmarket: [
+    {
+      icon: <FaBullhorn />,
+      title: "Social Media Marketing",
+      description: "Boost brand visibility with targeted social media strategies across platforms like Facebook, Instagram, and Twitter."
+    },
+    {
+      icon: <FaSearchDollar />,
+      title: "Search Engine Optimization (SEO)",
+      description: "Improve website rankings with SEO best practices, driving organic traffic and increasing visibility."
+    },
+    {
+      icon: <FaEnvelope />,
+      title: "Email Marketing",
+      description: "Engage and nurture your audience with personalized email campaigns designed to convert leads into customers."
+    },
+    {
+      icon: <FaChartLine />,
+      title: "Pay-Per-Click Advertising (PPC)",
+      description: "Generate immediate traffic and conversions with strategic PPC campaigns across platforms like Google Ads and Bing."
+    }
+  ],
+  videoEditing: [
+    {
+      icon: <FaCut />,
+      title: "Video Editing",
+      description: "Craft engaging visual stories by trimming, arranging, and adding effects to videos, ensuring impactful content."
+    },
+    {
+      icon: <FaMagic />,
+      title: "Color Grading",
+      description: "Enhance visual appeal through precise color correction and grading, aligning footage with desired aesthetics and mood."
+    },
+    {
+      icon: <FaVolumeUp />,
+      title: "Audio Synchronization",
+      description: "Ensure clear audio by synchronizing voice, music, and sound effects with video content for a seamless viewing experience."
+    },
+    {
+      icon: <FaVideo />,
+      title: "Motion Graphics",
+      description: "Add engaging animations, transitions, and graphic elements to enrich video presentations and enhance visual storytelling."
+    }
   ]
+
 };
 
 const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
@@ -56,15 +124,43 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
   return (
       <section id="business-prospect" className="py-16 bg-white min-h-[600px]">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-5xl font-bold text-[#273447]">
-            Custom {serviceType === "webDevelopment" ? "Web" : "App"} Development Services to Broaden{" "}
+          <h2 className="text-4xl font-bold text-[#273447]">
+            Custom{" "}
+            {serviceType === "webDevelopment" ? "Web Development"
+                : serviceType === "appDevelopment" ? "App Development"
+                    : serviceType === "softwareDevelopment" ? "software Development"
+                    : serviceType === "digitalmarket" ? "Digital Marketing"
+                        : serviceType === "videoEditing" ? "Video Editing"
+                        : "Software"}{" "}
+             Services to Broaden{" "}
             <span className="text-customGreen">Business Prospects</span>
           </h2>
+
+
           <p className="mt-6 text-lg text-[#273447]">
-            Experience {serviceType === "webDevelopment" ? "web" : "app"} development prowess with a team specialized in agile
-            project management and delivery. Here are the top {serviceType === "webDevelopment" ? "web" : "app"} development
+            Experience{" "}
+            {serviceType === "webDevelopment"
+                ? "web"
+                : serviceType === "appDevelopment"
+                    ? "app"
+                    : serviceType === "digitalmarket" ? "digital marketing"
+                        : serviceType === "videoEditing" ? "video Editing"
+                        : "software"}{" "}
+             prowess with a team specialized in
+            agile project management and delivery. Here are the
+            top{" "}
+            {serviceType === "webDevelopment"
+                ? "web  development"
+                : serviceType === "appDevelopment"
+                    ? "app  development"
+                    : serviceType === "digitalMarket"
+                        ? "digital marketing"
+                        : serviceType === "videoEditing"
+                        ? "video Editing"
+                        : "software"}{" "}
             solutions businesses trust XCon for.
           </p>
+
 
           {/* Icon Grid */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -86,7 +182,8 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
           {/* Call to Action */}
           <div className="mt-8">
             <Link href="/project-scope">
-            <span className="button  rounded-[50px] border-2  bg-black py-4 text-white after:bg-customGreen hover:border-customGreen hover:text-white">
+            <span
+                className="button  rounded-[50px] border-2  bg-black py-4 text-white after:bg-customGreen hover:border-customGreen hover:text-white">
               Discuss Project Scope
             </span>
             </Link>

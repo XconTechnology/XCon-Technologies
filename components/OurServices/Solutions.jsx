@@ -24,6 +24,27 @@ const Solutions = ({ serviceType }) => {
                 },
             ],
         },
+        softwareDevelopment: {
+            title: 'Software Development Solutions',
+            description: 'XCon offers comprehensive software development services to create tailored solutions that drive efficiency and innovation. From enterprise software to custom integrations, we deliver reliable, scalable, and secure products that match your unique business needs.',
+            features: [
+                {
+                    number: '01',
+                    title: 'Customized Solutions',
+                    description: 'Design and develop software tailored to your specific business processes, ensuring seamless integration and enhanced productivity across all departments.',
+                },
+                {
+                    number: '02',
+                    title: 'Advanced Security',
+                    description: 'Employ industry-standard security practices, including data encryption and multi-layered protection, to safeguard sensitive information and prevent data breaches.',
+                },
+                {
+                    number: '03',
+                    title: 'Scalable Architecture',
+                    description: 'Develop software with a scalable, modular architecture, allowing your system to grow and adapt to new demands as your business expands.',
+                },
+            ],
+        },
         appDevelopment: {
             title: 'App Development Solutions',
             description: 'XCon provides end-to-end app development services that bring innovation and efficiency to your business. From feature-rich mobile apps to enterprise-level solutions, we ensure scalability and user-centric design.',
@@ -45,6 +66,50 @@ const Solutions = ({ serviceType }) => {
                 },
             ],
         },
+        digitalmarket: {
+            title: 'Digital Marketing Solutions',
+            description: 'XCon offers comprehensive digital marketing services designed to elevate your online presence and drive measurable results. From SEO to social media marketing, we tailor strategies to fit your unique business needs.',
+            features: [
+                {
+                    number: '01',
+                    title: 'Search Engine Optimization (SEO)',
+                    description: 'Enhance your website’s visibility on search engines, driving organic traffic and improving your site’s ranking with proven SEO strategies.',
+                },
+                {
+                    number: '02',
+                    title: 'Social Media Marketing',
+                    description: 'Engage your audience across social media platforms with targeted campaigns that build brand awareness and foster community engagement.',
+                },
+                {
+                    number: '03',
+                    title: 'Content Marketing',
+                    description: 'Create valuable, relevant content that attracts and retains your target audience, establishing your brand as an authority in your industry.',
+                },
+            ],
+        },
+        videoEditing: {
+            title: 'Video Editing Solutions',
+            description: 'XCon’s video editing services transform raw footage into polished, engaging content that captures attention and conveys your brand message effectively. From promotional videos to cinematic storytelling, our team brings creativity and technical expertise to every project.',
+            features: [
+                {
+                    number: '01',
+                    title: 'Professional Editing Techniques',
+                    description: 'Utilize advanced editing techniques to produce smooth transitions, color grading, and effects that enhance the visual appeal of your videos.',
+                },
+                {
+                    number: '02',
+                    title: 'Customized Storytelling',
+                    description: 'Craft narratives that reflect your brand’s vision and values, ensuring each video tells a compelling story aligned with your marketing goals.',
+                },
+                {
+                    number: '03',
+                    title: 'High-Quality Output',
+                    description: 'Deliver videos in high-definition formats optimized for various platforms, including web, social media, and mobile, ensuring the best viewer experience.',
+                },
+            ],
+        },
+
+
     };
 
     const selectedContent = content[serviceType]; // Get the content based on serviceType
