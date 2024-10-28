@@ -38,7 +38,7 @@ const AWSCertificates = () => {
     };
 
     return (
-        <section id="aws-certificates" className="py-10">
+        <section id="aws-certificates" className="p-0 m-0">
             <div className="global-container">
                 <div className="flex justify-center"> {/* Centers the slider in the parent */}
                     <Slider
