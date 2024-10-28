@@ -21,7 +21,7 @@ const FaqS = () => {
                                 {/* Section Content Block */}
                                 <div className='mb-6'>
                                     <div className='mx-auto md:mx-0 md:max-w-none'>
-                                        <h2>Freely ask us for more information</h2>
+                                        <div className={"text-5xl "}>Freely ask us for more information</div>
                                     </div>
                                 </div>
                                 {/* Section Content Block */}

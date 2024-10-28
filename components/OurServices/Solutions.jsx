@@ -108,6 +108,50 @@ const Solutions = ({ serviceType }) => {
                 },
             ],
         },
+        graphicDesign: {
+            title: 'Graphic Design Solutions',
+            description: 'XCon specializes in creating impactful graphic design solutions that enhance brand visibility and engagement. From branding and marketing materials to UI/UX design, we deliver visually stunning graphics tailored to your business needs.',
+            features: [
+                {
+                    number: '01',
+                    title: 'Brand Design',
+                    description: 'Develop cohesive brand identities through logo design, color palettes, and typography that resonate with your target audience and establish a strong market presence.',
+                },
+                {
+                    number: '02',
+                    title: 'UI/UX Design',
+                    description: 'Create intuitive and user-friendly interfaces that enhance user experiences across digital platforms, ensuring seamless interaction and engagement.',
+                },
+                {
+                    number: '03',
+                    title: 'Marketing Materials',
+                    description: 'Design visually compelling marketing materials, including brochures, posters, and social media graphics, to effectively communicate your brand message and attract customers.',
+                },
+            ],
+        },
+        uiUxDesign: {
+            title: 'UI/UX Design Solutions',
+            description: 'XCon offers comprehensive UI/UX design services that focus on creating user-friendly and engaging interfaces for digital products. Our design approach combines creativity and usability to ensure optimal user experiences across all platforms.',
+            features: [
+                {
+                    number: '01',
+                    title: 'User Research',
+                    description: 'Conduct in-depth user research to understand user needs, behaviors, and pain points, ensuring designs are user-centered and effective.',
+                },
+                {
+                    number: '02',
+                    title: 'Wireframing & Prototyping',
+                    description: 'Create wireframes and interactive prototypes that visualize the user journey, allowing for early feedback and iteration before development.',
+                },
+                {
+                    number: '03',
+                    title: 'Visual Design',
+                    description: 'Develop aesthetically pleasing visual designs that align with your brand identity and enhance the overall user experience.',
+                },
+            ],
+        },
+
+
 
 
     };

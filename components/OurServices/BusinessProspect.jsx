@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaGlobe, FaShoppingBag, FaMobileAlt, FaFileAlt,FaLaptopCode,FaDatabase,FaLock,FaCogs,FaBullhorn,FaSearchDollar,FaEnvelope,FaChartLine,FaCut,FaMagic,FaVolumeUp,FaVideo } from "react-icons/fa";
+import { FaGlobe,FaEye,FaSketch,FaClipboardList, FaShoppingBag,FaPalette,FaPencilRuler,FaImages,FaDraftingCompass, FaMobileAlt, FaFileAlt,FaLaptopCode,FaDatabase,FaLock,FaCogs,FaBullhorn,FaSearchDollar,FaEnvelope,FaChartLine,FaCut,FaMagic,FaVolumeUp,FaVideo } from "react-icons/fa";
 
 // Define the service data
 const servicesData = {
@@ -114,7 +114,53 @@ const servicesData = {
       title: "Motion Graphics",
       description: "Add engaging animations, transitions, and graphic elements to enrich video presentations and enhance visual storytelling."
     }
-  ]
+  ],
+  graphicDesign: [
+    {
+      icon: <FaPalette />,
+      title: "Brand Identity",
+      description: "Develop unique and memorable brand identities through custom logo designs, color schemes, and typography that represent your brand's voice."
+    },
+    {
+      icon: <FaPencilRuler />,
+      title: "UI/UX Design",
+      description: "Create user-centered, visually appealing interfaces that enhance user experience and engagement across web and mobile applications."
+    },
+    {
+      icon: <FaImages />,
+      title: "Visual Content Creation",
+      description: "Design eye-catching graphics, infographics, and social media visuals that captivate audiences and boost online presence."
+    },
+    {
+      icon: <FaDraftingCompass />,
+      title: "Print Design",
+      description: "Produce high-quality print designs, including brochures, business cards, and banners, that convey professionalism and creativity."
+    }
+  ],
+  uiUxDesign: [
+    {
+      icon: <FaEye />,
+      title: "User Research",
+      description: "Conduct comprehensive user research to understand needs and preferences, ensuring designs are informed and user-centric."
+    },
+    {
+      icon: <FaSketch />,
+      title: "Wireframing & Prototyping",
+      description: "Create wireframes and interactive prototypes that visualize user journeys and interactions, facilitating better design decisions."
+    },
+    {
+      icon: <FaMobileAlt />,
+      title: "Responsive Design",
+      description: "Develop responsive interfaces that provide a seamless experience across all devices, enhancing accessibility and user satisfaction."
+    },
+    {
+      icon: <FaClipboardList />,
+      title: "Usability Testing",
+      description: "Conduct usability testing to gather feedback, identify pain points, and optimize the user experience for improved satisfaction."
+    }
+  ],
+
+
 
 };
 
@@ -131,6 +177,8 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
                     : serviceType === "softwareDevelopment" ? "software Development"
                     : serviceType === "digitalmarket" ? "Digital Marketing"
                         : serviceType === "videoEditing" ? "Video Editing"
+                                : serviceType === "graphicDesign" ? "Graphic Design"
+                                    : serviceType === "uiUxDesign" ? "UI/UX Design"
                         : "Software"}{" "}
              Services to Broaden{" "}
             <span className="text-customGreen">Business Prospects</span>
@@ -145,6 +193,7 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
                     ? "app"
                     : serviceType === "digitalmarket" ? "digital marketing"
                         : serviceType === "videoEditing" ? "video Editing"
+                        : serviceType === "uiUxDesign" ? "UI/UX Design"
                         : "software"}{" "}
              prowess with a team specialized in
             agile project management and delivery. Here are the
@@ -157,6 +206,8 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
                         ? "digital marketing"
                         : serviceType === "videoEditing"
                         ? "video Editing"
+                            : serviceType === "graphicDesign" ? "Graphic Design"
+                                : serviceType === "uiUxDesign" ? "UI/UX Design"
                         : "software"}{" "}
             solutions businesses trust XCon for.
           </p>

@@ -132,10 +132,10 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                                 <Link href='/VideoEditing' className=''>Video Editing</Link>
                             </li>
                             <li className='sub-menu--item border-b border-black-100 pb-2'>
-                                <Link href='/services/graphic-design' className=''>Graphic Designing</Link>
+                                <Link href='GraphicDesign' className=''>Graphic Designing</Link>
                             </li>
                             <li className='sub-menu--item border-b border-black-100 pb-2'>
-                                <Link href='/services/ui-ux' className=''>UI/UX</Link>
+                                <Link href='/UI' className=''>UI/UX</Link>
                             </li>
                         </ul>
                     </li>

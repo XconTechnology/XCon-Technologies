@@ -39,17 +39,30 @@ const servicesData = {
     imageUrl: "https://img.freepik.com/free-photo/videographer-color-correcting-clips-while-listening-music-headphones_482257-82266.jpg?t=st=1730093875~exp=1730097475~hmac=e3a962ed7fe0e97c141249c31817259e8356067e365bbccac21c31499e4c3810&w=1380",
     imageAlt: "video editing mockup",
   },
+  graphicDesign: {
+    title: "Creative Graphic Design Services",
+    description: "Elevate your brand with visually compelling graphic design solutions tailored to capture your audience’s attention. From logos and branding to marketing materials, our team blends creativity with strategy to bring your vision to life across digital and print media.",
+    buttonText: "Discover Graphic Design",
+    imageUrl: "https://img.freepik.com/free-vector/design-concept-illustration-idea-style-creativity-projects_613284-3229.jpg?t=st=1730097373~exp=1730100973~hmac=e5db6f13896391455273e86e20742c10082dc12589098027d93238d005a4eaf6&w=1380",
+    imageAlt: "graphic design mockup",
+  },
+  uiUxDesign: {
+    title: "User-Centric UI/UX Design Solutions",
+    description: "At XCon, we focus on creating intuitive and engaging user interfaces and experiences that enhance user satisfaction. Our design approach combines research, usability testing, and innovative design to ensure your products not only look great but also provide seamless interactions.",
+    buttonText: "Start Your UI/UX Project",
+    imageUrl: "https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?t=st=1730098545~exp=1730102145~hmac=feee05dec2cd9d7c5372e6861ba906e44be803fe36ae7d88da214b6863594bc4&w=1380",
+    imageAlt: "UI/UX Design Mockup",
+  },
+
 
 };
 
 const Header = ({ serviceType = "webDevelopment" }) => {
-  // Get the specific data for the service type (webDevelopment or appDevelopment)
   const { title, description, buttonText, imageUrl, imageAlt } = servicesData[serviceType];
 
   return (
     <div>
-      {/* Navbar Component */}
-      <Header_01 />  {/* Ensure this is your correct Navbar component */}
+      <Header_01 />
 
       <section id="section-Header" className="bg-[#2a3e50] py-20"> {/* Increased padding and margin */}
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
@@ -61,6 +74,9 @@ const Header = ({ serviceType = "webDevelopment" }) => {
                     serviceType === "softwareDevelopment" ? "Custom Software Development Services":
                     serviceType === "digitalmarket" ? "Digital Marketing Services":
                         serviceType === "videoEditing" ? "video Editing Services" :
+                            serviceType === "graphicDesign" ? "Graphic Design Services" :
+                            serviceType === "uiUxDesign" ? "UI/UX Design Services" :
+
                         "Service"}
             </p>
             <h1 className="text-4xl md:text-4xl font-bold leading-tight mt-4">

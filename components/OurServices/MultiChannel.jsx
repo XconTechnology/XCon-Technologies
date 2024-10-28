@@ -196,6 +196,92 @@ const servicesData = {
     imageUrl: "https://img.freepik.com/free-photo/empty-modern-creative-agency-office-with-dual-monitors-setup-with-processing-video-film-montage-vide_482257-3406.jpg?t=st=1730094138~exp=1730097738~hmac=8dc0a8a8c3956a5bbccf7bf1afb94b650287618766f90b41e29e40067256c448&w=1380",
     imageAlt: "Video Editing Mockup",
   },
+  graphicDesign: {
+    title: "Creative Graphic Design Services",
+    description1: "Boost your brand’s visual appeal with our expert graphic design services. From branding to marketing collateral, we create captivating designs that communicate your message effectively and leave a lasting impression.",
+    description2: "Our designers leverage creativity and strategic thinking to bring your ideas to life across both digital and print media.",
+    buttonText: "Discover Graphic Design",
+    sections: [
+      {
+        title: "Brand Identity & Logo Design",
+        content: "We create memorable brand identities, including logos, color schemes, and visual guidelines that reflect your brand values and resonate with your target audience."
+      },
+      {
+        title: "Marketing Collateral",
+        content: "From brochures and flyers to business cards and banners, we design cohesive marketing materials that support your brand message and engage potential clients."
+      },
+      {
+        title: "Social Media Graphics",
+        content: "Enhance your social media presence with customized graphics designed to capture attention and convey your message on platforms like Instagram, Facebook, and LinkedIn."
+      },
+      {
+        title: "Infographics & Data Visualization",
+        content: "Transform complex data into visually appealing infographics that communicate insights clearly and effectively, perfect for reports, presentations, and content marketing."
+      },
+      {
+        title: "Illustrations & Icon Design",
+        content: "Our team creates unique illustrations and icons tailored to your brand's style, adding personality and a distinctive touch to your digital or print content."
+      },
+      {
+        title: "Packaging Design",
+        content: "Make a strong impression on your customers with packaging designs that blend aesthetics and functionality, ensuring your product stands out on the shelves."
+      },
+      {
+        title: "Print Design",
+        content: "We specialize in print-ready designs that maintain clarity and quality, from magazine layouts to posters and signage, ensuring your brand stands out offline."
+      },
+      {
+        title: "UI Graphics for Digital Products",
+        content: "Complement your digital products with UI graphics that enhance user experience and align with the overall design, creating seamless, visually engaging interfaces."
+      }
+    ],
+    imageUrl: "https://scontent.flhe3-2.fna.fbcdn.net/o1/v/t0/f1/m340/genai_m4_lla_eag_v3:upload_img_49181737_10_27_2024_23_42_42_990374_5177703766376322622.jpeg?_nc_ht=scontent.flhe3-2.fna.fbcdn.net&_nc_cat=104&ccb=9-4&oh=00_AYCkIx3EzRKQljyzCy-F7qho51BJe6mY77RHIDqznyub6A&oe=67210F25&_nc_sid=5b3566",
+    imageAlt: "Graphic Design Mockup",
+  },
+  uiUxDesign:{
+    title: "Transforming User Experiences with Expert UI/UX Design",
+    description1: "Our UI/UX design services focus on creating seamless, engaging user experiences that connect with your audience. We prioritize user-centered design principles to ensure every interaction is intuitive and satisfying.",
+    description2: "By utilizing research-driven methodologies and industry-leading design tools, we craft visually appealing interfaces that not only look great but also enhance functionality.",
+    buttonText: "Start Your UI/UX Project",
+    sections: [
+      {
+        title: "User Research & Analysis",
+        content: "We conduct thorough user research to understand your target audience’s needs, preferences, and behaviors. This analysis informs our design process, ensuring we create solutions that resonate with users."
+      },
+      {
+        title: "Wireframing & Prototyping",
+        content: "Our team creates wireframes and prototypes to visualize the user journey and interface layout. These prototypes allow for early feedback and iterative design, ensuring a refined user experience."
+      },
+      {
+        title: "Visual Design",
+        content: "We develop stunning visual designs that align with your brand identity. Our aesthetic approach enhances usability and creates a lasting impression, combining color theory, typography, and imagery effectively."
+      },
+      {
+        title: "Interaction Design",
+        content: "We focus on crafting intuitive interactions that engage users. Our interaction designs are aimed at providing seamless transitions, animations, and feedback to improve the overall user journey."
+      },
+      {
+        title: "Usability Testing",
+        content: "We conduct usability testing to gather real user feedback and identify areas for improvement. This ensures the final product is user-friendly, addressing any pain points before launch."
+      },
+      {
+        title: "Responsive Design",
+        content: "We ensure that your UI/UX designs are fully responsive, providing an optimal experience across all devices and screen sizes. Our designs adapt seamlessly from desktop to mobile."
+      },
+      {
+        title: "Brand Integration",
+        content: "Our designs are aligned with your brand strategy, ensuring consistent messaging and aesthetics across all platforms. We create a cohesive brand experience that resonates with users."
+      },
+      {
+        title: "Ongoing Support & Iteration",
+        content: "Post-launch, we offer ongoing support and iterative design improvements based on user feedback and analytics. This ensures your UI/UX continues to meet user needs as they evolve."
+      }
+    ],
+    imageUrl: "https://img.freepik.com/free-vector/gradient-ui-ux-landing-page-template_23-2149053148.jpg?t=st=1730098946~exp=1730102546~hmac=11c77d99fbbabfc699aee3ff5030b64cb8871135af12db456ef8d1945b95000f&w=1380",
+    imageAlt: "UI/UX Design Mockup",
+
+  }
+
 
 
 
@@ -245,7 +331,9 @@ const MultiChannel = ({ serviceType = "webDevelopment" }) => {
                         : serviceType === "softwareDevelopment" ? "Software Development Services for Comprehensive Solutions"
                             : serviceType === "digitalmarket" ? "Digital Marketing Services to Amplify Your Online Presence"
                                 : serviceType === "videoEditing" ? "Video Editing Services to Amplify Your Brand’s Visual Presence"
-                                : "Our Services"}
+                                    : serviceType === "graphicDesign" ? "Graphic Design Services to Amplify Your Brand’s Visual Presence"
+                                    : serviceType === "uiUxDesign" ? "UI/UX Design Services to Amplify Your Brand’s Visual Presence"
+                                            : "Our Services"}
               </h2>
 
 
