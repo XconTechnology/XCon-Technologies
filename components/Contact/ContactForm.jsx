@@ -216,10 +216,11 @@ const ContactForm = () => {
                     borderRadius: "10px",
                     border: "1px solid #d1d5db",
                     zIndex: 1000,
-                    marginTop: "5px", 
-                    position: "absolute", 
-                    left: "0", 
-                    top: '100%'
+                    marginTop: "5px",
+                    position: "absolute",
+                    left: "0",
+                    top: "100%",
+                    backgroundColor: "white",
                   }}
                   enableSearch={true}
                   buttonStyle={{
@@ -237,6 +238,8 @@ const ContactForm = () => {
                     top: "50%",
                     transform: "translateY(-50%)",
                   }}
+                  // Apply hover effect to dropdown items
+                  dropdownClass=" hover:text-customGreen"
                 />
               </div>
               <div className="flex flex-col gap-y-[10px]">

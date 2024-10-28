@@ -42,6 +42,8 @@ module.exports = {
         customGray: '#686868',
 
       },
+
+      
     },
   },
   plugins: [],
