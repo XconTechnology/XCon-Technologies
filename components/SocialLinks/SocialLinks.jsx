@@ -11,13 +11,13 @@ const SocialLinks = () => {
                     <Link
                         rel="noopener noreferrer"
                         href="https://www.facebook.com/xcontechnologies/"
-                        className="group relative flex h-[50px] w-[50px] items-center justify-center rounded-full bg-black hover:bg-customGreen transition-all duration-300 hover:h-[60px] hover:w-[60px]"
+                        className="group relative flex h-[40px] w-[40px] items-center justify-center rounded-full bg-black hover:bg-customGreen transition-all duration-300 hover:h-[50px] hover:w-[50px]"
                     >
                         <Image
                             src="/assets/img_placeholder/th-1/facebook-icon-white.svg"
                             alt="facebook"
-                            width={30}
-                            height={30}
+                            width={20}
+                            height={20}
                             className="opacity-100"
                         />
                     </Link>
@@ -26,13 +26,13 @@ const SocialLinks = () => {
                     <Link
                         rel="noopener noreferrer"
                         href="https://www.linkedin.com/company/xcon-technologies/"
-                        className="group relative flex h-[50px] w-[50px] items-center justify-center rounded-full bg-black hover:bg-customGreen transition-all duration-300 hover:h-[60px] hover:w-[60px]"
+                        className="group relative flex h-[40px] w-[40px] items-center justify-center rounded-full bg-black hover:bg-customGreen transition-all duration-300 hover:h-[50px] hover:w-[50px]"
                     >
                         <Image
                             src="/assets/img_placeholder/th-1/linkedin-icon-white.svg"
                             alt="linkedin"
-                            width={30}
-                            height={30}
+                            width={20}
+                            height={20}
                             className="opacity-100"
                         />
                     </Link>
@@ -41,13 +41,13 @@ const SocialLinks = () => {
                     <Link
                         rel="noopener noreferrer"
                         href="https://www.instagram.com/xcontech/"
-                        className="group relative flex h-[50px] w-[50px] items-center justify-center rounded-full bg-black hover:bg-customGreen transition-all duration-300 hover:h-[60px] hover:w-[60px]"
+                        className="group relative flex h-[40px] w-[40px] items-center justify-center rounded-full bg-black hover:bg-customGreen transition-all duration-300 hover:h-[50px] hover:w-[50px]"
                     >
                         <Image
                             src="/assets/img_placeholder/th-1/instagram-icon-white.svg"
                             alt="instagram"
-                            width={30}
-                            height={30}
+                            width={20}
+                            height={20}
                             className="opacity-100"
                         />
                     </Link>
