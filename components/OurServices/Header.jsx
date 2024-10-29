@@ -29,7 +29,7 @@ const servicesData = {
     title: "Reach Further with  Digital Marketing",
     description: "Our digital marketing agency helps businesses navigate growing modern online challenges with strategic engagement channel(s) selection, integrated marketing communications, and compelling brand building. We not only get your brand to win over the SERPs but also create a brand story that resonates with user personas and compels conversion at every stage.",
     buttonText: "Consult Digital Strategy",
-    imageUrl: "https://img.freepik.com/premium-vector/flat-style-digital-marketing-illustration-featuring-mobile-marketing_1033579-91541.jpg?w=1380",
+    imageUrl:"/assets/img_placeholder/th-1/DigitalMarketing.png" ,
     imageAlt: "digital Mockup",
   },
   videoEditing: {
