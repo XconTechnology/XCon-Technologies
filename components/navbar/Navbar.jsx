@@ -146,6 +146,9 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                     <li className='nav-item'>
                         <Link href='/contact' className='nav-link-item text-lg'>Contact</Link>
                     </li>
+                    <li className='nav-item'>
+                        <Link href='/career' className='nav-link-item text-lg'>Career</Link>
+                    </li>
 
                     <div className="mt-3 mx-8">
                         <Link

@@ -29,7 +29,6 @@ const PricingSection = () => {
         "Ensuring your software solutions are efficiently maintained and updated.",
         "Our website and application development provide solutions that focus on user experience and satisfaction.",
         "Seamlessly integrating new and the right software with existing systems for improved efficiency.",
-        "Implementing robust security measures in website app development to protect your data and operations.",
       ],
       image: "/assets/img_placeholder/th-1/webDev.jpg",
     },
@@ -69,8 +68,7 @@ const PricingSection = () => {
         "Make designs inclusive for all users, including those with disabilities.",
         "Prioritize content to guide users to key information effectively.",
         "Provide clear feedback to user actions through visual cues.",
-        "Test with users regularly to identify and fix issues.",
-        "Maintain a clean design to enhance usability and reduce confusion.",
+
       ],
       image: "/assets/img_placeholder/th-1/demo.jpeg",
     },
@@ -84,8 +82,7 @@ const PricingSection = () => {
         "Keep clear documentation for code, APIs, and user guides.",
         "Focus on clean, maintainable code with best software development methodologies and code reviews",
         "Use CI/CD pipelines to automate testing and deployment",
-        "Regularly collect user feedback for improvements.",
-        "Incorporate security measures throughout the custom software development process.",
+
       ],
       image: "/assets/img_placeholder/th-1/sqa.jpg",
     },
@@ -214,8 +211,8 @@ const PricingSection = () => {
                     src={tabsData[selectedService].image}
                     alt={tabsData[selectedService].title}
                     layout="responsive"
-                    width={500} // Set appropriate width
-                    height={300} // Set appropriate height
+                    width={500}
+                    height={423.25}
                     className="rounded-lg"
                 />
               </div>
