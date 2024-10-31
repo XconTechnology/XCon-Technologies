@@ -121,17 +121,15 @@ const TechStack = ({ serviceType }) => {
     <section className="py-20 min-h-[40vh] bg-gray-800 text-white text-center">
       <div className="container mx-auto max-w-7xl px-4 text-center">
         <h2 className="text-5xl font-bold leading-tight">
-          Tech Stack We Use for Healthcare{" "}
+          Technology Stack We Use for
+          {" "}
           <span className="text-customGreen">
             {" "}
-            Application <br /> Development
+            Web Application <br /> Development
           </span>
         </h2>
         <p className="mt-4 text-md px-4">
-          Our custom healthcare app development solutions are powered by some of
-          the most groundbreaking and latest technology. We have a team of
-          healthcare app developers, experts in all languages and technologies,
-          and create advanced software solutions.
+          Our custom app development solutions leverage cutting-edge technologies to deliver innovative and effective software for high end websites.
         </p>
       </div>
 

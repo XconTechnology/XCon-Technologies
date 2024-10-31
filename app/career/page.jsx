@@ -4,6 +4,7 @@ import Header_01 from "@/components/header/Header_01";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import JoinUs from "@/components/Home/JoinUs";
+import Image from "next/image";
 
 function Career() {
     const [visibleCards, setVisibleCards] = useState([]);
@@ -53,7 +54,7 @@ function Career() {
                 {/*...::: Breadcrumb Section Start :::... */}
                 <section
                     id="section-breadcrumb"
-                    className="relative mb-10"
+                    className="relative "
                     style={{
                         backgroundImage: "url('/assets/img_placeholder/th-1/Careers.jpg')",
                         backgroundSize: "cover",
@@ -68,13 +69,19 @@ function Career() {
                                 <p className="breadcrumb-nav text-2xl pb-2">
                                     Join us and make an impact!
                                 </p>
-                                <ul className="breadcrumb-nav flex justify-center">
-                                    <li className="mr-2">
-                                        <Link href="/" style={{ color: "white" }}>
-                                            Home
-                                        </Link>
-                                    </li>
-                                    <li className="text-white">Careers</li>
+                                <ul className="breadcrumb-nav flex  text-white">
+
+                                    <Link href="/" style={{color: 'white'}}>Home</Link>
+                                    <span className="">
+                                        <Image
+                                            src="/assets/img_placeholder/th-1/try.svg"
+                                            alt="Background"
+                                            height={10}
+                                            width={10}
+
+                                        />
+                                     </span>
+                                    <div className="text-customGreen">Career</div>
                                 </ul>
                             </div>
                         </div>

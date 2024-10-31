@@ -76,9 +76,7 @@ const Projects = () => {
       <div className="container mx-auto text-center mb-8">
         {/* Title */}
         <h2 className="text-5xl font-bold text-[#273447] leading-tight">
-          Our Web Development{" "}
-          <span className="text-customGreen"> Projects </span> – Ground-Up{" "}
-          <br /> Launches to Makeovers
+          Complete <span className={"text-customGreen"}>Web Development</span>  {" "} - From Launch to Redesigns
         </h2>
       </div>
 

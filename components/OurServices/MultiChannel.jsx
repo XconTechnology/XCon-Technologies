@@ -5,42 +5,42 @@ import Link from "next/link";
 
 const servicesData = {
   webDevelopment: {
-    title: "Web Development for Multi-Channel Visibility",
-    description1: "A website or web app is built to facilitate user engagement. Our web development services help create scalable digital platforms with intuitive UI/UX and perform well under various conditions.",
-    description2: "We leverage threat resistance, tested architectures, continuous maintenance, and custom CMS solutions.",
+    title: "Custom Website Development for Maximum Reach",
+    description1: "Looking for website designers for small business? A website is designed to maximize user interaction and engagement. Our web design development services provide scalable, high-performance digital platforms with streamlined UI/UX.",
+    description2: "Our web design terms prioritize security, ongoing maintenance, and custom CMS solutions to support your website’s adaptability.",
     buttonText: "Start with a Free Consultation",
     sections: [
       {
         title: "UI/UX Web Design",
-        content: "We design captivating interfaces and experiences using tools like Figma and Adobe Creative Cloud for increased user stickiness and cross-platform breakpoint consistency. Our designs are not just pixel-perfect but also optimized for accessibility and brand consistency that drive maximum engagement and conversion."
+        content: "Our team creates visually engaging, user-focused designs that enhance engagement and brand alignment. Using tools like Figma and Adobe Creative Cloud, our website developers for small business deliver interfaces that are not only pixel-perfect but also accessible and consistent across all devices, improving user engagement and conversions."
       },
       {
         title: "Frontend Development",
-        content: "We build lightning-fast, SEO-friendly user interfaces using novel technologies that work flawlessly across devices. Our flexibility across monolithic and micro-frontend solutions brings performance and scalability to every interface we design, guaranteeing a smooth user experience and high conversion rates."
+        content: "Our website developers for small business create fast, SEO-optimized interfaces with modern technologies to ensure a seamless experience across all devices. Our flexible approach to both monolithic and micro-frontend solutions improve performance and scalability, optimizing each design for a smooth user journey and higher conversion rates."
       },
       {
         title: "Backend Development",
-        content: "From Node.js to Python, we architect secure and scalable server-side solutions that power your web applications. Our backend expertise ensures quick integration with frontend components for zero latency, efficient data processing, and robust API functionality."
+        content: "With expertise in server-side frameworks like Node.js and Python, our custom website development company develops scalable backend systems that power reliable web applications. Our backend solutions integrate seamlessly with frontend components, ensuring best data processing and API functionality for the best digital experience."
       },
       {
         title: "Full Stack Development",
-        content: "Get comprehensive hyper-connected, end-to-end web solutions with dynamic capabilities across channels. Our full-stack developers excel in building scalable, maintainable applications for your business, providing a cohesive user experience from start to finish."
+        content: "Our full-stack developers offer end-to-end solutions that connect all web application components, from front to back. Our responsive website design company build dynamic, scalable applications designed to provide a cohesive user experience and support long-term growth, delivering the best web solutions according to your business needs."
       },
       {
         title: "No/Low Code Development",
-        content: "Accelerate your development process with no-code and low-code platforms like Appian and OutSystems. Build and deploy web applications quickly without compromising functionality or scalability to speed up innovation and iteration."
+        content: "Accelerate your project timelines without sacrificing functionality through no-code and low-code platforms like Appian and OutSystems. Our streamlined development approach enables rapid deployment, helping you innovate and iterate efficiently for faster market readiness."
       },
       {
         title: "Cloud Development",
-        content: "Optimize your web applications for performance, security, and scalability with cloud computing solutions. Whether on AWS, Azure, or Google Cloud, our cloud development expertise ensures high availability and cost-effectiveness to scale your web presence easily."
+        content: "Harness the power of cloud computing to optimize your web application for security, scalability, and cost-efficiency. Our custom web solutions span AWS, Azure, and Google Cloud, ensuring high availability and performance for your web presence, easily adaptable to growth and demand."
       },
       {
         title: "Web Testing",
-        content: "We thoroughly test and fix bugs and glitches across design, code, and other web components. With a shared staging environment, we let you experience the real feel and do not finalize until you are happy. Zero-downtime rollout is second to none in our quality benchmark."
+        content: "We meticulously test all design and code components, identifying and resolving bugs and ensuring seamless functionality across all platforms. Using a shared staging environment, web design terms give you a true-to-life experience before launch and guarantee zero-downtime rollouts, meeting the highest quality standards."
       },
       {
         title: "Maintenance & Updates",
-        content: "We value progressive enhancements. Our experienced team provides ongoing support, security patches, and feature upgrades to keep your web applications running smoothly and up-to-date, ensuring your online presence remains competitive and secure."
+        content: "Our ongoing support ensures your applications remain competitive, secure, and current even after custom web development. We provide regular updates, security patches, and feature enhancements to keep your web presence running smoothly and aligned with evolving industry standards and user expectations."
       }
     ],
     imageUrl: "/assets/img_placeholder/th-1/lapi.png",
@@ -299,8 +299,8 @@ const MultiChannel = ({ serviceType = "webDevelopment" }) => {
             <Image
                 src={imageUrl}
                 alt={imageAlt}
-                width={900} // Increased image width
-                height={500} // Increased image height
+                width={900}
+                height={500}
                 className="w-full h-auto rounded-lg shadow-lg object-contain"
             />
           </div>
@@ -326,7 +326,7 @@ const MultiChannel = ({ serviceType = "webDevelopment" }) => {
             {/* Left Section */}
             <div className="md:w-1/2 lg:w-2/5 space-y-4 md:mr-10">
               <h2 className="text-4xl font-bold leading-tight text-[#273447]">
-                {serviceType === "webDevelopment" ? "Web Development Services for Novel, Best-Functioning Websites"
+                {serviceType === "webDevelopment" ? "What Custom Web Development Services We Offer?"
                     : serviceType === "appDevelopment" ? "App Development Services for Engaging Mobile Experiences"
                         : serviceType === "softwareDevelopment" ? "Software Development Services for Comprehensive Solutions"
                             : serviceType === "digitalmarket" ? "Digital Marketing Services to Amplify Your Online Presence"

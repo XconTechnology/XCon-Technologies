@@ -5,8 +5,8 @@ import Header_01 from '../header/Header_01';
 
 const servicesData = {
   webDevelopment: {
-    title: "Built-for-Experience, Scalable Websites",
-    description: "Design and code custom, from-scratch web solutions that engage users and compel interactions at every step.",
+    title: "Built for User-Focused, Scalable Web Solutions!",
+    description: "Get custom web development services that's optimized for speed and function, keeping users engaged.",
     buttonText: "Request a Quote",
     imageUrl: "/assets/img_placeholder/th-1/computer-mockup.png",
     imageAlt: "Website Mockup",

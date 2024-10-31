@@ -4,23 +4,23 @@ const Solutions = ({ serviceType }) => {
     // Define dynamic content based on the service type
     const content = {
         webDevelopment: {
-            title: 'Web Development Solutions',
-            description: 'XCon, a full-scale web development company, has all the elements to build dynamic and progressive web products. From customer-facing websites and internal management portals to e-commerce stores, we ensure excellence in every project with high-end development and systematic project management.',
+            title: 'Why Choose XCon for Custom Website Development?',
+            description: '',
             features: [
                 {
                     number: '01',
-                    title: 'Optimized Performance',
-                    description: 'Use efficient coding and performance optimization for a quick, friendly, and reliable website. Speed up operations and offer responsive browsing to users.',
+                    title: 'Security Measures',
+                    description: 'Implement secure data handling, encryption, and ongoing monitoring to safeguard both websites and users from potential threats.',
                 },
                 {
                     number: '02',
-                    title: 'Robust Security',
-                    description: 'Integrate secure data handling, encryption, and continuous monitoring to protect websites and users against threats. Maintain 100% integrity.',
+                    title: 'Enhanced Performance',
+                    description: 'Utilize streamlined coding practices and performance enhancements to create a fast, user-friendly, and dependable website.',
                 },
                 {
                     number: '03',
-                    title: 'Scalable Architecture',
-                    description: 'Design custom, flexible web architectures to support business growth and evolving needs. Get an adaptive, expandable product that’s future-ready.',
+                    title: 'Flexible Architecture',
+                    description: 'Develop customized, adaptable web architectures that accommodate your business growth and changing requirements.',
                 },
             ],
         },
@@ -162,8 +162,8 @@ const Solutions = ({ serviceType }) => {
         <section id="solutions" className="py-20 bg-gray-100">
             <div className="container mx-auto max-w-8xl px-4 text-center">
                 <h2 className="text-5xl font-bold text-[#273447] leading-tight">
-                    Purpose-Built{' '}
-                    <span className="text-customGreen">{selectedContent.title}</span><br />
+                    {' '}
+                    <span className="">{selectedContent.title}</span><br />
                 </h2>
                 <p className="mt-4 text-lg text-[#273447] max-w-2xl mx-auto">
                     {selectedContent.description}

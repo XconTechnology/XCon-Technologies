@@ -6,52 +6,52 @@ const Growth = () => {
             {/* Title Section */}
             <div className="container mx-auto text-center mb-10">
                 <h2 className="text-5xl font-bold text-white">
-                    Your Gateway to <span className="text-customGreen">Multi-Dimensional Growth</span>
+                    Your Pathway to Improve Your  <span className="text-customGreen">Brand Presence</span>
                 </h2>
                 <p className="text-white mt-4 max-w-5xl mx-auto">
-                    A website is your business’s digital storefront for direct online user interactions.
-                    An appealing and optimized website helps focalize marketing efforts, accelerate growth,
-                    and outperform the competition. Our experienced website development company anchors you
-                    there with excellence.
+                    A website is one of the most important assets of your business to engage with users online. As a top web development company in US, we are committed to delivering the best solutions that empower your business to grow in the digital world.
+
                 </p>
             </div>
 
             {/* Features Section */}
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-gray-700 p-10 text-center text-white shadow-lg transition duration-300 hover:bg-white hover:text-gray-700">
-                    <h3 className="text-xl font-bold text-customGreen">Bigger Brand & Credibility</h3>
+                <div className="bg-gray-700 p-10 text-center text-white shadow-lg transition duration-300 hover:bg-white hover:text-gray-700 ">
+                    <h3 className="text-xl font-bold tracking-normal text-customGreen">Enhanced Brand Visibility</h3>
                     <p className=" mt-4">
-                        Fuel growth and expansion with better visibility and engagement.
+                        Accelerate growth and expansion with improved visibility and user engagement.
+
                     </p>
                 </div>
                 <div className="bg-gray-700 p-10 text-center text-white shadow-lg transition duration-300 hover:bg-white hover:text-gray-700">
-                    <h3 className="text-xl font-bold text-customGreen">Global Reach & Accessibility</h3>
+                    <h3 className="text-xl font-bold tracking-normal	 text-customGreen">Flexible Growth Solutions</h3>
                     <p className="mt-4">
-                        More organic traffic, more leads, and more conversion.
+                        A customer-friendly platform for startups as well as scaling enterprises.
+
                     </p>
                 </div>
                 <div className="bg-gray-700 p-10 text-center text-white shadow-lg transition duration-300 hover:bg-white hover:text-gray-700">
-                    <h3 className="text-xl font-bold text-customGreen">Scales With You</h3>
+                    <h3 className="text-xl font-bold tracking-normal	 text-customGreen">Global Access</h3>
                     <p className="mt-4">
-                        A friendly customer-facing platform for start-ups and scale-ups.
+                        Attract more organic traffic, capture leads, and boost conversion rates.
                     </p>
                 </div>
                 <div className="bg-gray-700 p-10 text-center text-white shadow-lg transition duration-300 hover:bg-white hover:text-gray-700">
-                    <h3 className="text-xl font-bold text-customGreen">Sell Easily</h3>
+                    <h3 className="text-xl font-bold tracking-normal	 text-customGreen">Valuable User Insights</h3>
                     <p className="mt-4">
-                        API-integrated, mobile-optimized e-commerce solutions sites.
+                        Gain insights into user behavior, meet their requirements, and convert prospects.
                     </p>
                 </div>
                 <div className="bg-gray-700 p-10 text-center text-white shadow-lg transition duration-300 hover:bg-white hover:text-gray-700">
-                    <h3 className="text-xl font-bold text-customGreen">User Insights & Analytics</h3>
+                    <h3 className="text-xl font-bold tracking-normal	 text-customGreen">Effortless Selling Solutions</h3>
                     <p className="mt-4">
-                        Know user perceptions, meet expectations, & convert close misses.
+                        API-integrated, mobile-optimized e-commerce platforms for smooth transactions.
                     </p>
                 </div>
                 <div className="bg-gray-700 p-10 text-center text-white shadow-lg transition duration-300 hover:bg-white hover:text-gray-700">
-                    <h3 className="text-xl font-bold text-customGreen">Showcase Your Triumphs</h3>
+                    <h3 className="text-xl font-bold tracking-normal	 text-customGreen">Highlight Your Successes</h3>
                     <p className="mt-4">
-                        Demonstrate project/client success through a diverse portfolio.
+                        Showcase client projects and achievements through an impressive portfolio.
                     </p>
                 </div>
             </div>

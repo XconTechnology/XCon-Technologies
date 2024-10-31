@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import Image from "next/image";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import sendContactForm from "@/lib/api";
 
 const initValues = {
   name: "",
@@ -47,33 +48,16 @@ const ContactForm = () => {
     }));
   };
 
-  const sendContactForm = async (data) => {
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to send message");
-      }
-
-      return await response.json();
-    } catch (error) {
-      console.error("Error sending contact form:", error);
-      throw error; // Re-throw the error for handling in the component
-    }
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setState((prev) => ({ ...prev, isLoading: true, error: "" })); // Reset error
+    setState((prev) => ({ ...prev, isLoading: true, error: "" }));
 
     try {
-      await sendContactForm(values);
+      // Log the values and recipient email
+      console.log("Form Data:", values);
+      console.log("Recipient Email:", values.email); // Log the recipient email
+
+      await sendContactForm(values); // Pass form values to API function
       setTouched({});
       setState({ ...initState, showAlert: "success" });
     } catch (error) {
@@ -277,14 +261,22 @@ const ContactForm = () => {
                 className="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] font-bold text-black outline-none transition-all placeholder:font-normal placeholder:text-slate-500 focus:border-customGreen"
                 required
               >
-                <option value="">Select a service</option>
+                <option value="" disabled>
+                  Select a service
+                </option>
                 <option value="Software Development">
                   Software Development
-                </option>{" "}
-                <option value="Web Development">Web Development</option>
-                <option value="Wordpress">Wordpress</option>
-                <option value="App Development">App Development</option>
+                </option>
+                <option value="Mobile App Development">
+                  Mobile App Development
+                </option>
+                <option value="Worpress">Worpress</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Video Editing">Video Editing</option>
                 <option value="Digital Marketing">Digital Marketing</option>
+                <option value="SEO">SEO </option>
+                <option value="Consultancy">Consultancy</option>
               </select>
             </div>
 
@@ -298,22 +290,23 @@ const ContactForm = () => {
               <textarea
                 name="message"
                 id="message"
-                rows="5"
                 value={values.message}
                 onChange={handleChange}
-                placeholder="Your Message..."
+                placeholder="Your Message"
+                rows={5}
                 className="rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] font-bold text-black outline-none transition-all placeholder:font-normal placeholder:text-slate-500 focus:border-customGreen"
                 required
-              ></textarea>
+              />
             </div>
-            <div className="flex justify-center">
-              <button
-                type="submit"
-                className="w-full rounded-[10px] bg-customGreen py-3 text-white transition-all hover:bg-green-500 focus:outline-none"
-              >
-                {isLoading ? "Sending..." : "Send Message"}
-              </button>
-            </div>
+
+            <button
+              type="submit"
+              className="rounded-[10px] bg-customGreen px-6 py-[15px] text-white font-bold"
+              disabled={isLoading}
+            >
+              {isLoading ? "Sending..." : "Send Message"}
+            </button>
+            {error && <div className="text-red-500 text-sm mt-2">{error}</div>}
           </form>
         </div>
       </div>

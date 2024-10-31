@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import XConLogo from "../../public/assets/img_placeholder/Dark Logo.png";
@@ -6,10 +6,11 @@ import Marquee from "react-fast-marquee";
 import "swiper/swiper-bundle.css";
 import AWSCertificates from "../AWSCertificates/AWSCertificates";
 import SocialLinks from "../SocialLinks/SocialLinks";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Footer_01 = () => {
   return (
-    <footer className="relative z-[1] overflow-hidden bg-grey-[300]">
+    <footer className="relative z-[1] overflow-hidden bg-colorLinenRuffle">
       {/* Footer Top */}
       <div className="py-4 xl:pb-5 xl:pt-6">
         {" "}
@@ -64,17 +65,9 @@ const Footer_01 = () => {
           {/* Footer Widget */}
           <div className="flex flex-col max-w-2xl">
             <Link href="/" className="inline-block">
-              <Image
-                src={XConLogo}
-                alt="logo"
-                width={200}
-                height={75}
-                // className="h-auto w-full max-w-[250px]" // Adjusted max width
-              />
+              <Image src={XConLogo} alt="logo" width={200} height={75}/>
             </Link>
             <p className="text-1xl mt-5">
-              {" "}
-              {/* Reduced text size */}
               At XCon Technologies, we’re more than just a software company in
               the US. We are your partners in innovation. Let’s build the future
               together with cutting-edge IT solutions according to your business
@@ -82,18 +75,42 @@ const Footer_01 = () => {
               development ideas into reality!
             </p>
 
-            <ul className="mt-2 flex flex-col">
-              {" "}
-              {/* Reduced gap */}
-              {/* Social Media Links */}
-              <li className="flex mt-10">
-                <SocialLinks />
+            <ul className="mt-10 flex flex-col space-y-6">
+              {/* Contact Details */}
+              <li className="flex items-center space-x-2 cursor-pointer hover:text-customGreen">
+                <FaPhoneAlt className="text-customGreen text-xl sm:text-2xl"/>
+                <a href="tel:+15043699609" className="text-lg sm:text-xl">
+                  +1 (504) 369-9609
+                </a>
               </li>
-              {/* AWS Certificates */}
-              <li className="sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] p-0">
-                <AWSCertificates />
+              <li className="flex items-center space-x-2 cursor-pointer hover:text-customGreen">
+                <FaEnvelope className="text-customGreen text-xl sm:text-2xl"/>
+                <a href="mailto:askforqoute@xcontechnologies.com" className="text-lg sm:text-xl">
+                  askforqoute@xcontechnologies.com
+                </a>
+              </li>
+              <li className="flex items-center space-x-2 cursor-pointer hover:text-customGreen">
+                <FaMapMarkerAlt className="text-customGreen text-[22px] sm:text-2xl"/>
+                <a
+                    href="https://www.google.com/maps/search/1235+East+Blvd,+Suite+E+PMB+5100,+Charlotte,+North+Carolina,+28203,+United+States"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg sm:text-xl"
+                >
+                  1235 East Blvd, Suite E PMB 5100, Charlotte, North Carolina, 28203, United States
+                </a>
               </li>
             </ul>
+
+            {/* Social Media Links */}
+            <div className="flex flex-col md:flex-row mt-7">
+              <SocialLinks/>
+            </div>
+
+            {/* AWS Certificates */}
+            <div className="sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] p-0 mt-7">
+              <AWSCertificates/>
+            </div>
           </div>
           {/* Footer Widget for Services */}
           <div className="flex flex-col gap-y-2">
@@ -109,24 +126,24 @@ const Footer_01 = () => {
               {/* Reduced gap */}
               <li>
                 <Link
-                  href="/"
-                  className="transition-all duration-300 ease-linear hover:text-customGreen text-1xl" // Reduced text size
+                    href="/"
+                    className="transition-all duration-300 ease-linear hover:text-customGreen text-1xl" // Reduced text size
                 >
                   Software Development
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/"
-                  className="transition-all duration-300 ease-linear hover:text-customGreen text-1xl" // Reduced text size
+                    href="/"
+                    className="transition-all duration-300 ease-linear hover:text-customGreen text-1xl" // Reduced text size
                 >
                   Web Development
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/"
-                  className="transition-all duration-300 ease-linear hover:text-customGreen text-1xl" // Reduced text size
+                    href="/"
+                    className="transition-all duration-300 ease-linear hover:text-customGreen text-1xl" // Reduced text size
                 >
                   Mobile App Development
                 </Link>

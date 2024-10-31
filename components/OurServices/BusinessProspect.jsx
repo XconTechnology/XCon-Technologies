@@ -8,22 +8,22 @@ const servicesData = {
     {
       icon: <FaGlobe />,
       title: "Websites",
-      description: "Create dynamic websites with responsive design and scalable architectures. Offer easy navigation with zero latency and generate leads."
+      description: "Develop dynamic websites with best designs and scalable architectures. Ensure effortless navigation with no delays while effectively generating leads."
     },
     {
       icon: <FaShoppingBag />,
       title: "E-Commerce",
-      description: "Build mobile-first, secure e-commerce platforms with user-focused features. Optimize for SERPs, reach customers easily, and scale."
+      description: "Build secure, mobile-first e-commerce platforms with user-centric functionalities. Optimize your site for search engines, making it easy to reach customers and scale your business."
     },
     {
       icon: <FaMobileAlt />,
       title: "Web Applications",
-      description: "Progressive web apps for mobile-like experiences. Interactive products that keep dwell metrics above par across devices."
+      description: "Design progressive web apps that deliver mobile-like experiences. Create interactive products that enhance engagement metrics across all devices."
     },
     {
       icon: <FaFileAlt />,
-      title: "Content Management System",
-      description: "Custom, headless CMS for automated content staging and accelerated time-to-market using intuitive workflows and templates."
+      title: "CMS",
+      description: "Implement a custom, headless CMS that streamlines content staging and accelerates time-to-market through intuitive workflows and templates."
     }
   ],
   softwareDevelopment: [
@@ -180,13 +180,13 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
                                 : serviceType === "graphicDesign" ? "Graphic Design"
                                     : serviceType === "uiUxDesign" ? "UI/UX Design"
                         : "Software"}{" "}
-             Services to Broaden{" "}
-            <span className="text-customGreen">Business Prospects</span>
+            Solutions to Expand Your {" "}
+            <span className="text-customGreen">Business Horizons</span>
           </h2>
 
 
           <p className="mt-6 text-lg text-[#273447]">
-            Experience{" "}
+            Boost{" "}
             {serviceType === "webDevelopment"
                 ? "web"
                 : serviceType === "appDevelopment"
@@ -195,9 +195,8 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
                         : serviceType === "videoEditing" ? "video Editing"
                         : serviceType === "uiUxDesign" ? "UI/UX Design"
                         : "software"}{" "}
-             prowess with a team specialized in
-            agile project management and delivery. Here are the
-            top{" "}
+            Boost your business with our custom web design and development services.Explore the top  services of {""}
+
             {serviceType === "webDevelopment"
                 ? "web  development"
                 : serviceType === "appDevelopment"
@@ -209,7 +208,7 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
                             : serviceType === "graphicDesign" ? "Graphic Design"
                                 : serviceType === "uiUxDesign" ? "UI/UX Design"
                         : "software"}{" "}
-            solutions businesses trust XCon for.
+             that businesses can get at XCon Technologies.
           </p>
 
 
@@ -220,7 +219,7 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
                   <div className="text-customGreen text-6xl mb-12">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-[#273447] mb-5">
+                  <h3 className="text-xl font-bold tracking-normal text-[#273447] mb-5">
                     {service.title}
                   </h3>
                   <p className="text-md text-[#273447] text-center mb-10">

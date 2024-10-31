@@ -20,8 +20,8 @@ const ContactDetails = () => {
           <li className="flex flex-col gap-y-4 text-2xl font-bold">
             Send us an Email:
             <Link
-              href="mailto:askforqoute@xcontechnologies.com"
-              className="font-normal leading-loose hover:text-customGreen"
+                href="mailto:askforqoute@xcontechnologies.com"
+                className="font-normal leading-loose hover:text-customGreen"
             >
               askforqoute@xcontechnologies.com
             </Link>
@@ -29,17 +29,26 @@ const ContactDetails = () => {
           <li className="flex flex-col gap-y-4 text-2xl font-bold">
             Give us a call:
             <Link
-              href="tel:+923495137127"
-              className="font-normal leading-loose hover:text-customGreen"
+                href="tel:+1 (504) 369-9609"
+                className="font-normal leading-loose hover:text-customGreen"
             >
-              +923495137127
+              +1 (504) 369-9609
+            </Link>
+          </li>
+          <li className="flex flex-col gap-y-4 text-2xl font-bold">
+            Address:
+            <Link
+                href="https://www.google.com/maps/search/1235+East+Blvd,+Suite+E+PMB+5100,+Charlotte,+North+Carolina,+28203,+United+States"
+                className="font-normal leading-loose hover:text-customGreen"
+            >
+              1235 East Blvd, Suite E PMB 5100, Charlotte, North Carolina, 28203, United States
             </Link>
           </li>
           <li className="flex flex-col">
-            <SocialLinks />
+            <SocialLinks/>
           </li>
           <li>
-            <AWSCertificates />
+            <AWSCertificates/>
           </li>
         </ul>
       </div>
