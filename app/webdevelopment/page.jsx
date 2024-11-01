@@ -34,7 +34,7 @@ function Page() {
 				{/*<Diversity   serviceType="webDevelopment"/>*/}
 				<Growth  serviceType="webDevelopment" />
 				<Expertise  serviceType="webDevelopment" />
-                 <FaqS serviceType="webDevelopment" />
+                 <FaqS serviceType="webDevelopment"  />
 
 
 
