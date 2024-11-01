@@ -9,7 +9,7 @@ import {
   FaMobileAlt,
 } from "react-icons/fa";
 
-const Workflow = () => {
+const Workflow = ({ serviceType = "webDevelopment" }) => {
   const workflowSteps = [
     {
       number: "01",
@@ -54,12 +54,16 @@ const Workflow = () => {
     <section className="workflow-section py-16 bg-gray-100 text-center">
       <div className="container mx-auto max-w-7xl px-4 text-center">
         <h2 className="text-5xl font-bold text-[#273447] leading-tight">
-          Our Custom
+          Our <span className="text-customGreen">
+             {serviceType === "webDevelopment" ? "Web Development ?"
+                 : serviceType === "appDevelopment" ? "App Development"
+                     : serviceType === "softwareDevelopment" ? "Custom Software Development"
+                                         : "Our Services"}
 
-          <span className="text-customGreen"> Web Development </span>Process
+          {" "}  </span>Process
         </h2>
         <p className="mt-4 text-lg text-[#273447] max-w-2xl mx-auto">
-          We follow a structured, collaborative approach to bring your design agency website design to life:
+          We implement an agile software development methodology developing collaboration and delivering timely. Here’s the process we use for custom software development for small business:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-20">
           {workflowSteps.map((step) => (

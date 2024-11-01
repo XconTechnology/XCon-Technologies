@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-const TechStack = ({ serviceType }) => {
+const TechStack = ({ serviceType = "webDevelopment" }) => {
   const [activeTab, setActiveTab] = useState(
     serviceType === "webDevelopment" ? "Frontend" : "AppDevelopment"
   );
@@ -120,16 +120,19 @@ const TechStack = ({ serviceType }) => {
   return (
     <section className="py-20 min-h-[40vh] bg-gray-800 text-white text-center">
       <div className="container mx-auto max-w-7xl px-4 text-center">
-        <h2 className="text-5xl font-bold leading-tight">
+        <h2 className="text-5xl font-bold  leading-tight">
           Technology Stack We Use for
           {" "}
           <span className="text-customGreen">
             {" "}
-            Web Application <br /> Development
+            {serviceType === "webDevelopment" ? "Web "
+                : serviceType === "appDevelopment" ? "App "
+                    : serviceType === "softwareDevelopment" ? "Custom Software"
+                        : "Our Services"} <br /> Development
           </span>
         </h2>
         <p className="mt-4 text-md px-4">
-          Our custom app development solutions leverage cutting-edge technologies to deliver innovative and effective software for high end websites.
+          Our custom software development solutions use the latest, most advanced technologies to create powerful software for your business. With the best IT system custom software development team of developers, we deliver innovative solutions.
         </p>
       </div>
 

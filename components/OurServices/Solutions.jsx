@@ -25,23 +25,23 @@ const Solutions = ({ serviceType }) => {
             ],
         },
         softwareDevelopment: {
-            title: 'Software Development Solutions',
-            description: 'XCon offers comprehensive software development services to create tailored solutions that drive efficiency and innovation. From enterprise software to custom integrations, we deliver reliable, scalable, and secure products that match your unique business needs.',
+            title: 'Why Choose XCon for Custom Software Product Development?',
+            description: 'XCon provides end-to-end software development services and customized solutions that boost efficiency. From enterprise applications to specialized integrations, our custom software development services USA deliver dependable, scalable, and secure products.',
             features: [
                 {
                     number: '01',
                     title: 'Customized Solutions',
-                    description: 'Design and develop software tailored to your specific business processes, ensuring seamless integration and enhanced productivity across all departments.',
+                    description: 'Our programming developer designs and develops software uniquely customized according to your business processes, boosting smooth integration and productivity.',
                 },
                 {
                     number: '02',
                     title: 'Advanced Security',
-                    description: 'Employ industry-standard security practices, including data encryption and multi-layered protection, to safeguard sensitive information and prevent data breaches.',
+                    description: 'Our computer software developers implement top-tier security practices, including data encryption and multi-layered defenses, to protect sensitive information.',
                 },
                 {
                     number: '03',
                     title: 'Scalable Architecture',
-                    description: 'Develop software with a scalable, modular architecture, allowing your system to grow and adapt to new demands as your business expands.',
+                    description: 'Our custom software integration is built with a modular, scalable architecture, allowing your systems to evolve and adapt smoothly as your business grows.',
                 },
             ],
         },
@@ -157,7 +157,6 @@ const Solutions = ({ serviceType }) => {
     };
 
     const selectedContent = content[serviceType]; // Get the content based on serviceType
-
     return (
         <section id="solutions" className="py-20 bg-gray-100">
             <div className="container mx-auto max-w-8xl px-4 text-center">

@@ -47,39 +47,39 @@ const servicesData = {
     imageAlt: "Web Development Mockup",
   },
   softwareDevelopment: {
-    title: "Software Development for Multi-Channel Presence",
-    description1: "Choose a reputable partner for your business project – a professional team that understands your needs. Our software development services ensure personalized solutions, including unique software creation, system updates, and safe, scalable integration.",
-    description2: "Check out our amazing reviews, which demonstrate our commitment to excellence as a top-ranked software development company in the USA.",
+    title: "Custom Software Solution for Multi-Platform Success",
+    description1: "Selecting the right custom software development services company for your business project is key to success. Our custom software developer delivers the best custom software design that support a smooth, multi-channel presence and help you connect with customers wherever they are.",
+    description2: "From creating unique software to providing system enhancements and scalable integrations, our custom programming services ensure every solution is according to your needs.",
     buttonText: "Get a Free Consultation",
     sections: [
       {
         title: "Mobile UI/UX Design",
-        content: "Our team crafts beautiful, intuitive, and responsive mobile interfaces optimized for user experience. From prototyping to design, we create mobile-first, user-centered interfaces using the latest tools and frameworks.",
+        content: "Our software engineering professionals creates stunning, user-friendly, and responsive mobile interfaces that prioritize user experience. From initial prototyping to final design, our mobile app developers focus on user-focused interfaces using the latest design tools.",
         points: 15
       },
       {
         title: "iOS & Android Development",
-        content: "We develop robust, scalable, and secure native mobile applications for both iOS and Android platforms, utilizing cutting-edge technologies to provide seamless functionality across devices.",
+        content: "Our mobile application developers specialize in building secure, scalable mobile applications for both iOS and Android platforms. By leveraging modern technologies, we ensure seamless functionality of mobile application development across all devices.",
         points: 25
       },
       {
         title: "Cross-Platform Development",
-        content: "With tools like React Native and Flutter, we build cross-platform applications that provide a native-like experience on both iOS and Android. This approach reduces time-to-market while ensuring high-quality performance.",
+        content: "Utilizing frameworks like React Native and Flutter, we create cross-platform custom software for small business that deliver a native-like experience on both iOS and Android. This strategy improves time-to-market while maintaining high-quality performance.",
         points: 20
       },
       {
         title: "API Integration & Backend Development",
-        content: "Our expert developers handle API integrations and backend services to create mobile applications that sync flawlessly with web services and third-party platforms, ensuring a unified experience across devices.",
+        content: "Our skilled developers manage API integrations and backend services, ensuring that your mobile phone app development process sync smoothly with web services and third-party platforms for the best user experience.",
         points: 30
       },
       {
         title: "Mobile App Testing",
-        content: "We conduct thorough testing across multiple devices and platforms to identify and fix any issues before deployment. Our comprehensive testing guarantees your app runs smoothly and is bug-free.",
+        content: "Our custom software development services company perform detailed testing on a variety of devices and platforms to identify and resolve any issues prior to deployment. Our rigorous testing process ensures your computer software development operates smoothly.",
         points: 10
       },
       {
         title: "Post-Launch Support & Updates",
-        content: "Our post-launch services include monitoring app performance, providing updates, and rolling out new features to keep your app relevant and fully functional as your business grows.",
+        content: "After your app goes live, our custom software services provide ongoing support, including performance monitoring, updates, and new feature trends, to ensure your app remains relevant and fully functional as your business evolves.",
         points: 15
       }
     ],
@@ -328,7 +328,7 @@ const MultiChannel = ({ serviceType = "webDevelopment" }) => {
               <h2 className="text-4xl font-bold leading-tight text-[#273447]">
                 {serviceType === "webDevelopment" ? "What Custom Web Development Services We Offer?"
                     : serviceType === "appDevelopment" ? "App Development Services for Engaging Mobile Experiences"
-                        : serviceType === "softwareDevelopment" ? "Software Development Services for Comprehensive Solutions"
+                        : serviceType === "softwareDevelopment" ? "What Custom Software Development Services We Offer?"
                             : serviceType === "digitalmarket" ? "Digital Marketing Services to Amplify Your Online Presence"
                                 : serviceType === "videoEditing" ? "Video Editing Services to Amplify Your Brand’s Visual Presence"
                                     : serviceType === "graphicDesign" ? "Graphic Design Services to Amplify Your Brand’s Visual Presence"

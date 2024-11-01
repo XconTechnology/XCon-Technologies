@@ -117,25 +117,25 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                         </Link>
                         <ul className={`sub-menu ${mobileSubMenu === 3 && 'active'} space-y-1 w-80`}>
                             <li className='sub-menu--item border-b border-black-100 pb-2'>
-                                <Link href='/webdevelopment' className=''>Web Development</Link>
+                                <Link href='/services/web-development' className=''>Web Development</Link>
                             </li>
                             <li className='sub-menu--item border-b border-black-100 pb-2'>
-                                <Link href='/softwaredevelopment' className=''>Software Development</Link>
+                                <Link href='/services/software-development' className=''>Software Development</Link>
                             </li>
                             <li className='sub-menu--item border-b border-black-100 pb-2'>
-                                <Link href='/appdevelopment' className=''>App Development</Link>
+                                <Link href='/services/app-development' className=''>App Development</Link>
                             </li>
                             <li className='sub-menu--item border-b border-black-100 pb-2'>
-                                <Link href='/DigitalMarketing' className=''>Digital Marketing Services</Link>
+                                <Link href='/services/Digital-Marketing' className=''>Digital Marketing Services</Link>
                             </li>
                             <li className='sub-menu--item border-b border-black-100 pb-2'>
-                                <Link href='/VideoEditing' className=''>Video Editing</Link>
+                                <Link href='/services/Video-Editing' className=''>Video Editing</Link>
                             </li>
                             <li className='sub-menu--item border-b border-black-100 pb-2'>
-                                <Link href='GraphicDesign' className=''>Graphic Designing</Link>
+                                <Link href='/services/Graphic-design' className=''>Graphic Designing</Link>
                             </li>
                             <li className='sub-menu--item border-b border-black-100 pb-2'>
-                                <Link href='/UI' className=''>UI/UX</Link>
+                                <Link href='/services/UI' className=''>UI/UX</Link>
                             </li>
                         </ul>
                     </li>

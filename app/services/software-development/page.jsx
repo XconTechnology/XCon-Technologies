@@ -27,11 +27,11 @@ function Page() {
                 <MultiChannel serviceType="softwareDevelopment" />
                 <BusinessProspect serviceType="softwareDevelopment" />
                 <Solutions serviceType="softwareDevelopment" />
-                <TechStack serviceType="webDevelopment" />
+                <TechStack serviceType="softwareDevelopment" />
                 <Workflow serviceType="softwareDevelopment" />
                 <OurAchievements serviceType="softwareDevelopment" />
-                {/*<Projects serviceType="softwareDevelopment" />*/}
-                <Diversity serviceType="softwareDevelopment" />
+                <Projects serviceType="softwareDevelopment" />
+                {/*<Diversity serviceType="softwareDevelopment" />*/}
                 <Growth serviceType="softwareDevelopment" />
                 <Expertise serviceType="softwareDevelopment" />
                 <FaqS serviceType="softwareDevelopment" />

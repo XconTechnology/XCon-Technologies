@@ -26,20 +26,20 @@ const faqData = {
     softwareDevelopment: {
         section: [
             {
-                question: 'How can custom software development benefit my business?',
-                answer: 'Custom software development provides tailored solutions that address your specific business needs, improve efficiency, and give you a competitive edge in your industry.'
+                question: 'What types of custom software solutions do XCon offer?',
+                answer: 'Our IT software development team provides a range of solutions, including custom web application and mobile apps, integrations with existing systems, and customized data management solutions.'
             },
             {
-                question: 'What software development services does XCon offer?',
-                answer: 'XCon offers a range of services, including custom software solutions, mobile app development, and enterprise software integration.',
+                question: 'How long does it take for healthcare custom software development?',
+                answer: 'Development time varies depending on the complexity and scope of the project. After an initial custom software development consulting, we provide an estimated timeline.',
             },
             {
-                question: 'What is the development process followed at XCon?',
-                answer: 'Our process includes requirement gathering, planning, design, development, testing, and ongoing support to ensure the final product meets your business needs.',
+                question: 'How much does custom software development cost?',
+                answer: 'The cost of custom software development depends on the complexity, features, and scope of the project. After discussing your requirements, we’ll provide an estimate according to your goals.',
             },
             {
-                question: 'What technologies are used in your software development projects?',
-                answer: 'We utilize modern technologies like Java, Python, .NET, and various frameworks to deliver high-performance software solutions.',
+                question: 'How does custom software development solutions benefit my business?',
+                answer: 'Our software development process involves creating customized software solutions that can improve efficiency, enhance productivity, and help streamline operations.',
             },
         ]
     }
