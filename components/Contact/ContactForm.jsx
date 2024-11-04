@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import Image from "next/image";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import sendContactForm from "@/lib/api";
 
 const initValues = {
   name: "",
@@ -46,6 +45,21 @@ const ContactForm = () => {
         phone,
       },
     }));
+  };
+
+  const sendContactForm = async (values) => {
+    console.log("Sending Contact Form Data:", values); // Log all values
+
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values), // Send the entire values object
+    });
+
+    if (!response.ok) throw new Error("Failed to send message");
+    return response.json();
   };
 
   const handleSubmit = async (e) => {
@@ -179,7 +193,7 @@ const ContactForm = () => {
                   Phone Number
                 </label>
                 <PhoneInput
-                  country={"pk"}
+                  country={"us"}
                   placeholder="Enter phone number"
                   value={values.phone}
                   onChange={handlePhoneChange}
