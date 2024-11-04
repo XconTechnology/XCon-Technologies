@@ -19,8 +19,8 @@ const servicesData = {
     imageAlt: "App Mockup",
   },
   softwareDevelopment: {
-    title: "Custom Software Development Company",
-    description: "Grow your global presence with the leading US-based custom software development company. To help you achieve your goals, we embrace diverse programming languages, platforms, and cutting-edge tech.",
+    title: "Get the Best Customer Software Development Services!",
+    description: "Improve your online presence with XCon – a trusted IT company in USA. We are dedicated to bringing global vision to life through high-performance custom software for businesses.",
     buttonText: "Get a Free Consultation",
     imageUrl: "/assets/img_placeholder/th-1/Softwaredevelopment.png",
     imageAlt: "csm Mockup",

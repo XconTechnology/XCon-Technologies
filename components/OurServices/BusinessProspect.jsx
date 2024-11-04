@@ -30,22 +30,22 @@ const servicesData = {
     {
       icon: <FaLaptopCode />,
       title: "Custom Web Applications",
-      description: "Tailored web applications designed to address specific business requirements with high scalability and performance.",
+      description: "Customized web applications created to meet your unique business needs and ensure exceptional scalability and performance for growth.",
     },
     {
       icon: <FaDatabase />,
       title: "Database Design & Management",
-      description: "Efficient database solutions for structured storage, retrieval, and management of complex data.",
+      description: "Comprehensive database solutions that facilitate structured storage, efficient retrieval, and effective management of complex datasets.",
     },
     {
       icon: <FaLock />,
       title: "Security & Compliance",
-      description: "Robust security protocols and compliance with industry standards to safeguard sensitive data.",
+      description: "Advanced security measures and adherence to industry standards to protect sensitive information and ensure compliance with regulations.",
     },
     {
       icon: <FaCogs />,
       title: "System Integrations",
-      description: "Seamless integration with third-party systems, enhancing functionality and enabling smooth data exchange.",
+      description: "Effortless integration with third-party systems, increasing functionality and enabling smooth data exchange across platforms.",
     },
 
   ],
@@ -174,7 +174,7 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
             Custom{" "}
             {serviceType === "webDevelopment" ? "Web Development"
                 : serviceType === "appDevelopment" ? "App Development"
-                    : serviceType === "softwareDevelopment" ? "software Development"
+                    : serviceType === "softwareDevelopment" ? "Custom Software Development"
                     : serviceType === "digitalmarket" ? "Digital Marketing"
                         : serviceType === "videoEditing" ? "Video Editing"
                                 : serviceType === "graphicDesign" ? "Graphic Design"
@@ -187,15 +187,12 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
 
           <p className="mt-6 text-lg text-[#273447]">
             Boost{" "}
-            {serviceType === "webDevelopment"
-                ? "web"
-                : serviceType === "appDevelopment"
-                    ? "app"
-                    : serviceType === "digitalmarket" ? "digital marketing"
+            {serviceType === "webDevelopment" ? "web" : serviceType === "appDevelopment" ? "app" : serviceType === "digitalmarket" ? "digital marketing"
+                : serviceType === "softwareDevelopment" ? "Software Development"
                         : serviceType === "videoEditing" ? "video Editing"
                         : serviceType === "uiUxDesign" ? "UI/UX Design"
                         : "software"}{" "}
-            Boost your business with our custom web design and development services.Explore the top  services of {""}
+             with our custom web design and development services.Explore the top  services of {""}
 
             {serviceType === "webDevelopment"
                 ? "web  development"

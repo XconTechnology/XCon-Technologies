@@ -12,31 +12,27 @@ const Slider = dynamic(() => import("react-slick"), { ssr: false });
 const projects = [
   {
     logoSrc: "/assets/img_placeholder/Dark Logo.png",
-    laptopSrc: "/assets/img_placeholder/th-1/project-1.webp",
-    title: "XCon Technologies Projects 1 Title",
-    description: "This is a brief description of Project 1.",
-    caseStudy: "Case Studies",
+    laptopSrc: "/assets/img_placeholder/th-1/Laptop-01.png",
+    title: "Beautiful Bathrooms",
+    description: "Your source of the best bathroom Solutions.",
   },
   {
     logoSrc: "/assets/img_placeholder/Dark Logo.png",
-    laptopSrc: "/assets/img_placeholder/th-1/project-2.webp",
-    title: "XCon Technologies Projects 2 Title",
-    description: "This is a brief description of Project 2.",
-    caseStudy: "Case Studies",
+    laptopSrc: "/assets/img_placeholder/th-1/Laptop-02.png",
+    title: "Door 2 Door House Removal Services",
+    description: "Delivering affordability without compromise – explore our array of services at budget-friendly rates.",
   },
   {
     logoSrc: "/assets/img_placeholder/Dark Logo.png",
-    laptopSrc: "/assets/img_placeholder/th-1/project-3.webp",
-    title: "XCon Technologies Projects 3 Title",
-    description: "This is a brief description of Project 3.",
-    caseStudy: "Case Studies",
+    laptopSrc: "/assets/img_placeholder/th-1/Laptop-03.png",
+    title: "Carpets & Flooring Specialists",
+    description: "Work with a professional Interior Designer anywhere in Ireland from the comfort of your own home.",
   },
   {
     logoSrc: "/assets/img_placeholder/Dark Logo.png",
-    laptopSrc: "/assets/img_placeholder/th-1/project-4.webp",
-    title: "XCon Technologies Projects 4 Title",
-    description: "This is a brief description of Project 4.",
-    caseStudy: "Case Studies",
+    laptopSrc: "/assets/img_placeholder/th-1/Laptop-04.png",
+    title: "We construct your dream projects",
+    description: "We specialise in all aspects of construction from home extensions, home renovations & new home builds.",
   },
 ];
 

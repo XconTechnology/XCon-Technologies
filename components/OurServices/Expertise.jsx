@@ -1,12 +1,17 @@
 import React from 'react';
 
-const Expertise = () => {
+const Expertise = ({ serviceType = "webDevelopment" }) => {
     return (
         <section className="py-16 bg-white">
             {/* Title Section */}
             <div className="container mx-auto text-center mb-12">
                 <h2 className="text-5xl font-bold text-gray-800">
-                    Get Custom Web Development Expertise at <span className="text-customGreen">Xcon!</span>
+                    Get Custom {" "}
+                    {serviceType === "webDevelopment" ? "Web Development ?"
+                    : serviceType === "appDevelopment" ? "App Development"
+                        : serviceType === "softwareDevelopment" ? "Software Development"
+                            : "Our Services"}
+                    {" "} Expertise at <span className="text-customGreen">Xcon!</span>
                 </h2>
                 <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
                     We don’t proclaim to be the best custom website development company, but we take pride in our expertise. Our professional, full-service in-house team follows a modern web development process to deliver efficient, secure, and scalable products that businesses trust and appreciate.

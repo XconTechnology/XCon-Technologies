@@ -2,7 +2,10 @@ import React, { useState, useRef } from "react";
 import Image from "next/image";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+<<<<<<< HEAD
 
+=======
+>>>>>>> c26e4656ed02b900f2233875558cba4b71b1a734
 const initValues = {
   name: "",
   email: "",
