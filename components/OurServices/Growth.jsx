@@ -1,15 +1,25 @@
 import React from 'react';
 
-const Growth = () => {
+const Growth = ({ serviceType }) => {
+
+
     return (
         <section className="bg-gray-800 py-12">
             {/* Title Section */}
             <div className="container mx-auto text-center mb-10">
                 <h2 className="text-5xl font-bold text-white">
-                    Your Pathway to Improve Your  <span className="text-customGreen">Brand Presence</span>
+
+                    {serviceType === "webDevelopment" ? "Grow Your Brand with Exceptional Web Development"
+                        : serviceType === "appDevelopment" ? "Grow Your Brand with Exceptional App Solutions"
+                            : serviceType === "softwareDevelopment" ? "Grow Your Brand with Exceptional Custom Software Development"
+                                : "Software"}{" "}
+
                 </h2>
                 <p className="text-white mt-4 max-w-5xl mx-auto">
-                    A website is one of the most important assets of your business to engage with users online. As a top web development company in US, we are committed to delivering the best solutions that empower your business to grow in the digital world.
+                    {serviceType === "webDevelopment" ? "As one of the top website development companies, we are dedicated to providing top-notch solutions that empower your business to grow and connect with customers through innovative Websites."
+                        : serviceType === "appDevelopment" ? "As one of the top mobile app development companies, we are dedicated to providing top-notch solutions that empower your business to grow and connect with customers through innovative mobile applications."
+                            : serviceType === "softwareDevelopment" ? "As one of the top Custom Software development companies, we are dedicated to providing top-notch solutions that empower your business to grow and connect with customers through Custom software applications."
+                                : "Software"}{" "}
 
                 </p>
             </div>

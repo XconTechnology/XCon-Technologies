@@ -87,37 +87,37 @@ const servicesData = {
     imageAlt: "Software Development Mockup",
   },
   appDevelopment: {
-    title: "App Development for Multi-Channel Presence",
-    description1: "Custom mobile app development services designed to help businesses reach users across devices with engaging and intuitive apps.",
-    description2: "We build scalable mobile apps with cross-platform compatibility, optimized performance, and secure frameworks.",
+    title: "Cross-Platform App Development Company for Maximum Reach",
+    description1: "At XCon, our custom mobile app development tools empower businesses to connect with users on any device and provide a smooth, engaging experience.",
+    description2: "Our enterprise mobile app development company creates scalable apps with cross-platform compatibility, ensuring optimal performance and robust security, so your app is ready to make an impact wherever your audience is.",
     buttonText: "Get a Free Consultation",
     sections: [
       {
         title: "Mobile UI/UX Design",
-        content: "Our team crafts beautiful, intuitive, and responsive mobile interfaces optimized for user experience. From prototyping to design, we create mobile-first, user-centered interfaces using the latest tools and frameworks."
+        content: "Our android app development software design engaging and responsive mobile interfaces that improves user experience. From wireframing to final design, our team creates the best interfaces using advanced tools to ensure seamless interaction and aesthetic appeal.",
       },
       {
         title: "iOS & Android Development",
-        content: "We develop robust, scalable, and secure native mobile applications for both iOS and Android platforms, utilizing cutting-edge technologies to provide seamless functionality across devices."
+        content: "Our team is expert in iOS mobile app development as well as Android, focusing on security, scalability, and smooth functionality. Leveraging the latest technologies, our android application development company delivers apps optimized for each platform."
       },
       {
         title: "Cross-Platform Development",
-        content: "With tools like React Native and Flutter, we build cross-platform applications that provide a native-like experience on both iOS and Android. This approach reduces time-to-market while ensuring high-quality performance."
+        content: "Using powerful tools like React Native and Flutter, our custom mobile app development company creates cross-platform apps that provide the best experience on both iOS and Android. This approach improves development timelines while maintaining performance."
       },
       {
         title: "API Integration & Backend Development",
-        content: "Our expert developers handle API integrations and backend services to create mobile applications that sync flawlessly with web services and third-party platforms, ensuring a unified experience across devices."
+        content: "Our flutter mobile app development team specialize in API integrations and backend solutions that ensure smooth connectivity with third-party platforms. We create mobile apps that work flawlessly within your digital landscape."
       },
       {
         title: "Mobile App Testing",
-        content: "We conduct thorough testing across multiple devices and platforms to identify and fix any issues before deployment. Our comprehensive testing guarantees your app runs smoothly and is bug-free."
+        content: "Through proper testing across devices and platforms, our enterprise mobile app development company identifies and resolves any issues prior to launch. Our extensive quality assurance ensures your app delivers a smooth, reliable experience to every user."
       },
       {
         title: "Post-Launch Support & Updates",
-        content: "Our post-launch services include monitoring app performance, providing updates, and rolling out new features to keep your app relevant and fully functional as your business grows."
+        content: "Our ionic app development company provides continuous support after launch, monitoring performance and giving updates to keep your app advanced. Our team ensures your app stays updated with your business goals."
       }
     ],
-    imageUrl: "/assets/img_placeholder/th-1/mobile_app_leap.webp",
+    imageUrl: "/assets/img_placeholder/th-1/App-Sec.png",
     imageAlt: "App Development Mockup",
   },
   digitalmarket: {
@@ -312,11 +312,7 @@ const MultiChannel = ({ serviceType = "webDevelopment" }) => {
             </h2>
             <p className="text-lg text-[#273447]">{description1}</p>
             <p className="text-lg text-[#273447]">{description2}</p>
-            <Link href="/consultation">
-              <button className="button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-customGreen hover:border-customGreen hover:text-white">
-                {buttonText}
-              </button>
-            </Link>
+
           </div>
         </div>
 
@@ -327,7 +323,7 @@ const MultiChannel = ({ serviceType = "webDevelopment" }) => {
             <div className="md:w-1/2 lg:w-2/5 space-y-4 md:mr-10">
               <h2 className="text-4xl font-bold leading-tight text-[#273447]">
                 {serviceType === "webDevelopment" ? "What Custom Web Development Services We Offer?"
-                    : serviceType === "appDevelopment" ? "App Development Services for Engaging Mobile Experiences"
+                    : serviceType === "appDevelopment" ? "What Custom App Development Services We Offer?"
                         : serviceType === "softwareDevelopment" ? "What Custom Software Development Services We Offer?"
                             : serviceType === "digitalmarket" ? "Digital Marketing Services to Amplify Your Online Presence"
                                 : serviceType === "videoEditing" ? "Video Editing Services to Amplify Your Brand’s Visual Presence"
@@ -343,7 +339,7 @@ const MultiChannel = ({ serviceType = "webDevelopment" }) => {
             <div className="md:w-1/2 lg:w-3/5 overflow-y-auto h-96 px-4 space-y-6">
               {sections.map((section, index) => (
                   <div className="space-y-4" key={index}>
-                    <h3 className="text-2xl font-semibold text-[#273447]">
+                    <h3 className="text-2xl font-semibold tracking-normal text-[#273447]">
                       {section.title}
                     </h3>
                     <p className="mt-2 text-lg text-[#273447]">{section.content}</p>

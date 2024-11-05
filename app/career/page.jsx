@@ -54,39 +54,62 @@ function Career() {
                 {/*...::: Breadcrumb Section Start :::... */}
                 <section
                     id="section-breadcrumb"
-                    className="relative "
+                    className="relative"
                     style={{
                         backgroundImage: "url('/assets/img_placeholder/th-1/Careers.jpg')",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
-                        height: "50vh",
+                        height: "70vh",
                     }}
                 >
                     <div className="relative z-[1] flex items-center justify-center w-full h-full">
-                        <div className="global-container text-white">
-                            <div className="breadcrumb-block text-center">
+                        <div className="global-container text-white text-center">
+                            <div className="breadcrumb-block">
                                 <h2 className="breadcrumb-title">Careers</h2>
-                                <p className="breadcrumb-nav text-2xl pb-2">
-                                    Join us and make an impact!
-                                </p>
-                                <ul className="breadcrumb-nav flex  text-white">
-
-                                    <Link href="/" style={{color: 'white'}}>Home</Link>
+                                <ul className="breadcrumb-nav flex text-white justify-center">
+                                    <Link href="/" style={{color: "white"}}>Home</Link>
                                     <span className="">
-                                        <Image
+                                     <Image
                                             src="/assets/img_placeholder/th-1/try.svg"
                                             alt="Background"
                                             height={10}
                                             width={10}
-
-                                        />
-                                     </span>
+                                     />
+          </span>
                                     <div className="text-customGreen">Career</div>
                                 </ul>
+                            </div>
+
+                            {/* Search bar container */}
+                            <div
+                                className="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-3/4 p-4 bg-white rounded-lg shadow-md"
+                                style={{marginTop: "2rem"}}
+                            >
+                                <div className="flex justify-between items-center">
+                                    <input
+                                        type="text"
+                                        placeholder="Enter Keyword"
+                                        className="p-3 w-1/4 border border-gray-300 rounded-md mr-2"
+                                    />
+                                    <select className="p-3 w-1/4 border border-gray-300 rounded-md mr-2">
+                                        <option>Job Type</option>
+                                    </select>
+                                    <input
+                                        type="text"
+                                        placeholder="City"
+                                        className="p-3 w-1/4 border border-gray-300 rounded-md mr-2"
+                                    />
+                                    <button className="bg-red-500 text-white py-3 px-6 rounded-md">Job Search</button>
+                                </div>
+                                <div className="text-center mt-2 text-sm text-gray-500">
+                                    Key Word: #HTML #Design #Web Developer #Sale & Marketing &nbsp;
+                                    <a href="#" className="text-blue-500">advance search</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
+
                 {/*...::: Breadcrumb Section End :::... */}
 
                 {/*...::: Job Listings Section Start :::... */}
@@ -106,14 +129,15 @@ function Career() {
                                     id={job}
                                     ref={(el) => (jobCardsRef.current[index] = el)}
                                     className={`bg-white p-8 rounded-lg shadow-lg transition-transform transform ${visibleCards.includes(job) ? "scale-105 shadow-xl bg-gray-50" : "opacity-0"
-                                        } ${visibleCards.includes(job) ? animationClasses[index] : ""} duration-300 ease-in-out`}
+                                    } ${visibleCards.includes(job) ? animationClasses[index] : ""} duration-300 ease-in-out`}
                                 >
                                     <h3 className="text-2xl font-semibold text-gray-800 mb-4 capitalize">{job.replace(/-/g, ' ')}</h3>
                                     <p className="text-gray-600 mb-6">
                                         {`We are looking for a skilled ${job.replace(/-/g, ' ')} to join our team.`}
                                     </p>
                                     <div className="text-center">
-                                        <Link href={`/job-details/${job}`} className="text-blue-600 font-semibold hover:underline">
+                                        <Link href={`/job-details/${job}`}
+                                              className="text-blue-600 font-semibold hover:underline">
                                             View Details
                                         </Link>
                                     </div>
@@ -128,75 +152,8 @@ function Career() {
                 <JoinUs/>
                 {/*...::: Apply Now Section End :::... */}
 
-                <Footer_01 />
+                <Footer_01/>
             </main>
-            <style jsx>{`
-                @keyframes slide-in-left {
-                    0% {
-                        opacity: 0;
-                        transform: translateX(-20px);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-                }
-                @keyframes slide-in-right {
-                    0% {
-                        opacity: 0;
-                        transform: translateX(20px);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-                }
-                @keyframes slide-in-up {
-                    0% {
-                        opacity: 0;
-                        transform: translateY(20px);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-                @keyframes slide-in-down {
-                    0% {
-                        opacity: 0;
-                        transform: translateY(-20px);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-                @keyframes fade-in {
-                    0% {
-                        opacity: 0;
-                        transform: translateY(20px);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-                .animate-slide-in-left {
-                    animation: slide-in-left 0.5s forwards;
-                }
-                .animate-slide-in-right {
-                    animation: slide-in-right 0.5s forwards;
-                }
-                .animate-slide-in-up {
-                    animation: slide-in-up 0.5s forwards;
-                }
-                .animate-slide-in-down {
-                    animation: slide-in-down 0.5s forwards;
-                }
-                .animate-fade-in {
-                    animation: fade-in 0.5s forwards;
-                }
-            `}</style>
         </>
     );
 }

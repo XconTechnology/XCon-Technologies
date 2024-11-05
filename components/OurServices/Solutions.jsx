@@ -46,23 +46,23 @@ const Solutions = ({ serviceType }) => {
             ],
         },
         appDevelopment: {
-            title: 'App Development Solutions',
-            description: 'XCon provides end-to-end app development services that bring innovation and efficiency to your business. From feature-rich mobile apps to enterprise-level solutions, we ensure scalability and user-centric design.',
+            title: 'Why Choose XCon for App Development Solutions?',
+            description: 'XCon being one of the best app building companies provides comprehensive app development services for your business. Our custom android app development company focuses on scalability and performance.',
             features: [
                 {
                     number: '01',
-                    title: 'High-Performance Apps',
-                    description: 'Develop apps with optimized performance for smooth, fast, and responsive user experiences. Ensure your app runs efficiently on all platforms.',
+                    title: 'Efficiency Boost',
+                    description: 'Our iOS and android app development are engineered for optimal performance, delivering fast, smooth, and responsive user experiences on any platform.',
                 },
                 {
                     number: '02',
-                    title: 'Secure App Environments',
-                    description: 'Implement advanced security measures to protect user data and prevent malicious attacks. We follow the latest encryption and security protocols.',
+                    title: 'Secure Apps',
+                    description: 'We prioritize security by implementing advanced strategies to protect user data and guard against potential threats or issues.',
                 },
                 {
                     number: '03',
-                    title: 'Future-Proof Architecture',
-                    description: 'Build scalable, flexible architectures that allow easy feature addition and smooth expansion as your app grows and evolves with your business.',
+                    title: 'Scalable Architecture',
+                    description: 'Our best app making company designs flexible and scalable architectures that make it easy to add new features and adapt as your app grows.',
                 },
             ],
         },
@@ -162,7 +162,7 @@ const Solutions = ({ serviceType }) => {
             <div className="container mx-auto max-w-8xl px-4 text-center">
                 <h2 className="text-5xl font-bold text-[#273447] leading-tight">
                     {' '}
-                    <span className="">{selectedContent.title}</span><br />
+                    <span className="">{selectedContent.title}</span>
                 </h2>
                 <p className="mt-4 text-lg text-[#273447] max-w-2xl mx-auto">
                     {selectedContent.description}
@@ -175,10 +175,10 @@ const Solutions = ({ serviceType }) => {
                             <div className="flex shadow-md p-6 justify-center items-center w-20 h-20 bg-white rounded-full mx-auto">
                                 <span className="text-3xl font-bold text-customGreen">{feature.number}</span>
                             </div>
-                            <h3 className="text-4xl font-bold mt-6 text-[#273447]">
+                            <h3 className="text-4xl tracking-normal	 font-bold mt-6 text-[#273447]">
                                 {feature.title.split(' ').map((word, i) => (
                                     <span key={i}>
-                                        {word} <br />
+                                        {word} {" "}
                                     </span>
                                 ))}
                             </h3>

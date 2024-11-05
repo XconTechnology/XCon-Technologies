@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { FaGlobe,FaEye,FaSketch,FaClipboardList, FaShoppingBag,FaPalette,FaPencilRuler,FaImages,FaDraftingCompass, FaMobileAlt, FaFileAlt,FaLaptopCode,FaDatabase,FaLock,FaCogs,FaBullhorn,FaSearchDollar,FaEnvelope,FaChartLine,FaCut,FaMagic,FaVolumeUp,FaVideo } from "react-icons/fa";
 
-// Define the service data
 const servicesData = {
   webDevelopment: [
     {
@@ -53,22 +52,22 @@ const servicesData = {
     {
       icon: <FaMobileAlt />,
       title: "Mobile Apps",
-      description: "Engaging and intuitive mobile applications that reach users across devices, optimized for performance and user experience."
+      description: "We create captivating, user-friendly mobile applications that engage audiences across any device. Our apps are thoughtfully designed to provide intuitive experiences."
     },
     {
       icon: <FaShoppingBag />,
-      title: "Cross-Platform Development",
-      description: "Build applications with tools like React Native and Flutter, ensuring high-quality performance and native-like experiences."
+      title: "Multi-Platform apps",
+      description: "Using advanced tools, our best app developer company creates cross-platform applications that deliver native-like experiences on both iOS and Android."
     },
     {
       icon: <FaGlobe />,
       title: "API Integration",
-      description: "Seamless integration of your app with web services and third-party platforms for a unified experience."
+      description: "Our custom mobile app development company integrates your app with essential third-party platforms, providing a cohesive and smooth experience."
     },
     {
       icon: <FaFileAlt />,
       title: "Post-Launch Support",
-      description: "Ongoing support and updates to keep your mobile application relevant and fully functional."
+      description: "We offer continuous support after launch, including regular updates. Our software and app development company works to keep your app running smoothly."
     }
   ],
   digitalmarket: [
@@ -170,53 +169,71 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
   return (
       <section id="business-prospect" className="py-16 bg-white min-h-[600px]">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-[#273447]">
-            Custom{" "}
+          <h2 className="text-4xl tracking-normal font-bold text-[#273447]">
+            {" "}
             {serviceType === "webDevelopment" ? "Web Development"
-                : serviceType === "appDevelopment" ? "App Development"
+                : serviceType === "appDevelopment" ? "Innovative App Development"
                     : serviceType === "softwareDevelopment" ? "Custom Software Development"
-                    : serviceType === "digitalmarket" ? "Digital Marketing"
-                        : serviceType === "videoEditing" ? "Video Editing"
+                        : serviceType === "digitalmarket" ? "Digital Marketing"
+                            : serviceType === "videoEditing" ? "Video Editing"
                                 : serviceType === "graphicDesign" ? "Graphic Design"
                                     : serviceType === "uiUxDesign" ? "UI/UX Design"
-                        : "Software"}{" "}
+                                        : "Software"}{" "}
             Solutions to Expand Your {" "}
-            <span className="text-customGreen">Business Horizons</span>
+            <span className="text-customGreen">Business</span>
           </h2>
 
 
           <p className="mt-6 text-lg text-[#273447]">
-            Boost{" "}
-            {serviceType === "webDevelopment" ? "web" : serviceType === "appDevelopment" ? "app" : serviceType === "digitalmarket" ? "digital marketing"
-                : serviceType === "softwareDevelopment" ? "Software Development"
-                        : serviceType === "videoEditing" ? "video Editing"
-                        : serviceType === "uiUxDesign" ? "UI/UX Design"
-                        : "software"}{" "}
-             with our custom web design and development services.Explore the top  services of {""}
-
-            {serviceType === "webDevelopment"
-                ? "web  development"
-                : serviceType === "appDevelopment"
-                    ? "app  development"
-                    : serviceType === "digitalMarket"
-                        ? "digital marketing"
-                        : serviceType === "videoEditing"
-                        ? "video Editing"
-                            : serviceType === "graphicDesign" ? "Graphic Design"
-                                : serviceType === "uiUxDesign" ? "UI/UX Design"
-                        : "software"}{" "}
-             that businesses can get at XCon Technologies.
+            {serviceType === "appDevelopment" ? (
+                <>
+                  Achieve new levels with the best app development company in the US. We provide services for healthcare
+                  app development, cloud-based quantum app development, food delivery app development, etc.
+                </>
+            ) : (
+                <>
+                  Boost{" "}
+                  {serviceType === "webDevelopment"
+                      ? "web"
+                      : serviceType === "digitalMarket"
+                          ? "digital marketing"
+                          : serviceType === "softwareDevelopment"
+                              ? "software development"
+                              : serviceType === "videoEditing"
+                                  ? "video editing"
+                                  : serviceType === "uiUxDesign"
+                                      ? "UI/UX design"
+                                      : serviceType === "graphicDesign"
+                                          ? "graphic design"
+                                          : "software"}{" "}
+                  with our custom web design and development services. Explore the top services of{" "}
+                  {serviceType === "webDevelopment"
+                      ? "web development"
+                      : serviceType === "digitalMarket"
+                          ? "digital marketing"
+                          : serviceType === "softwareDevelopment"
+                              ? "software development"
+                              : serviceType === "videoEditing"
+                                  ? "video editing"
+                                  : serviceType === "uiUxDesign"
+                                      ? "UI/UX design"
+                                      : serviceType === "graphicDesign"
+                                          ? "graphic design"
+                                          : "software"}{" "}
+                  that businesses can get at XCon Technologies.
+                </>
+            )}
           </p>
 
 
           {/* Icon Grid */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             {serviceData.map((service, index) => (
-                <div className="flex flex-col items-center p-6" key={index}>
+                <div className="flex flex-col items-center  p-6" key={index}>
                   <div className="text-customGreen text-6xl mb-12">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-bold tracking-normal text-[#273447] mb-5">
+                  <h3 className="text-xl font-bold  tracking-normal  text-[#273447] mb-5">
                     {service.title}
                   </h3>
                   <p className="text-md text-[#273447] text-center mb-10">
@@ -226,15 +243,6 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
             ))}
           </div>
 
-          {/* Call to Action */}
-          <div className="mt-8">
-            <Link href="/project-scope">
-            <span
-                className="button  rounded-[50px] border-2  bg-black py-4 text-white after:bg-customGreen hover:border-customGreen hover:text-white">
-              Discuss Project Scope
-            </span>
-            </Link>
-          </div>
         </div>
       </section>
   );

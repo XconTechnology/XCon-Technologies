@@ -42,6 +42,26 @@ const faqData = {
                 answer: 'Our software development process involves creating customized software solutions that can improve efficiency, enhance productivity, and help streamline operations.',
             },
         ]
+    },
+    appDevelopment: {
+        section: [
+            {
+                question: 'What types of mobile applications do XCon develop?',
+                answer: 'We specialize in developing cloud-based quantum app development, IOT app development, hybrid app development, cross-platform mobile applications, etc.',
+            },
+            {
+                question: 'What technologies do we use for app development?',
+                answer: 'Our software app development company utilizes a range of cutting-edge technologies, including React Native, Flutter, to create high-performing mobile apps.',
+            },
+            {
+                question: 'What is your approach to app performance optimization?',
+                answer: 'Our android app making company focuses on optimizing performance through code efficiency, resource management, and continuous testing to ensure fast load times.',
+            },
+            {
+                question: 'How do we ensure the security of mobile applications?',
+                answer: 'We implement advanced security measures, including encryption, secure APIs, and regular security audits, to protect user data and prevent threats.',
+            },
+        ]
     }
 };
 

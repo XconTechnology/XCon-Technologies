@@ -12,8 +12,8 @@ const servicesData = {
     imageAlt: "Website Mockup",
   },
   appDevelopment: {
-    title: "Innovative Mobile App Solutions",
-    description: "We build custom mobile applications that are user-friendly, responsive, and engaging across all platforms.",
+    title: "Get the Best Custom App Development Services!",
+    description: "Being the best custom app development company, our team creates customized apps according to your expectations. Our best app development software combines advanced technology with user-focused design.",
     buttonText: "Get a Free Consultation",
     imageUrl: "/assets/img_placeholder/th-1/app-mockup.png",
     imageAlt: "App Mockup",
@@ -70,7 +70,7 @@ const Header = ({ serviceType = "webDevelopment" }) => {
           <div className="md:w-1/2 lg:w-1/3 text-white">
             <p className="text-customGreen uppercase font-semibold">
               {serviceType === "webDevelopment" ? "Custom Web Development Services" :
-                serviceType === "appDevelopment" ? "Custom App Development Services" :
+                serviceType === "appDevelopment" ? "App Development Services" :
                     serviceType === "softwareDevelopment" ? "Custom Software Development Services":
                     serviceType === "digitalmarket" ? "Digital Marketing Services":
                         serviceType === "videoEditing" ? "video Editing Services" :
