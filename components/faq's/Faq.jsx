@@ -62,6 +62,26 @@ const faqData = {
                 answer: 'We implement advanced security measures, including encryption, secure APIs, and regular security audits, to protect user data and prevent threats.',
             },
         ]
+    },
+    digitalmarket: {
+        section: [
+            {
+                question: 'What industries does our local digital marketing services specialize in?',
+                answer: 'We have experience working with various industries, including e-commerce, healthcare, finance, real estate, technology, allowing us to customize our strategies to meet specific industry needs.',
+            },
+            {
+                question: 'What digital marketing services does XCon offer?',
+                answer: 'Our digital marketing agency provides lots of services, including SEO, social media marketing, content marketing, email marketing, PPC advertising, and web development.',
+            },
+            {
+                question: 'How long does it take to see results from digital marketing?',
+                answer:'Digital marketing is a long-term investment. While PPC can deliver immediate traffic, SEO and content marketing might take a few months to show significant, long-term results.',
+            },
+            {
+                question: 'Can you help with content creation for my digital marketing campaigns?',
+                answer: 'Yes, our digital marketing team specializes in creating high-quality, engaging content according to your audience. We produce blogs, social media posts, videos, infographics, etc.',
+            },
+        ]
     }
 };
 

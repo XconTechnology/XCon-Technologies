@@ -26,15 +26,14 @@ const servicesData = {
     imageAlt: "csm Mockup",
   },
   digitalmarket: {
-    title: "Reach Further with  Digital Marketing",
-    description: "Our digital marketing agency helps businesses navigate growing modern online challenges with strategic engagement channel(s) selection, integrated marketing communications, and compelling brand building. We not only get your brand to win over the SERPs but also create a brand story that resonates with user personas and compels conversion at every stage.",
-    buttonText: "Consult Digital Strategy",
+    title: "Best Digital Marketing Agency in Charlotte NC!",
+    description: 'Our digital marketing agency allows businesses to overcome today’s evolving online challenges. We do not just improve your brand’s SERP ranking but our online marketing services develop a brand story according to your target audience and drives conversions at every stage of your business journey.',
     imageUrl:"/assets/img_placeholder/th-1/DigitalMarketing .png" ,
     imageAlt: "digital Mockup",
   },
   videoEditing: {
-    title: "Bring Your Vision to Life with Video Editing",
-    description: "Our video editing services transform raw footage into captivating visual stories that engage and inspire. Whether you're looking to promote a product, share a brand story, or capture an event, we employ dynamic editing techniques, compelling graphics, and seamless transitions to make your vision a reality.",
+    title: "Craft stories from your footage with our editing!",
+    description: "Our expert editors create engaging visuals that attract viewers and drive results for brands, businesses, and creators alike. By using the best editing tool for videos, we bring your vision to life and make every second worth-watching.",
     buttonText: "Explore Video Editing",
     imageUrl: "/assets/img_placeholder/th-1/videoediting.png",
     imageAlt: "video editing mockup",
@@ -79,15 +78,13 @@ const Header = ({ serviceType = "webDevelopment" }) => {
 
                         "Service"}
             </p>
-            <h1 className="text-4xl md:text-4xl font-bold leading-tight mt-4">
+            <h1 className="text-4xl md:text-4xl font-bold tracking-normal mt-4">
               {title}
             </h1>
             <p className="text-[16px] mt-4">
               {description}
             </p>
-            <button className='button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-customGreen hover:border-customGreen hover:text-white'>
-              {buttonText}
-            </button>
+
           </div>
 
           {/* Right side image */}

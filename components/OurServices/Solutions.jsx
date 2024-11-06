@@ -67,23 +67,23 @@ const Solutions = ({ serviceType }) => {
             ],
         },
         digitalmarket: {
-            title: 'Digital Marketing Solutions',
-            description: 'XCon offers comprehensive digital marketing services designed to elevate your online presence and drive measurable results. From SEO to social media marketing, we tailor strategies to fit your unique business needs.',
+            title: 'Why Choose XCon for Digital Marketing Agency Services?',
+            description: 'XCon provides comprehensive digital marketing services. From SEO to social media marketing, our strategies including healthcare digital marketing make sure you achieve your business aims.',
             features: [
                 {
                     number: '01',
-                    title: 'Search Engine Optimization (SEO)',
-                    description: 'Enhance your website’s visibility on search engines, driving organic traffic and improving your site’s ranking with proven SEO strategies.',
+                    title: 'Customized Strategies',
+                    description: 'Our digital marketing for startups understands that every business is unique. We use customized digital marketing strategies that guarantee impactful results in your industry.',
                 },
                 {
                     number: '02',
-                    title: 'Social Media Marketing',
-                    description: 'Engage your audience across social media platforms with targeted campaigns that build brand awareness and foster community engagement.',
+                    title: 'Data-Driven Approach',
+                    description: 'Our power digital marketing strategies are built on analytics and industry insights, allowing us to optimize every campaign for maximum effectiveness so you see real value.',
                 },
                 {
                     number: '03',
                     title: 'Content Marketing',
-                    description: 'Create valuable, relevant content that attracts and retains your target audience, establishing your brand as an authority in your industry.',
+                    description: 'With our digital marketing strategist skilled in SEO, social media, PPC, and more, our digital marketing software brings years of experience to every project using the latest trends.',
                 },
             ],
         },
@@ -175,7 +175,7 @@ const Solutions = ({ serviceType }) => {
                             <div className="flex shadow-md p-6 justify-center items-center w-20 h-20 bg-white rounded-full mx-auto">
                                 <span className="text-3xl font-bold text-customGreen">{feature.number}</span>
                             </div>
-                            <h3 className="text-4xl tracking-normal	 font-bold mt-6 text-[#273447]">
+                            <h3 className="text-2xl tracking-normal	 font-bold mt-6 text-[#273447]">
                                 {feature.title.split(' ').map((word, i) => (
                                     <span key={i}>
                                         {word} {" "}

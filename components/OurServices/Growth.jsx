@@ -12,6 +12,7 @@ const Growth = ({ serviceType }) => {
                     {serviceType === "webDevelopment" ? "Grow Your Brand with Exceptional Web Development"
                         : serviceType === "appDevelopment" ? "Grow Your Brand with Exceptional App Solutions"
                             : serviceType === "softwareDevelopment" ? "Grow Your Brand with Exceptional Custom Software Development"
+                                : serviceType === "digitalmarket" ? "Achieve Success with our Digital Marketing Services"
                                 : "Software"}{" "}
 
                 </h2>
@@ -19,6 +20,7 @@ const Growth = ({ serviceType }) => {
                     {serviceType === "webDevelopment" ? "As one of the top website development companies, we are dedicated to providing top-notch solutions that empower your business to grow and connect with customers through innovative Websites."
                         : serviceType === "appDevelopment" ? "As one of the top mobile app development companies, we are dedicated to providing top-notch solutions that empower your business to grow and connect with customers through innovative mobile applications."
                             : serviceType === "softwareDevelopment" ? "As one of the top Custom Software development companies, we are dedicated to providing top-notch solutions that empower your business to grow and connect with customers through Custom software applications."
+                            : serviceType === "digitalmarket" ? "In today’s competitive world, a strong online presence is vital for connecting with your audience. As a leading digital marketing agency in the US, our digital marketing for IT companies is dedicated to providing innovative solutions."
                                 : "Software"}{" "}
 
                 </p>

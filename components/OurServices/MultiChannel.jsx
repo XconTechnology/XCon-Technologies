@@ -121,60 +121,59 @@ const servicesData = {
     imageAlt: "App Development Mockup",
   },
   digitalmarket: {
-    title: "Expand Your Reach with Digital Marketing",
-    description1: "Our digital marketing services are designed to help your business connect with audiences across digital channels with engaging and strategic approaches.",
-    description2: "We create data-driven campaigns that improve brand visibility, drive user engagement, and generate conversions.",
+    title: "Maximize Your Impact with our Digital Marketing Consultant",
+    description1: 'Our local digital marketing services are created to connect your business with target audiences across digital platforms, using engaging, strategic approaches according to your goals.',
+    description2: 'XCon being one of the best digital marketing agencies develop data-driven campaigns that improve your brand visibility and make sure every interaction strengthens the digital presence and impact of your business.',
     buttonText: "Consult Digital Strategy",
     sections: [
       {
         title: "Search Engine Optimization (SEO)",
-        content: "We optimize your online presence to enhance search visibility, drive organic traffic, and improve SERP rankings. Our team applies the latest SEO strategies, including on-page, off-page, and technical SEO, to ensure long-term growth."
+        content: "We elevate your online presence to increase search visibility, attract organic traffic, and increase your SERP rankings. Our SEO services team implements cutting-edge SEO strategies including on-page, off-page, and technical SEO for long-term growth."
       },
       {
         title: "Social Media Marketing",
-        content: "We craft targeted social media strategies to engage audiences, build community, and drive brand loyalty. Our team handles content creation, scheduling, and analytics across platforms like Facebook, Instagram, LinkedIn, and Twitter."
+        content: "Our targeted social media marketing services are created to engage audiences and build brand loyalty. From content creation to in-depth analytics, our digital marketing strategy manage your presence across key platforms like Facebook, Instagram, etc."
       },
       {
         title: "Content Marketing",
-        content: "Our content marketing services involve creating valuable and relevant content that resonates with your target audience, building trust and authority in your industry. We produce blogs, videos, infographics, and more."
+        content: "At XCon, our content marketing services are focused on producing valuable, audience-centric content that builds trust and authority in your industry. Our digital marketing specialist create blogs, videos, and more to drive engagement and establish your brand as a leader."
       },
       {
         title: "Email Marketing Campaigns",
-        content: "We design and execute personalized email marketing campaigns to nurture leads and retain customers. Our campaigns are optimized for engagement and conversion, utilizing segmentation, A/B testing, and automation."
+        content: "We design and run personalized email marketing solutions that nurture leads and retain customers. Through segmentation, A/B testing, and automation, our full-service digital marketing agency ensures high engagement rates and optimized conversions."
       },
       {
         title: "Pay-Per-Click (PPC) Advertising",
-        content: "Our PPC experts manage targeted ad campaigns on Google, Bing, and social media platforms to maximize ROI. We focus on keyword optimization, ad copy, and bid management to deliver cost-effective results."
+        content: "Our PPC advertising specialists run targeted ad campaigns on Google, Bing, and social media to maximize return on investment. We emphasize strategic keyword selection, best ad copy, and effective bid management to accomplish cost-efficient results."
       },
       {
         title: "Analytics & Performance Tracking",
-        content: "We provide detailed analytics and performance reports to measure campaign effectiveness and make data-driven adjustments. Our approach ensures continuous improvement and alignment with business goals."
+        content: "Our digital marketing packages provide comprehensive analytics and performance tracking to assess campaign success. We support ongoing optimization to align with your business goals and ensure consistent growth, increasing chances of your brand success."
       }
     ],
-    imageUrl: "https://img.freepik.com/free-photo/social-media-marketing-concept-marketing-with-applications_23-2150063172.jpg?t=st=1729936722~exp=1729940322~hmac=51eb7103ff8486b039ab96d1fe440ee968d721d16c3d02bbd9ba5a38dd391ae7&w=1060",
+    imageUrl: "/assets/img_placeholder/th-1/digital2.png",
     imageAlt: "Digital Marketing Mockup",
   },
   videoEditing: {
-    title: "Bring Your Vision to Life with Professional Video Editing",
-    description1: "Transform raw footage into compelling visual stories with our expert video editing services. From social media content to promotional videos, we bring ideas to life with a focus on engagement and brand storytelling.",
-    description2: "Our team combines creativity with the latest software tools, including Adobe Premiere Pro, Final Cut Pro, and After Effects, to produce polished, professional results that captivate audiences.",
-    buttonText: "Get a Free Video Editing Consultation",
+    title: "Engage, Inspire, and Captivate with Expert Video Editing",
+    description1: "Transform your vision into captivating visual stories with our professional video editing services. Whether you’re producing social media content, promotional videos, or brand storytelling, we bring your ideas to life.",
+    description2: "Our best video editor for social media uses the best video editing software like Adobe Premiere Pro, Final Cut Pro, and After Effects to deliver engaging, professional videos. Grow your brand with videos that connect with your audience.",
     sections: [
       {
         title: "Corporate Video Editing",
-        content: "We craft corporate videos that communicate your brand’s message effectively, adding transitions, graphics, and color correction to enhance visual impact and brand presence."
+        content: "Deliver your brand’s message through our best corporate video editing services. We enhance each video with professional transitions and branded graphics to improve brand presence."
       },
       {
         title: "Social Media Content Editing",
-        content: "Create engaging, platform-optimized videos for social media. Our team edits short-form content that aligns with trends, captures attention, and enhances shareability on platforms like Instagram, TikTok, and YouTube."
+        content: "We use the best video editing software for social media shorts or reels. Boost your social media engagement with custom-edited, platform-ready videos that align with current trends."
       },
       {
-        title: "Promotional Videos",
-        content: "Our promotional video editing services are designed to highlight products, services, or events. We use dynamic cuts, effects, and sound design to create impactful videos that boost conversions and reach."
+        title: "Promotional Video Editing",
+        content: "Make your products, services, or events stand out with our high-quality promotional video editing. Using dynamic transitions, our good video editor creates compelling videos."
       },
       {
-        title: "Post-Production Services",
-        content: "We offer comprehensive post-production services, including color grading, sound mixing, and special effects. Our meticulous attention to detail ensures a professional finish for any type of project."
+        title: "Comprehensive post-production",
+        content: "From color grading and sound mixing to special effects, our post-production services cover every detail. Our approach ensures a polished, professional result that brings your vision to life."
       },
       {
         title: "Animation & Motion Graphics",
@@ -193,7 +192,7 @@ const servicesData = {
         content: "Receive continued support for future edits or reformatting needs. We assist in keeping your video content relevant and up-to-date as your brand evolves."
       }
     ],
-    imageUrl: "https://img.freepik.com/free-photo/empty-modern-creative-agency-office-with-dual-monitors-setup-with-processing-video-film-montage-vide_482257-3406.jpg?t=st=1730094138~exp=1730097738~hmac=8dc0a8a8c3956a5bbccf7bf1afb94b650287618766f90b41e29e40067256c448&w=1380",
+    imageUrl: "/assets/img_placeholder/th-1/Video2.png",
     imageAlt: "Video Editing Mockup",
   },
   graphicDesign: {
@@ -235,7 +234,7 @@ const servicesData = {
         content: "Complement your digital products with UI graphics that enhance user experience and align with the overall design, creating seamless, visually engaging interfaces."
       }
     ],
-    imageUrl: "https://scontent.flhe3-2.fna.fbcdn.net/o1/v/t0/f1/m340/genai_m4_lla_eag_v3:upload_img_49181737_10_27_2024_23_42_42_990374_5177703766376322622.jpeg?_nc_ht=scontent.flhe3-2.fna.fbcdn.net&_nc_cat=104&ccb=9-4&oh=00_AYCkIx3EzRKQljyzCy-F7qho51BJe6mY77RHIDqznyub6A&oe=67210F25&_nc_sid=5b3566",
+    imageUrl: "/assets/img_placeholder/th-1/Graphic2.png",
     imageAlt: "Graphic Design Mockup",
   },
   uiUxDesign:{
@@ -277,7 +276,7 @@ const servicesData = {
         content: "Post-launch, we offer ongoing support and iterative design improvements based on user feedback and analytics. This ensures your UI/UX continues to meet user needs as they evolve."
       }
     ],
-    imageUrl: "https://img.freepik.com/free-vector/gradient-ui-ux-landing-page-template_23-2149053148.jpg?t=st=1730098946~exp=1730102546~hmac=11c77d99fbbabfc699aee3ff5030b64cb8871135af12db456ef8d1945b95000f&w=1380",
+    imageUrl: "/assets/img_placeholder/th-1/UI2.png",
     imageAlt: "UI/UX Design Mockup",
 
   }
@@ -325,8 +324,8 @@ const MultiChannel = ({ serviceType = "webDevelopment" }) => {
                 {serviceType === "webDevelopment" ? "What Custom Web Development Services We Offer?"
                     : serviceType === "appDevelopment" ? "What Custom App Development Services We Offer?"
                         : serviceType === "softwareDevelopment" ? "What Custom Software Development Services We Offer?"
-                            : serviceType === "digitalmarket" ? "Digital Marketing Services to Amplify Your Online Presence"
-                                : serviceType === "videoEditing" ? "Video Editing Services to Amplify Your Brand’s Visual Presence"
+                            : serviceType === "digitalmarket" ? "What Digital Marketing Services We Offer?"
+                                : serviceType === "videoEditing" ? "What Video Editing Services We Offer at XCon?"
                                     : serviceType === "graphicDesign" ? "Graphic Design Services to Amplify Your Brand’s Visual Presence"
                                     : serviceType === "uiUxDesign" ? "UI/UX Design Services to Amplify Your Brand’s Visual Presence"
                                             : "Our Services"}

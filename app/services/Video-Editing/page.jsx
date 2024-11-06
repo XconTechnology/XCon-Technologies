@@ -27,11 +27,6 @@ function Page() {
                 <MultiChannel serviceType="videoEditing"  />
                 <BusinessProspect serviceType="videoEditing"  />
                 <Solutions  serviceType="videoEditing" />
-                {/*<TechStack  serviceType="videoEditing" />*/}
-                {/*<Workflow  serviceType="videoEditing" />*/}
-                {/*<OurAchievements  serviceType="webDevelopment" />*/}
-                {/*<Projects  serviceType="webDevelopment" />*/}
-                <Diversity   serviceType="videoEditing"/>
                 <Growth  serviceType="videoEditing" />
                 {/*<Expertise  serviceType="videoEditing" />*/}
                 <FaqS serviceType="videoEditing" />

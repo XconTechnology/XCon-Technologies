@@ -74,22 +74,22 @@ const servicesData = {
     {
       icon: <FaBullhorn />,
       title: "Social Media Marketing",
-      description: "Boost brand visibility with targeted social media strategies across platforms like Facebook, Instagram, and Twitter."
+      description: "Enhance your brand’s visibility with our digital marketing agency in Charlotte NC that builds engagement and develops loyalty by reaching audiences where they’re most active."
     },
     {
       icon: <FaSearchDollar />,
-      title: "Search Engine Optimization (SEO)",
-      description: "Improve website rankings with SEO best practices, driving organic traffic and increasing visibility."
+      title: "SEO",
+      description: "Boost your website’s search engine rankings and organic traffic with our SEO services. From keyword optimization to technical SEO, we ensure your site remains visible and relevant."
     },
     {
       icon: <FaEnvelope />,
       title: "Email Marketing",
-      description: "Engage and nurture your audience with personalized email campaigns designed to convert leads into customers."
+      description: "Build strong relationships with your audience through our customized email campaigns. Our digital marketing consultant for small business focuses on driving conversions."
     },
     {
       icon: <FaChartLine />,
-      title: "Pay-Per-Click Advertising (PPC)",
-      description: "Generate immediate traffic and conversions with strategic PPC campaigns across platforms like Google Ads and Bing."
+      title: "PPC",
+      description: "Drive immediate results with precisely targeted PPC advertising on platforms like Google Ads. Our approach prioritizes keyword targeting and cost-effective bidding to maximize ROI."
     }
   ],
   videoEditing: [
@@ -170,17 +170,14 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
       <section id="business-prospect" className="py-16 bg-white min-h-[600px]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl tracking-normal font-bold text-[#273447]">
-            {" "}
-            {serviceType === "webDevelopment" ? "Web Development"
-                : serviceType === "appDevelopment" ? "Innovative App Development"
-                    : serviceType === "softwareDevelopment" ? "Custom Software Development"
-                        : serviceType === "digitalmarket" ? "Digital Marketing"
-                            : serviceType === "videoEditing" ? "Video Editing"
-                                : serviceType === "graphicDesign" ? "Graphic Design"
-                                    : serviceType === "uiUxDesign" ? "UI/UX Design"
-                                        : "Software"}{" "}
-            Solutions to Expand Your {" "}
-            <span className="text-customGreen">Business</span>
+            {serviceType === "webDevelopment" && "Web Development Solutions to Expand Your Business "}
+            {serviceType === "appDevelopment" && "Innovative App Development Solutions to Expand Your Business "}
+            {serviceType === "softwareDevelopment" && "Custom Software Development Solutions to Expand Your Business"}
+            {serviceType === "videoEditing" && "Video Editing Solutions to Expand Your "}
+            {serviceType === "graphicDesign" && "Graphic Design Solutions to Expand Your "}
+            {serviceType === "uiUxDesign" && "UI/UX Design Solutions to Expand Your "}
+            {serviceType === "digitalmarket" && "Grow with our Best Small Business Digital Marketing Solutions"}
+
           </h2>
 
 
@@ -190,35 +187,27 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
                   Achieve new levels with the best app development company in the US. We provide services for healthcare
                   app development, cloud-based quantum app development, food delivery app development, etc.
                 </>
+            ) : serviceType === "digitalmarket" ? (
+                <>
+                  Increase your digital presence with our digital marketing services for small businesses. At XCon Technologies, our digital marketing manager offers modern solutions to improve your business growth.
+                </>
             ) : (
                 <>
-                  Boost{" "}
-                  {serviceType === "webDevelopment"
-                      ? "web"
-                      : serviceType === "digitalMarket"
-                          ? "digital marketing"
-                          : serviceType === "softwareDevelopment"
-                              ? "software development"
-                              : serviceType === "videoEditing"
-                                  ? "video editing"
-                                  : serviceType === "uiUxDesign"
-                                      ? "UI/UX design"
-                                      : serviceType === "graphicDesign"
-                                          ? "graphic design"
+                Boost{" "}
+                  {serviceType === "webDevelopment" ? "web"
+                          : serviceType === "softwareDevelopment" ? "software development"
+                              : serviceType === "videoEditing" ? "video editing"
+                                  : serviceType === "uiUxDesign" ? "UI/UX design"
+                                      : serviceType === "graphicDesign" ? "graphic design"
                                           : "software"}{" "}
                   with our custom web design and development services. Explore the top services of{" "}
+
                   {serviceType === "webDevelopment"
                       ? "web development"
-                      : serviceType === "digitalMarket"
-                          ? "digital marketing"
-                          : serviceType === "softwareDevelopment"
-                              ? "software development"
-                              : serviceType === "videoEditing"
-                                  ? "video editing"
-                                  : serviceType === "uiUxDesign"
-                                      ? "UI/UX design"
-                                      : serviceType === "graphicDesign"
-                                          ? "graphic design"
+                          : serviceType === "softwareDevelopment" ? "software development"
+                              : serviceType === "videoEditing" ? "video editing"
+                                  : serviceType === "uiUxDesign" ? "UI/UX design"
+                                      : serviceType === "graphicDesign" ? "graphic design"
                                           : "software"}{" "}
                   that businesses can get at XCon Technologies.
                 </>

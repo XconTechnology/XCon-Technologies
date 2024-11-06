@@ -6,7 +6,7 @@ const engagementModels = [
     {
         title: "Project-Based Development",
         description: "Assign dedicated product managers & developers for your adaptive software development project.",
-        image: "/assets/img_placeholder/th-1/pbd.png",
+        image: "/assets/img_placeholder/th-1/1.gif",
     },
     {
         title: "Team-Based Development",
@@ -30,7 +30,7 @@ const EngagementModels = () => {
 
                         {engagementModels.map((model, index) => (
                             <div key={index} className="text-center border rounded-lg shadow-lg hover:shadow-xl transition-shadow group">
-                                <div className="relative w-full h-60">
+                                <div className="relative w-full h-96 ">
                                     {/* Image taking full width of the top */}
                                     <Image
                                         src={model.image}
