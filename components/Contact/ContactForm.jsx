@@ -50,7 +50,7 @@ const ContactForm = () => {
   const sendContactForm = async (values) => {
     console.log("Sending Contact Form Data:", values); // Log all values
 
-    const response = await fetch("/api/contact", {
+    const response = await fetch("process.env.VERCEL_URL/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
