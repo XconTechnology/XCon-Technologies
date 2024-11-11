@@ -82,7 +82,67 @@ const faqData = {
                 answer: 'Yes, our digital marketing team specializes in creating high-quality, engaging content according to your audience. We produce blogs, social media posts, videos, infographics, etc.',
             },
         ]
-    }
+    },
+    videoEditing: {
+        section: [
+            {
+                question: 'Can we create videos optimized for social media?',
+                answer: 'Yes, we specialize in editing social media videos for platforms like Instagram, TikTok, YouTube, and more, ensuring they are optimized for engagement and platform-specific formats.',
+            },
+            {
+                question: 'What types of videos do we specialize in editing?',
+                answer: 'We specialize in a variety of video editing services, including corporate videos, promotional videos, social media content, event highlights, testimonials, and brand storytelling.',
+            },
+            {
+                question: 'What video editing software do we use at XCon?',
+                answer:'We use the top video editing software like Adobe Premiere Pro, Final Cut Pro, and After Effects to ensure high-quality and professional video output.',
+            },
+            {
+                question: 'How do we handle revisions during the video editing process?',
+                answer: 'Our process includes multiple review stages, where we collaborate closely with you, ensuring your feedback is implemented and that the final video is according to your expectations.',
+            },
+        ]
+    },
+    graphicDesign: {
+        section: [
+            {
+                question: 'What types of graphic design services do XCon offer?',
+                answer: 'We offer a diverse range of graphic design services, including brand identity, logo creation, UI/UX design, social media graphics, marketing materials, packaging design, and more.',
+            },
+            {
+                question: 'How do you ensure the designs align with our brand identity?',
+                answer: 'We start each project by understanding your target audience, and goals. Our designers work closely with you to ensure all visuals are according to your brand’s voice.',
+            },
+            {
+                question: 'What is the turnaround time for a graphic design project?',
+                answer:'Turnaround time depends on the complexity of your project. Small projects like social media graphics can take a few days, while larger projects might take a few weeks.',
+            },
+            {
+                question: 'What sets XCon’s graphic design services apart from others?',
+                answer: 'Our focus on customization, strategic creativity, and brand alignment sets us apart. We make sure that designs that not only look great but also achieve your brand’s goals.',
+            },
+        ]
+    },
+    uiUxDesign: {
+        section: [
+            {
+                question: 'What types of businesses do we deal with for UI/UX design services?',
+                answer: 'We work with a diverse range of businesses, from startups to established ones. Our designs are customized to make them beneficial for e-commerce, SaaS, finance, healthcare, etc.',
+            },
+            {
+                question: 'What tools do you use for UI/UX design and prototyping?',
+                answer: 'Our team uses industry-leading tools such as Adobe XD, Figma, Sketch, and InVision to create wireframes, prototypes, and final designs.',
+            },
+            {
+                question: 'What is included in your UI/UX design services?',
+                answer:'Our UI/UX design services cover everything from user research, wireframing, and prototyping to visual design and usability testing. We ensure each design goes well with your brand.',
+            },
+            {
+                question: 'Can XCon help with both web and mobile UI/UX design?',
+                answer: 'Yes, we specialize in creating seamless and modern UI/UX designs optimized for both web and mobile platforms, ensuring a consistent experience across devices.',
+            },
+        ]
+    },
 };
 
 const FaqS = ({ serviceType = "webDevelopment" }) => {

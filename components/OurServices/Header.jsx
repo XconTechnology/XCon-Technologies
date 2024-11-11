@@ -39,17 +39,16 @@ const servicesData = {
     imageAlt: "video editing mockup",
   },
   graphicDesign: {
-    title: "Creative Graphic Design Services",
-    description: "Elevate your brand with visually compelling graphic design solutions tailored to capture your audience’s attention. From logos and branding to marketing materials, our team blends creativity with strategy to bring your vision to life across digital and print media.",
+    title: "Graphic Design Services to Grow Your Brand",
+    description: 'We specialize in providing all graphic design services that improve the identity of your brand. Whether you need logos, marketing materials, or web graphics, our custom graphic design services bring your ideas to life with strategy and creativity.',
     buttonText: "Discover Graphic Design",
     imageUrl: "/assets/img_placeholder/th-1/Graphic_design.png",
     imageAlt: "graphic design mockup",
   },
   uiUxDesign: {
-    title: "User-Centric UI/UX Design Solutions",
-    description: "At XCon, we focus on creating intuitive and engaging user interfaces and experiences that enhance user satisfaction. Our design approach combines research, usability testing, and innovative design to ensure your products not only look great but also provide seamless interactions.",
-    buttonText: "Start Your UI/UX Project",
-    imageUrl: "https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?t=st=1730098545~exp=1730102145~hmac=feee05dec2cd9d7c5372e6861ba906e44be803fe36ae7d88da214b6863594bc4&w=1380",
+    title: "Get Engaging Interfaces with UI UX Graphic Design!",
+    description: "At XCon, our UI UX design and development services specialize in designing intuitive, user-focused interfaces. Our approach uses in-depth user research, usability testing, and creative innovation to create products that deliver smooth, interactive UI design.",
+    imageUrl: "/assets/img_placeholder/th-1/ui ux.png",
     imageAlt: "UI/UX Design Mockup",
   },
 

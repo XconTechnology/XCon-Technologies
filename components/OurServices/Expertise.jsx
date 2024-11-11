@@ -9,7 +9,7 @@ const Expertise = ({ serviceType = "webDevelopment" }) => {
 
                     {serviceType === "webDevelopment" ? "Get Custom Web Development Expertise at ?"
                     : serviceType === "appDevelopment" ? "Get Custom App Development Expertise at"
-                        : serviceType === "softwareDevelopment" ? "Software Development"
+                        : serviceType === "softwareDevelopment" ? "Get Custom Software Development Expertise at"
                             : "Our Services"}
                     {" "}  <span className="text-customGreen">Xcon!</span>
                 </h2>

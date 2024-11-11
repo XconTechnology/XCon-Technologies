@@ -75,35 +75,33 @@ function Career() {
                                             height={10}
                                             width={10}
                                      />
-          </span>
+                                     </span>
                                     <div className="text-customGreen">Career</div>
                                 </ul>
                             </div>
 
                             {/* Search bar container */}
-                            <div
-                                className="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-3/4 p-4 bg-white rounded-lg shadow-md"
-                                style={{marginTop: "2rem"}}
-                            >
-                                <div className="flex justify-between items-center">
+                            <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-3/4 p-4 bg-white rounded-lg shadow-md">
+                                <div className="flex justify-evenly items-center">
                                     <input
                                         type="text"
                                         placeholder="Enter Keyword"
-                                        className="p-3 w-1/4 border border-gray-300 rounded-md mr-2"
+                                        className="p-3 w-1/4 border border-gray-300 bg-gray-100 text-gray-800 rounded-md mr-2 "
                                     />
-                                    <select className="p-3 w-1/4 border border-gray-300 rounded-md mr-2">
-                                        <option>Job Type</option>
+                                    <select
+                                        className="p-3 w-1/4 border border-gray-300 rounded-md  mr-2 bg-gray-100 text-gray-800">
+                                        <option defaultValue="" disabled selected>Choose your field</option>
+                                        <option>WordPress Developer</option>
+                                        <option>Web Developer</option>
+                                        <option>SEO</option>
+                                        <option>Content Writer</option>
+                                        <option>Graphic Designer</option>
+                                        <option>Video Editor</option>
+                                        <option>Business Developer</option>
+                                        <option>Digital Marketing</option>
                                     </select>
-                                    <input
-                                        type="text"
-                                        placeholder="City"
-                                        className="p-3 w-1/4 border border-gray-300 rounded-md mr-2"
-                                    />
-                                    <button className="bg-red-500 text-white py-3 px-6 rounded-md">Job Search</button>
-                                </div>
-                                <div className="text-center mt-2 text-sm text-gray-500">
-                                    Key Word: #HTML #Design #Web Developer #Sale & Marketing &nbsp;
-                                    <a href="#" className="text-blue-500">advance search</a>
+
+                                    <button className="bg-customGreen text-white py-3 px-6 rounded-md">Job Search</button>
                                 </div>
                             </div>
                         </div>

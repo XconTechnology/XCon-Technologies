@@ -96,66 +96,66 @@ const servicesData = {
     {
       icon: <FaCut />,
       title: "Video Editing",
-      description: "Craft engaging visual stories by trimming, arranging, and adding effects to videos, ensuring impactful content."
+      description: "Change raw footage into captivating stories by refining, trimming, and enhancing with professional effects to create powerful, engaging content."
     },
     {
       icon: <FaMagic />,
       title: "Color Grading",
-      description: "Enhance visual appeal through precise color correction and grading, aligning footage with desired aesthetics and mood."
+      description: "Elevate your visuals with expert color correction and grading, ensuring your footage aligns perfectly with your brand’s aesthetic and vibe."
     },
     {
       icon: <FaVolumeUp />,
       title: "Audio Synchronization",
-      description: "Ensure clear audio by synchronizing voice, music, and sound effects with video content for a seamless viewing experience."
+      description: "Achieve flawless audio by smoothly syncing voice overs, music, and sound effects, ensuring a smooth, professional sound experience throughout your video."
     },
     {
       icon: <FaVideo />,
       title: "Motion Graphics",
-      description: "Add engaging animations, transitions, and graphic elements to enrich video presentations and enhance visual storytelling."
+      description: "Infuse your videos with dynamic animations, sleek transitions, and eye-catching graphic elements to improve storytelling and captivate your audience."
     }
   ],
   graphicDesign: [
     {
       icon: <FaPalette />,
       title: "Brand Identity",
-      description: "Develop unique and memorable brand identities through custom logo designs, color schemes, and typography that represent your brand's voice."
+      description: "Create a distinctive and memorable brand identity with custom logo designs, color palettes, and typography that resonate with your audience."
     },
     {
       icon: <FaPencilRuler />,
       title: "UI/UX Design",
-      description: "Create user-centered, visually appealing interfaces that enhance user experience and engagement across web and mobile applications."
+      description: "Design intuitive, visually engaging interfaces that improve user experience and drive interaction, enhancing both web and mobile applications."
     },
     {
       icon: <FaImages />,
       title: "Visual Content Creation",
-      description: "Design eye-catching graphics, infographics, and social media visuals that captivate audiences and boost online presence."
+      description: "Create striking graphics, infographics, and social media visuals that capture attention and strengthen your brand's online presence."
     },
     {
       icon: <FaDraftingCompass />,
       title: "Print Design",
-      description: "Produce high-quality print designs, including brochures, business cards, and banners, that convey professionalism and creativity."
+      description: "Deliver exceptional print designs, from brochures to business cards and banners, ensuring professionalism and creativity in every printed piece."
     }
   ],
   uiUxDesign: [
     {
       icon: <FaEye />,
       title: "User Research",
-      description: "Conduct comprehensive user research to understand needs and preferences, ensuring designs are informed and user-centric."
+      description: "We conduct thorough user research to get insights into your audience's behaviors and preferences and making designs that are both user-centric and strategic."
     },
     {
       icon: <FaSketch />,
-      title: "Wireframing & Prototyping",
-      description: "Create wireframes and interactive prototypes that visualize user journeys and interactions, facilitating better design decisions."
+      title: "Wireframing",
+      description: "Our best ecommerce UI design team develops detailed wireframes and prototypes to visualize the user journey, enabling feedback and refined design decisions."
     },
     {
       icon: <FaMobileAlt />,
       title: "Responsive Design",
-      description: "Develop responsive interfaces that provide a seamless experience across all devices, enhancing accessibility and user satisfaction."
+      description: "We create creative UI UX designs that adapt perfectly across all devices, providing a consistent and satisfying user experience on mobile, tablet, and desktop."
     },
     {
       icon: <FaClipboardList />,
       title: "Usability Testing",
-      description: "Conduct usability testing to gather feedback, identify pain points, and optimize the user experience for improved satisfaction."
+      description: "Through rigorous usability testing, our digital marketing and UX design gather user feedback to identify and resolve any challenges, ensuring a user-friendly experience."
     }
   ],
 
@@ -173,9 +173,9 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
             {serviceType === "webDevelopment" && "Web Development Solutions to Expand Your Business "}
             {serviceType === "appDevelopment" && "Innovative App Development Solutions to Expand Your Business "}
             {serviceType === "softwareDevelopment" && "Custom Software Development Solutions to Expand Your Business"}
-            {serviceType === "videoEditing" && "Video Editing Solutions to Expand Your "}
-            {serviceType === "graphicDesign" && "Graphic Design Solutions to Expand Your "}
-            {serviceType === "uiUxDesign" && "UI/UX Design Solutions to Expand Your "}
+            {serviceType === "videoEditing" && "Modern Video Editing Solutions to Grow Your Brand "}
+            {serviceType === "graphicDesign" && "Transform Your Brand with Expert Graphic Design Services "}
+            {serviceType === "uiUxDesign" && "Customized UI/UX Solutions for Business Growth"}
             {serviceType === "digitalmarket" && "Grow with our Best Small Business Digital Marketing Solutions"}
 
           </h2>
@@ -191,14 +191,23 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
                 <>
                   Increase your digital presence with our digital marketing services for small businesses. At XCon Technologies, our digital marketing manager offers modern solutions to improve your business growth.
                 </>
+            ) : serviceType === "videoEditing" ? (
+                <>
+                  Enhance your business's reach with our specialized video editing services designed to captivate and engage. Explore top video editing services we offer at XCon Technologies.
+                </>
+            ) : serviceType === "graphicDesign" ? (
+                <>
+                  At XCon Technologies, we specialize in delivering custom graphic design services that help businesses build a unique visual identity. Let our graphic design service packages help you stand out in a competitive market with visuals that leave a lasting impression.
+                </>
+            ) : serviceType === "uiUxDesign" ? (
+                <>
+                  Elevate your business with XCon Technologies customized UI/UX design services. Discover how our expert design solutions can drive user engagement, satisfaction, and brand impact.
+                </>
             ) : (
                 <>
                 Boost{" "}
                   {serviceType === "webDevelopment" ? "web"
                           : serviceType === "softwareDevelopment" ? "software development"
-                              : serviceType === "videoEditing" ? "video editing"
-                                  : serviceType === "uiUxDesign" ? "UI/UX design"
-                                      : serviceType === "graphicDesign" ? "graphic design"
                                           : "software"}{" "}
                   with our custom web design and development services. Explore the top services of{" "}
 
@@ -206,8 +215,6 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
                       ? "web development"
                           : serviceType === "softwareDevelopment" ? "software development"
                               : serviceType === "videoEditing" ? "video editing"
-                                  : serviceType === "uiUxDesign" ? "UI/UX design"
-                                      : serviceType === "graphicDesign" ? "graphic design"
                                           : "software"}{" "}
                   that businesses can get at XCon Technologies.
                 </>

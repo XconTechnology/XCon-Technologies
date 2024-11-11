@@ -177,103 +177,102 @@ const servicesData = {
       },
       {
         title: "Animation & Motion Graphics",
-        content: "Enhance your videos with animated elements and motion graphics. We create visuals that add depth and engagement to your content, from logo animations to explainer videos."
+        content: "Add depth to your videos with custom animations and motion graphics. Our video recording and editing services design engaging visuals that enhance viewer engagement with style."
       },
       {
         title: "Video Quality Optimization",
-        content: "Ensure your videos look their best across all devices. We focus on resolution, clarity, and format compatibility, optimizing videos for smooth playback and high-quality visuals."
+        content: "Ensure consistent, high-quality playback across devices. Our splice video editor optimizes resolution, clarity, and compatibility to make sure your brand videos look their best."
       },
       {
-        title: "Feedback & Revision Process",
-        content: "Our editing process includes multiple review stages to ensure your vision is fully realized. We collaborate closely with you, incorporating feedback until you’re satisfied with the final product."
+        title: "Detailed Feedback & Revision Process",
+        content: "Our editing process includes multiple review phases to guarantee you achieve your business goals. We work closely with you until you are satisfied with the final outcome."
       },
       {
         title: "Ongoing Support & Updates",
-        content: "Receive continued support for future edits or reformatting needs. We assist in keeping your video content relevant and up-to-date as your brand evolves."
+        content: "Keep your video content fresh with our ongoing support services. Our video maker and editor are here for future edits and updates, helping your videos evolve alongside your brand."
       }
     ],
     imageUrl: "/assets/img_placeholder/th-1/Video2.png",
     imageAlt: "Video Editing Mockup",
   },
   graphicDesign: {
-    title: "Creative Graphic Design Services",
-    description1: "Boost your brand’s visual appeal with our expert graphic design services. From branding to marketing collateral, we create captivating designs that communicate your message effectively and leave a lasting impression.",
-    description2: "Our designers leverage creativity and strategic thinking to bring your ideas to life across both digital and print media.",
-    buttonText: "Discover Graphic Design",
+    title: "Innovative Graphic Design Services Agency for Your Brand",
+    description1: "Enhance your brand’s visual identity with our professional graphic design services. From eye-catching logos to dynamic marketing materials, our branding and graphic design services create striking visuals that effectively communicate your brand’s message.",
+    description2: "Our creative team combines innovative design techniques with strategic insight, ensuring your brand stands out in both digital and print media.",
     sections: [
       {
         title: "Brand Identity & Logo Design",
-        content: "We create memorable brand identities, including logos, color schemes, and visual guidelines that reflect your brand values and resonate with your target audience."
+        content: "Our subscription-based design services create unique brand identities, including logos, color schemes, and visual guidelines, that connect with your audience."
       },
       {
         title: "Marketing Collateral",
-        content: "From brochures and flyers to business cards and banners, we design cohesive marketing materials that support your brand message and engage potential clients."
+        content: "From brochures to business cards and banners, our cheap graphic design services design cohesive marketing materials that deliver your brand message."
       },
       {
         title: "Social Media Graphics",
-        content: "Enhance your social media presence with customized graphics designed to capture attention and convey your message on platforms like Instagram, Facebook, and LinkedIn."
+        content: "Boost your social media presence with customized brand design services that grab attention across various platforms like Instagram, Facebook, and LinkedIn."
       },
       {
         title: "Infographics & Data Visualization",
-        content: "Transform complex data into visually appealing infographics that communicate insights clearly and effectively, perfect for reports, presentations, and content marketing."
+        content: "Our infographic design company turns complex data into easy-to-understand, visually engaging infographics that convey your message in presentations, and marketing materials."
       },
       {
         title: "Illustrations & Icon Design",
-        content: "Our team creates unique illustrations and icons tailored to your brand's style, adding personality and a distinctive touch to your digital or print content."
+        content: "Our graphic design services for small businesses create custom-made illustrations and icons that give your brand a memorable touch, enhancing both digital and print content."
       },
       {
         title: "Packaging Design",
-        content: "Make a strong impression on your customers with packaging designs that blend aesthetics and functionality, ensuring your product stands out on the shelves."
+        content: "Create a lasting first impression with packaging designs that balance aesthetics and functionality, ensuring your product stands out in the market."
       },
       {
         title: "Print Design",
-        content: "We specialize in print-ready designs that maintain clarity and quality, from magazine layouts to posters and signage, ensuring your brand stands out offline."
+        content: "We specialize in high-quality, print-ready designs, from magazine layouts to posters and signage, helping your brand make an impact in the offline world."
       },
       {
         title: "UI Graphics for Digital Products",
-        content: "Complement your digital products with UI graphics that enhance user experience and align with the overall design, creating seamless, visually engaging interfaces."
+        content: "Elevate your digital products with intuitive UI graphics and artwork design services that improve user experience and ensure a seamless, visually appealing interface."
       }
     ],
     imageUrl: "/assets/img_placeholder/th-1/Graphic2.png",
     imageAlt: "Graphic Design Mockup",
   },
   uiUxDesign:{
-    title: "Transforming User Experiences with Expert UI/UX Design",
-    description1: "Our UI/UX design services focus on creating seamless, engaging user experiences that connect with your audience. We prioritize user-centered design principles to ensure every interaction is intuitive and satisfying.",
-    description2: "By utilizing research-driven methodologies and industry-leading design tools, we craft visually appealing interfaces that not only look great but also enhance functionality.",
+    title: "Elevate Your Brand with Exceptional UI & UX Design Services",
+    description1: "Our UI/UX design services are dedicated to building memorable and seamless user experiences that improve engagement. Through a combination of detailed research and advanced design tools, we use the best app for UI UX design that improve functionality and align with your brand’s vision.",
+    description2: "Whether it’s for web or mobile, our bespoke UI and UX design services help you make a powerful first impression that keeps users coming back.",
     buttonText: "Start Your UI/UX Project",
     sections: [
       {
         title: "User Research & Analysis",
-        content: "We conduct thorough user research to understand your target audience’s needs, preferences, and behaviors. This analysis informs our design process, ensuring we create solutions that resonate with users."
+        content: "We start by knowing about your target audience’s needs and preferences through comprehensive user research. This insight-driven approach helps us customize accessible UX design to resonate with users and meet their expectations."
       },
       {
         title: "Wireframing & Prototyping",
-        content: "Our team creates wireframes and prototypes to visualize the user journey and interface layout. These prototypes allow for early feedback and iterative design, ensuring a refined user experience."
+        content: "Our best UI UX design company creates detailed wireframes and interactive prototypes to map out user flows and layouts. Prototypes allow us to refine the mobile app UI UX design based on early feedback, ensuring a user-focused experience."
       },
       {
         title: "Visual Design",
-        content: "We develop stunning visual designs that align with your brand identity. Our aesthetic approach enhances usability and creates a lasting impression, combining color theory, typography, and imagery effectively."
+        content: "We being one of the top user interface design companies create visually compelling designs Using strategic color palettes, typography, and imagery, we enhance usability and create a memorable user experience."
       },
       {
         title: "Interaction Design",
-        content: "We focus on crafting intuitive interactions that engage users. Our interaction designs are aimed at providing seamless transitions, animations, and feedback to improve the overall user journey."
+        content: "Focused on creating seamless interactions, our best UI design agency designs intuitive transitions, animations, and feedback mechanisms. Each interaction is created to engage users and make navigation effortless."
       },
       {
         title: "Usability Testing",
-        content: "We conduct usability testing to gather real user feedback and identify areas for improvement. This ensures the final product is user-friendly, addressing any pain points before launch."
+        content: "At XCon, our usability testing process involves real user feedback to uncover areas of improvement. We audit UI UX and address potential challenges early, ensuring the final product is intuitive and easy to use."
       },
       {
         title: "Responsive Design",
-        content: "We ensure that your UI/UX designs are fully responsive, providing an optimal experience across all devices and screen sizes. Our designs adapt seamlessly from desktop to mobile."
+        content: "Our web or android app UI UX design services are optimized for all devices, ensuring that your users have a smooth experience whether they’re on desktop, tablet, or mobile. Each layout adapts to screen size for consistent usability."
       },
       {
         title: "Brand Integration",
-        content: "Our designs are aligned with your brand strategy, ensuring consistent messaging and aesthetics across all platforms. We create a cohesive brand experience that resonates with users."
+        content: "We add your brand identity into every aspect of the angular UI UX design, from visuals to interactions. This ensures that your brand’s message is communicated consistently across all digital and social media platforms."
       },
       {
         title: "Ongoing Support & Iteration",
-        content: "Post-launch, we offer ongoing support and iterative design improvements based on user feedback and analytics. This ensures your UI/UX continues to meet user needs as they evolve."
+        content: "After launch, our best enterprise UX design company provide ongoing support and improvements based on user analytics and feedback, ensuring your design stays aligned with growing user needs and industry trends."
       }
     ],
     imageUrl: "/assets/img_placeholder/th-1/UI2.png",
@@ -326,8 +325,8 @@ const MultiChannel = ({ serviceType = "webDevelopment" }) => {
                         : serviceType === "softwareDevelopment" ? "What Custom Software Development Services We Offer?"
                             : serviceType === "digitalmarket" ? "What Digital Marketing Services We Offer?"
                                 : serviceType === "videoEditing" ? "What Video Editing Services We Offer at XCon?"
-                                    : serviceType === "graphicDesign" ? "Graphic Design Services to Amplify Your Brand’s Visual Presence"
-                                    : serviceType === "uiUxDesign" ? "UI/UX Design Services to Amplify Your Brand’s Visual Presence"
+                                    : serviceType === "graphicDesign" ? "What Graphic Design Services We Offer?"
+                                    : serviceType === "uiUxDesign" ? "What UI UX Design Services We Offer at XCon?"
                                             : "Our Services"}
               </h2>
 

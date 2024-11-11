@@ -31,7 +31,6 @@ function Page() {
 				<Workflow  serviceType="webDevelopment" />
 				<OurAchievements  serviceType="webDevelopment" />
 				<Projects  serviceType="webDevelopment" />
-				{/*<Diversity   serviceType="webDevelopment"/>*/}
 				<Growth  serviceType="webDevelopment" />
 				<Expertise  serviceType="webDevelopment" />
                  <FaqS serviceType="webDevelopment"  />

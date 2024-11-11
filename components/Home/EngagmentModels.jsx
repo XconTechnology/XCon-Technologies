@@ -11,12 +11,12 @@ const engagementModels = [
     {
         title: "Team-Based Development",
         description: "Deploy a cooperative and professional team to deliver custom end-to-end,software solutions",
-        image: "/assets/img_placeholder/th-1/sa.png",
+        image: "/assets/img_placeholder/th-1/2.gif",
     },
     {
         title: "Staff Augmentation",
         description: "Integrate the best and expert app developers into your team for improved project success.",
-        image: "/assets/img_placeholder/th-1/tbd.png",
+        image: "/assets/img_placeholder/th-1/3.gif",
     },
 ];
 
