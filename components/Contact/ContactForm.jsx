@@ -3,6 +3,11 @@ import Image from "next/image";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
+const apiUrl =
+  process.env.NODE_ENV === "production"
+    ? process.env.VERCEL_URL
+    : "http://localhost:3000";
+
 const initValues = {
   name: "",
   email: "",
@@ -48,18 +53,18 @@ const ContactForm = () => {
   };
 
   const sendContactForm = async (values) => {
-    console.log("Sending Contact Form Data:", values); // Log all values
-
-    const response = await fetch("process.env.VERCEL_URL/api/contact", {
+    console.log("Sending Contact Form Data:", values);
+    const response = await fetch(`${apiUrl}/api/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(values), // Send the entire values object
+      body: JSON.stringify(values),
     });
 
-    if (!response.ok) throw new Error("Failed to send message");
-    return response.json();
+    if (!response.ok) {
+      throw new Error("Failed to send the contact form.");
+    }
   };
 
   const handleSubmit = async (e) => {
