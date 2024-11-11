@@ -5,8 +5,8 @@ import "react-phone-input-2/lib/style.css";
 
 const apiUrl =
   process.env.NODE_ENV === "production"
-    ? process.env.VERCEL_URL
-    : "http://localhost:3000";
+    ? process.env.VERCEL_URL / api / contact
+    : "http://localhost:3000/api/contact";
 
 const initValues = {
   name: "",
@@ -54,7 +54,7 @@ const ContactForm = () => {
 
   const sendContactForm = async (values) => {
     console.log("Sending Contact Form Data:", values);
-    const response = await fetch(`${apiUrl}/api/contact`, {
+    const response = await fetch(apiUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
