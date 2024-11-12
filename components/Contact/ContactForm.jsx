@@ -5,7 +5,7 @@ import "react-phone-input-2/lib/style.css";
 
 const apiUrl =
   process.env.NODE_ENV === "production"
-    ? process.env.VERCEL_URL / api / contact
+    ? `https://${process.env.VERCEL_URL}/api/contact`
     : "http://localhost:3000/api/contact";
 
 const initValues = {
