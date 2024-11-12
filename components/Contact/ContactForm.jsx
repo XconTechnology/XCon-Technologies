@@ -2,12 +2,11 @@ import React, { useState, useRef } from "react";
 import Image from "next/image";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import axios from "axios";
 
 const apiUrl =
   process.env.NODE_ENV === "production"
-    ? `${process.env.NEXT_PUBLIC_API_URL}/api/contact` // Production URL
-    : "http://localhost:3000/api/contact"; // Localhost URL
+    ? process.env.VERCEL_URL/api/contact
+    : "http://localhost:3000/api/contact";
 
 const initValues = {
   name: "",
@@ -55,18 +54,16 @@ const ContactForm = () => {
 
   const sendContactForm = async (values) => {
     console.log("Sending Contact Form Data:", values);
-    try {
-      const response = await axios.post(apiUrl, values, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+    const response = await fetch(apiUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
+    });
 
-      if (response.status !== 200) {
-        throw new Error("Failed to send the contact form.");
-      }
-    } catch (error) {
-      throw new Error(error.response?.data?.message || "An error occurred.");
+    if (!response.ok) {
+      throw new Error("Failed to send the contact form.");
     }
   };
 
@@ -75,7 +72,11 @@ const ContactForm = () => {
     setState((prev) => ({ ...prev, isLoading: true, error: "" }));
 
     try {
-      await sendContactForm(values);
+      // Log the values and recipient email
+      console.log("Form Data:", values);
+      console.log("Recipient Email:", values.email); // Log the recipient email
+
+      await sendContactForm(values); // Pass form values to API function
       setTouched({});
       setState({ ...initState, showAlert: "success" });
     } catch (error) {
@@ -322,7 +323,7 @@ const ContactForm = () => {
               className="rounded-[10px] bg-customGreen px-6 py-[15px] text-white font-bold"
               disabled={isLoading}
             >
-              {isLoading ? "Sending..." : "Send Qoute"}
+              {isLoading ? "Sending..." : "Send Message"}
             </button>
             {error && <div className="text-red-500 text-sm mt-2">{error}</div>}
           </form>

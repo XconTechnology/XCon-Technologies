@@ -1,22 +1,7 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
-import Cors from "cors";
 
-// Initialize CORS middleware
-const cors = Cors({
-  methods: ["GET", "POST"],
-  origin: "*", // Allow your frontend to make requests
-});
-
-function runMiddleware(req, res, fn) {
-  return new Promise((resolve, reject) => {
-    fn(req, res, (result) => {
-      result instanceof Error ? reject(result) : resolve(result);
-    });
-  });
-}
-
-// Function to generate email content for the contact form submission
+// Function to generate email content
 const CONTACT_MESSAGE_FIELDS = {
   name: "Name",
   email: "Email",
@@ -83,13 +68,11 @@ const generateEmailContent = (data) => {
 };
 
 export async function POST(request) {
-  await runMiddleware(request, null, cors); // Apply CORS middleware
-
   try {
     const body = await request.json();
 
-    // Validate required fields
     if (
+      !body ||
       !body.name ||
       !body.email ||
       !body.phone ||
@@ -97,32 +80,13 @@ export async function POST(request) {
       !body.service ||
       !body.message
     ) {
-      return NextResponse.json(
-        { message: "All fields are required" },
-        { status: 400 }
-      );
-    }
-
-    // Validate email format
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(body.email)) {
-      return NextResponse.json(
-        { message: "Valid email address is required" },
-        { status: 400 }
-      );
-    }
-
-    // Validate message length
-    if (body.message.length > 500) {
-      return NextResponse.json(
-        { message: "Message must be less than 500 characters" },
-        { status: 400 }
-      );
+      return NextResponse.json({ message: "Bad request" }, { status: 400 });
     }
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: process.env.SMTP_PORT,
-      secure: process.env.SMTP_PORT === "465", // true for 465, false for other ports
+      secure: process.env.SMTP_PORT === "465",
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
@@ -132,29 +96,35 @@ export async function POST(request) {
     // Generate the email content
     const emailContent = generateEmailContent(body);
 
-    // Send email to admin with form data
+    // Send HTML email to admin
     await transporter.sendMail({
       from: process.env.SMTP_USER,
-      to: process.env.SMTP_USER, // Replace with admin email(s)
+      to: process.env.SMTP_USER,
       subject: `New Contact Form Submission from ${body.name}`,
       text: emailContent.text,
       html: emailContent.html,
     });
 
-    // Send a thank-you email to the submitter
+    // Send thank-you email to the submitter
     await transporter.sendMail({
       from: process.env.SMTP_USER,
       to: body.email,
-      subject: "Thank you for contacting us!",
-      text: `Dear ${body.name},\n\nThank you for reaching out! We will get back to you shortly.\n\nBest regards,\nXCon Technologies`,
+      subject: "Thank You for Your Submission",
+      text: `Dear ${body.name},\n\nThank you for reaching out! We have received your message and will get back to you shortly.\n\nBest regards,\nXCon Technologies`,
     });
 
-    return NextResponse.json({ message: "Form submitted successfully" });
+    return NextResponse.json({
+      success: true,
+      message: "Emails sent successfully",
+    });
   } catch (error) {
-    console.error("Error handling contact form submission:", error);
     return NextResponse.json(
-      { message: "Internal Server Error", error: error.message },
+      { success: false, message: "Failed to send email, please try again" },
       { status: 500 }
     );
   }
+}
+
+export async function GET() {
+  return NextResponse.json({ message: "Welcome to the Contact Form API!" });
 }

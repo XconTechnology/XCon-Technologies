@@ -1,23 +1,6 @@
 import nodemailer from "nodemailer";
-import Cors from "cors";
-
-// Initialize CORS middleware
-const cors = Cors({
-  methods: ["GET", "POST"],
-  origin: "*", // Allow your Next.js frontend to make requests
-});
-
-function runMiddleware(req, res, fn) {
-  return new Promise((resolve, reject) => {
-    fn(req, res, (result) => {
-      result instanceof Error ? reject(result) : resolve(result);
-    });
-  });
-}
 
 export default async function handler(req, res) {
-  await runMiddleware(req, res, cors); // Apply CORS middleware
-  
   if (req.method === "POST") {
     const { name, email, phone, company, service, message } = req.body;
 
@@ -40,19 +23,19 @@ export default async function handler(req, res) {
 
     try {
       const transporter = nodemailer.createTransport({
-        host: process.env.SMTP_HOST, // e.g., 'smtp.gmail.com'
-        port: process.env.SMTP_PORT, // e.g., 465 or 587
-        secure: process.env.SMTP_PORT == 465, // true for port 465, false for 587
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT,
+        secure: true,
         auth: {
-          user: process.env.SMTP_USER, // Your SMTP username (e.g., email address)
-          pass: process.env.SMTP_PASS, // Your SMTP password or app-specific password
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASS,
         },
       });
 
       // Send email to admin with form data
       await transporter.sendMail({
         from: process.env.SMTP_USER,
-        to: process.env.SMTP_USER, // Replace with admin email(s)
+        to: process.env.SMTP_USER,
         subject: "Contact Form Submission",
         text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nCompany: ${company}\nService: ${service}\nMessage: ${message}`,
       });
@@ -68,10 +51,9 @@ export default async function handler(req, res) {
       res.status(200).json({ message: "Emails sent successfully" });
     } catch (error) {
       console.error("Error sending email:", error);
-      res.status(500).json({
-        message: "Failed to send email",
-        error: error.message || error,
-      });
+      res
+        .status(500)
+        .json({ message: "Failed to send email", error: error.message });
     }
   } else {
     res.setHeader("Allow", ["POST"]);
