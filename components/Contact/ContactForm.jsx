@@ -3,6 +3,8 @@ import Image from "next/image";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
+const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/api/contact`;
+
 const initValues = {
   name: "",
   email: "",
@@ -46,8 +48,6 @@ const ContactForm = () => {
       },
     }));
   };
-
-  const apiUrl = `https://x-con-technologies.vercel.app/api/contact`;
 
   const sendContactForm = async (values) => {
     console.log("Sending Contact Form Data:", values);
