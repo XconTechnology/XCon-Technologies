@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 
-// Function to generate email content
+// Function to generate email content for the contact form submission
 const CONTACT_MESSAGE_FIELDS = {
   name: "Name",
   email: "Email",
@@ -71,8 +71,8 @@ export async function POST(request) {
   try {
     const body = await request.json();
 
+    // Validate required fields
     if (
-      !body ||
       !body.name ||
       !body.email ||
       !body.phone ||
@@ -80,13 +80,32 @@ export async function POST(request) {
       !body.service ||
       !body.message
     ) {
-      return NextResponse.json({ message: "Bad request" }, { status: 400 });
+      return NextResponse.json(
+        { message: "All fields are required" },
+        { status: 400 }
+      );
+    }
+
+    // Validate email format
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(body.email)) {
+      return NextResponse.json(
+        { message: "Valid email address is required" },
+        { status: 400 }
+      );
+    }
+
+    // Validate message length
+    if (body.message.length > 500) {
+      return NextResponse.json(
+        { message: "Message must be less than 500 characters" },
+        { status: 400 }
+      );
     }
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: process.env.SMTP_PORT,
-      secure: process.env.SMTP_PORT === "465",
+      secure: process.env.SMTP_PORT === "465", // true for 465, false for other ports
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
@@ -96,10 +115,10 @@ export async function POST(request) {
     // Generate the email content
     const emailContent = generateEmailContent(body);
 
-    // Send HTML email to admin
+    // Send email to admin with form data
     await transporter.sendMail({
       from: process.env.SMTP_USER,
-      to: process.env.SMTP_USER,
+      to: process.env.SMTP_USER, // Replace with admin email(s)
       subject: `New Contact Form Submission from ${body.name}`,
       text: emailContent.text,
       html: emailContent.html,
@@ -118,8 +137,13 @@ export async function POST(request) {
       message: "Emails sent successfully",
     });
   } catch (error) {
+    console.error("Error sending email:", error);
     return NextResponse.json(
-      { success: false, message: "Failed to send email, please try again" },
+      {
+        success: false,
+        message: "Failed to send email, please try again",
+        error: error.message || error, // Add error message in the response
+      },
       { status: 500 }
     );
   }

@@ -25,7 +25,7 @@ export default async function handler(req, res) {
       const transporter = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
         port: process.env.SMTP_PORT,
-        secure: true,
+        secure: true, // true for 465, false for other ports
         auth: {
           user: process.env.SMTP_USER,
           pass: process.env.SMTP_PASS,
@@ -35,7 +35,7 @@ export default async function handler(req, res) {
       // Send email to admin with form data
       await transporter.sendMail({
         from: process.env.SMTP_USER,
-        to: process.env.SMTP_USER,
+        to: process.env.SMTP_USER, // Replace with admin email(s)
         subject: "Contact Form Submission",
         text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nCompany: ${company}\nService: ${service}\nMessage: ${message}`,
       });
@@ -51,9 +51,10 @@ export default async function handler(req, res) {
       res.status(200).json({ message: "Emails sent successfully" });
     } catch (error) {
       console.error("Error sending email:", error);
-      res
-        .status(500)
-        .json({ message: "Failed to send email", error: error.message });
+      res.status(500).json({
+        message: "Failed to send email",
+        error: error.message || error,
+      });
     }
   } else {
     res.setHeader("Allow", ["POST"]);
