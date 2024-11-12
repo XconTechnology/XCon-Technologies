@@ -4,7 +4,10 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import axios from "axios";
 
-const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/api/contact`;
+const apiUrl =
+  process.env.NODE_ENV === "production"
+    ? `${process.env.NEXT_PUBLIC_API_URL}/api/contact` // Production URL
+    : "http://localhost:3000/api/contact"; // Localhost URL
 
 const initValues = {
   name: "",
