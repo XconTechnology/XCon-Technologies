@@ -18,11 +18,11 @@ const nextConfig = {
       "d2jdgazzki9vjm.cloudfront.net",
       "brandslogos.com",
       "img.freepik.com",
-      'www.iconfinder.com/'
+      "serverless",
+      "www.iconfinder.com/",
     ],
     unoptimized: true,
   },
 };
-
 
 export default nextConfig;

@@ -1,5 +1,20 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
+import Cors from "cors";
+
+// Initialize CORS middleware
+const cors = Cors({
+  methods: ["GET", "POST"],
+  origin: process.env.NEXT_PUBLIC_API_URL, // Allow your frontend to make requests
+});
+
+function runMiddleware(req, res, fn) {
+  return new Promise((resolve, reject) => {
+    fn(req, res, (result) => {
+      result instanceof Error ? reject(result) : resolve(result);
+    });
+  });
+}
 
 // Function to generate email content for the contact form submission
 const CONTACT_MESSAGE_FIELDS = {
@@ -68,6 +83,8 @@ const generateEmailContent = (data) => {
 };
 
 export async function POST(request) {
+  await runMiddleware(request, null, cors); // Apply CORS middleware
+
   try {
     const body = await request.json();
 
@@ -124,31 +141,20 @@ export async function POST(request) {
       html: emailContent.html,
     });
 
-    // Send thank-you email to the submitter
+    // Send a thank-you email to the submitter
     await transporter.sendMail({
       from: process.env.SMTP_USER,
       to: body.email,
-      subject: "Thank You for Your Submission",
-      text: `Dear ${body.name},\n\nThank you for reaching out! We have received your message and will get back to you shortly.\n\nBest regards,\nXCon Technologies`,
+      subject: "Thank you for contacting us!",
+      text: `Dear ${body.name},\n\nThank you for reaching out! We will get back to you shortly.\n\nBest regards,\nXCon Technologies`,
     });
 
-    return NextResponse.json({
-      success: true,
-      message: "Emails sent successfully",
-    });
+    return NextResponse.json({ message: "Form submitted successfully" });
   } catch (error) {
-    console.error("Error sending email:", error);
+    console.error("Error handling contact form submission:", error);
     return NextResponse.json(
-      {
-        success: false,
-        message: "Failed to send email, please try again",
-        error: error.message || error, // Add error message in the response
-      },
+      { message: "Internal Server Error", error: error.message },
       { status: 500 }
     );
   }
-}
-
-export async function GET() {
-  return NextResponse.json({ message: "Welcome to the Contact Form API!" });
 }
