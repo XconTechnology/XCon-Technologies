@@ -319,7 +319,7 @@ const ContactForm = () => {
               className="rounded-[10px] bg-customGreen px-6 py-[15px] text-white font-bold"
               disabled={isLoading}
             >
-              {isLoading ? "Sending..." : "Send Message"}
+              {isLoading ? "Sending..." : "Send Qoute"}
             </button>
             {error && <div className="text-red-500 text-sm mt-2">{error}</div>}
           </form>
