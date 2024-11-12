@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { FaGlobe,FaEye,FaSketch,FaClipboardList, FaShoppingBag,FaPalette,FaPencilRuler,FaImages,FaDraftingCompass, FaMobileAlt, FaFileAlt,FaLaptopCode,FaDatabase,FaLock,FaCogs,FaBullhorn,FaSearchDollar,FaEnvelope,FaChartLine,FaCut,FaMagic,FaVolumeUp,FaVideo } from "react-icons/fa";
 
-// Define the service data
 const servicesData = {
   webDevelopment: [
     {
@@ -53,110 +52,110 @@ const servicesData = {
     {
       icon: <FaMobileAlt />,
       title: "Mobile Apps",
-      description: "Engaging and intuitive mobile applications that reach users across devices, optimized for performance and user experience."
+      description: "We create captivating, user-friendly mobile applications that engage audiences across any device. Our apps are thoughtfully designed to provide intuitive experiences."
     },
     {
       icon: <FaShoppingBag />,
-      title: "Cross-Platform Development",
-      description: "Build applications with tools like React Native and Flutter, ensuring high-quality performance and native-like experiences."
+      title: "Multi-Platform apps",
+      description: "Using advanced tools, our best app developer company creates cross-platform applications that deliver native-like experiences on both iOS and Android."
     },
     {
       icon: <FaGlobe />,
       title: "API Integration",
-      description: "Seamless integration of your app with web services and third-party platforms for a unified experience."
+      description: "Our custom mobile app development company integrates your app with essential third-party platforms, providing a cohesive and smooth experience."
     },
     {
       icon: <FaFileAlt />,
       title: "Post-Launch Support",
-      description: "Ongoing support and updates to keep your mobile application relevant and fully functional."
+      description: "We offer continuous support after launch, including regular updates. Our software and app development company works to keep your app running smoothly."
     }
   ],
   digitalmarket: [
     {
       icon: <FaBullhorn />,
       title: "Social Media Marketing",
-      description: "Boost brand visibility with targeted social media strategies across platforms like Facebook, Instagram, and Twitter."
+      description: "Enhance your brand’s visibility with our digital marketing agency in Charlotte NC that builds engagement and develops loyalty by reaching audiences where they’re most active."
     },
     {
       icon: <FaSearchDollar />,
-      title: "Search Engine Optimization (SEO)",
-      description: "Improve website rankings with SEO best practices, driving organic traffic and increasing visibility."
+      title: "SEO",
+      description: "Boost your website’s search engine rankings and organic traffic with our SEO services. From keyword optimization to technical SEO, we ensure your site remains visible and relevant."
     },
     {
       icon: <FaEnvelope />,
       title: "Email Marketing",
-      description: "Engage and nurture your audience with personalized email campaigns designed to convert leads into customers."
+      description: "Build strong relationships with your audience through our customized email campaigns. Our digital marketing consultant for small business focuses on driving conversions."
     },
     {
       icon: <FaChartLine />,
-      title: "Pay-Per-Click Advertising (PPC)",
-      description: "Generate immediate traffic and conversions with strategic PPC campaigns across platforms like Google Ads and Bing."
+      title: "PPC",
+      description: "Drive immediate results with precisely targeted PPC advertising on platforms like Google Ads. Our approach prioritizes keyword targeting and cost-effective bidding to maximize ROI."
     }
   ],
   videoEditing: [
     {
       icon: <FaCut />,
       title: "Video Editing",
-      description: "Craft engaging visual stories by trimming, arranging, and adding effects to videos, ensuring impactful content."
+      description: "Change raw footage into captivating stories by refining, trimming, and enhancing with professional effects to create powerful, engaging content."
     },
     {
       icon: <FaMagic />,
       title: "Color Grading",
-      description: "Enhance visual appeal through precise color correction and grading, aligning footage with desired aesthetics and mood."
+      description: "Elevate your visuals with expert color correction and grading, ensuring your footage aligns perfectly with your brand’s aesthetic and vibe."
     },
     {
       icon: <FaVolumeUp />,
       title: "Audio Synchronization",
-      description: "Ensure clear audio by synchronizing voice, music, and sound effects with video content for a seamless viewing experience."
+      description: "Achieve flawless audio by smoothly syncing voice overs, music, and sound effects, ensuring a smooth, professional sound experience throughout your video."
     },
     {
       icon: <FaVideo />,
       title: "Motion Graphics",
-      description: "Add engaging animations, transitions, and graphic elements to enrich video presentations and enhance visual storytelling."
+      description: "Infuse your videos with dynamic animations, sleek transitions, and eye-catching graphic elements to improve storytelling and captivate your audience."
     }
   ],
   graphicDesign: [
     {
       icon: <FaPalette />,
       title: "Brand Identity",
-      description: "Develop unique and memorable brand identities through custom logo designs, color schemes, and typography that represent your brand's voice."
+      description: "Create a distinctive and memorable brand identity with custom logo designs, color palettes, and typography that resonate with your audience."
     },
     {
       icon: <FaPencilRuler />,
       title: "UI/UX Design",
-      description: "Create user-centered, visually appealing interfaces that enhance user experience and engagement across web and mobile applications."
+      description: "Design intuitive, visually engaging interfaces that improve user experience and drive interaction, enhancing both web and mobile applications."
     },
     {
       icon: <FaImages />,
       title: "Visual Content Creation",
-      description: "Design eye-catching graphics, infographics, and social media visuals that captivate audiences and boost online presence."
+      description: "Create striking graphics, infographics, and social media visuals that capture attention and strengthen your brand's online presence."
     },
     {
       icon: <FaDraftingCompass />,
       title: "Print Design",
-      description: "Produce high-quality print designs, including brochures, business cards, and banners, that convey professionalism and creativity."
+      description: "Deliver exceptional print designs, from brochures to business cards and banners, ensuring professionalism and creativity in every printed piece."
     }
   ],
   uiUxDesign: [
     {
       icon: <FaEye />,
       title: "User Research",
-      description: "Conduct comprehensive user research to understand needs and preferences, ensuring designs are informed and user-centric."
+      description: "We conduct thorough user research to get insights into your audience's behaviors and preferences and making designs that are both user-centric and strategic."
     },
     {
       icon: <FaSketch />,
-      title: "Wireframing & Prototyping",
-      description: "Create wireframes and interactive prototypes that visualize user journeys and interactions, facilitating better design decisions."
+      title: "Wireframing",
+      description: "Our best ecommerce UI design team develops detailed wireframes and prototypes to visualize the user journey, enabling feedback and refined design decisions."
     },
     {
       icon: <FaMobileAlt />,
       title: "Responsive Design",
-      description: "Develop responsive interfaces that provide a seamless experience across all devices, enhancing accessibility and user satisfaction."
+      description: "We create creative UI UX designs that adapt perfectly across all devices, providing a consistent and satisfying user experience on mobile, tablet, and desktop."
     },
     {
       icon: <FaClipboardList />,
       title: "Usability Testing",
-      description: "Conduct usability testing to gather feedback, identify pain points, and optimize the user experience for improved satisfaction."
+      description: "Through rigorous usability testing, our digital marketing and UX design gather user feedback to identify and resolve any challenges, ensuring a user-friendly experience."
     }
   ],
 
@@ -170,53 +169,67 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
   return (
       <section id="business-prospect" className="py-16 bg-white min-h-[600px]">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-[#273447]">
-            Custom{" "}
-            {serviceType === "webDevelopment" ? "Web Development"
-                : serviceType === "appDevelopment" ? "App Development"
-                    : serviceType === "softwareDevelopment" ? "Custom Software Development"
-                    : serviceType === "digitalmarket" ? "Digital Marketing"
-                        : serviceType === "videoEditing" ? "Video Editing"
-                                : serviceType === "graphicDesign" ? "Graphic Design"
-                                    : serviceType === "uiUxDesign" ? "UI/UX Design"
-                        : "Software"}{" "}
-            Solutions to Expand Your {" "}
-            <span className="text-customGreen">Business Horizons</span>
+          <h2 className="text-4xl tracking-normal font-bold text-[#273447]">
+            {serviceType === "webDevelopment" && "Web Development Solutions to Expand Your Business "}
+            {serviceType === "appDevelopment" && "Innovative App Development Solutions to Expand Your Business "}
+            {serviceType === "softwareDevelopment" && "Custom Software Development Solutions to Expand Your Business"}
+            {serviceType === "videoEditing" && "Modern Video Editing Solutions to Grow Your Brand "}
+            {serviceType === "graphicDesign" && "Transform Your Brand with Expert Graphic Design Services "}
+            {serviceType === "uiUxDesign" && "Customized UI/UX Solutions for Business Growth"}
+            {serviceType === "digitalmarket" && "Grow with our Best Small Business Digital Marketing Solutions"}
+
           </h2>
 
 
           <p className="mt-6 text-lg text-[#273447]">
-            Boost{" "}
-            {serviceType === "webDevelopment" ? "web" : serviceType === "appDevelopment" ? "app" : serviceType === "digitalmarket" ? "digital marketing"
-                : serviceType === "softwareDevelopment" ? "Software Development"
-                        : serviceType === "videoEditing" ? "video Editing"
-                        : serviceType === "uiUxDesign" ? "UI/UX Design"
-                        : "software"}{" "}
-             with our custom web design and development services.Explore the top  services of {""}
+            {serviceType === "appDevelopment" ? (
+                <>
+                  Achieve new levels with the best app development company in the US. We provide services for healthcare
+                  app development, cloud-based quantum app development, food delivery app development, etc.
+                </>
+            ) : serviceType === "digitalmarket" ? (
+                <>
+                  Increase your digital presence with our digital marketing services for small businesses. At XCon Technologies, our digital marketing manager offers modern solutions to improve your business growth.
+                </>
+            ) : serviceType === "videoEditing" ? (
+                <>
+                  Enhance your business's reach with our specialized video editing services designed to captivate and engage. Explore top video editing services we offer at XCon Technologies.
+                </>
+            ) : serviceType === "graphicDesign" ? (
+                <>
+                  At XCon Technologies, we specialize in delivering custom graphic design services that help businesses build a unique visual identity. Let our graphic design service packages help you stand out in a competitive market with visuals that leave a lasting impression.
+                </>
+            ) : serviceType === "uiUxDesign" ? (
+                <>
+                  Elevate your business with XCon Technologies customized UI/UX design services. Discover how our expert design solutions can drive user engagement, satisfaction, and brand impact.
+                </>
+            ) : (
+                <>
+                Boost{" "}
+                  {serviceType === "webDevelopment" ? "web"
+                          : serviceType === "softwareDevelopment" ? "software development"
+                                          : "software"}{" "}
+                  with our custom web design and development services. Explore the top services of{" "}
 
-            {serviceType === "webDevelopment"
-                ? "web  development"
-                : serviceType === "appDevelopment"
-                    ? "app  development"
-                    : serviceType === "digitalMarket"
-                        ? "digital marketing"
-                        : serviceType === "videoEditing"
-                        ? "video Editing"
-                            : serviceType === "graphicDesign" ? "Graphic Design"
-                                : serviceType === "uiUxDesign" ? "UI/UX Design"
-                        : "software"}{" "}
-             that businesses can get at XCon Technologies.
+                  {serviceType === "webDevelopment"
+                      ? "web development"
+                          : serviceType === "softwareDevelopment" ? "software development"
+                              : serviceType === "videoEditing" ? "video editing"
+                                          : "software"}{" "}
+                  that businesses can get at XCon Technologies.
+                </>
+            )}
           </p>
 
 
           {/* Icon Grid */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             {serviceData.map((service, index) => (
-                <div className="flex flex-col items-center p-6" key={index}>
+                <div className="flex flex-col items-center  p-6" key={index}>
                   <div className="text-customGreen text-6xl mb-12">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-bold tracking-normal text-[#273447] mb-5">
+                  <h3 className="text-xl font-bold  tracking-normal  text-[#273447] mb-5">
                     {service.title}
                   </h3>
                   <p className="text-md text-[#273447] text-center mb-10">
@@ -226,15 +239,6 @@ const BusinessProspect = ({ serviceType = "webDevelopment" }) => {
             ))}
           </div>
 
-          {/* Call to Action */}
-          <div className="mt-8">
-            <Link href="/project-scope">
-            <span
-                className="button  rounded-[50px] border-2  bg-black py-4 text-white after:bg-customGreen hover:border-customGreen hover:text-white">
-              Discuss Project Scope
-            </span>
-            </Link>
-          </div>
         </div>
       </section>
   );

@@ -120,19 +120,23 @@ const TechStack = ({ serviceType = "webDevelopment" }) => {
   return (
     <section className="py-20 min-h-[40vh] bg-gray-800 text-white text-center">
       <div className="container mx-auto max-w-7xl px-4 text-center">
-        <h2 className="text-5xl font-bold  leading-tight">
-          Technology Stack We Use for
+        <h2 className="text-5xl font-bold pb-2  leading-tight">
+          Tech Stack We Use for
           {" "}
           <span className="text-customGreen">
             {" "}
             {serviceType === "webDevelopment" ? "Web "
-                : serviceType === "appDevelopment" ? "App "
+                : serviceType === "appDevelopment" ? "Custom App "
                     : serviceType === "softwareDevelopment" ? "Custom Software"
-                        : "Our Services"} <br /> Development
+                        : "Our Services"}  Development Process
           </span>
         </h2>
-        <p className="mt-4 text-md px-4">
-          Our custom software development solutions use the latest, most advanced technologies to create powerful software for your business. With the best IT system custom software development team of developers, we deliver innovative solutions.
+        <p className="mt-2 text-md px-4">
+
+          {serviceType === "webDevelopment" ? "Our Web development solutions use the latest technologies for AI app development according to your business. With a dedicated team of expert developers, we deliver innovative app development solutions. "
+              : serviceType === "appDevelopment" ? "Our custom app development solutions use the latest technologies for AI app development according to your business. With a dedicated team of expert developers, we deliver innovative app development solutions. "
+                  : serviceType === "softwareDevelopment" ? "Our custom software development solutions use the latest, most advanced technologies to create powerful software for your business. With the best IT system custom software development team of developers, we deliver innovative solutions."
+                      : "Our Services"}
         </p>
       </div>
 

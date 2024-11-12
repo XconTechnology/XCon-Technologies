@@ -6,12 +6,12 @@ const Expertise = ({ serviceType = "webDevelopment" }) => {
             {/* Title Section */}
             <div className="container mx-auto text-center mb-12">
                 <h2 className="text-5xl font-bold text-gray-800">
-                    Get Custom {" "}
-                    {serviceType === "webDevelopment" ? "Web Development ?"
-                    : serviceType === "appDevelopment" ? "App Development"
-                        : serviceType === "softwareDevelopment" ? "Software Development"
+
+                    {serviceType === "webDevelopment" ? "Get Custom Web Development Expertise at ?"
+                    : serviceType === "appDevelopment" ? "Get Custom App Development Expertise at"
+                        : serviceType === "softwareDevelopment" ? "Get Custom Software Development Expertise at"
                             : "Our Services"}
-                    {" "} Expertise at <span className="text-customGreen">Xcon!</span>
+                    {" "}  <span className="text-customGreen">Xcon!</span>
                 </h2>
                 <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
                     We don’t proclaim to be the best custom website development company, but we take pride in our expertise. Our professional, full-service in-house team follows a modern web development process to deliver efficient, secure, and scalable products that businesses trust and appreciate.

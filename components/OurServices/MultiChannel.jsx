@@ -87,197 +87,195 @@ const servicesData = {
     imageAlt: "Software Development Mockup",
   },
   appDevelopment: {
-    title: "App Development for Multi-Channel Presence",
-    description1: "Custom mobile app development services designed to help businesses reach users across devices with engaging and intuitive apps.",
-    description2: "We build scalable mobile apps with cross-platform compatibility, optimized performance, and secure frameworks.",
+    title: "Cross-Platform App Development Company for Maximum Reach",
+    description1: "At XCon, our custom mobile app development tools empower businesses to connect with users on any device and provide a smooth, engaging experience.",
+    description2: "Our enterprise mobile app development company creates scalable apps with cross-platform compatibility, ensuring optimal performance and robust security, so your app is ready to make an impact wherever your audience is.",
     buttonText: "Get a Free Consultation",
     sections: [
       {
         title: "Mobile UI/UX Design",
-        content: "Our team crafts beautiful, intuitive, and responsive mobile interfaces optimized for user experience. From prototyping to design, we create mobile-first, user-centered interfaces using the latest tools and frameworks."
+        content: "Our android app development software design engaging and responsive mobile interfaces that improves user experience. From wireframing to final design, our team creates the best interfaces using advanced tools to ensure seamless interaction and aesthetic appeal.",
       },
       {
         title: "iOS & Android Development",
-        content: "We develop robust, scalable, and secure native mobile applications for both iOS and Android platforms, utilizing cutting-edge technologies to provide seamless functionality across devices."
+        content: "Our team is expert in iOS mobile app development as well as Android, focusing on security, scalability, and smooth functionality. Leveraging the latest technologies, our android application development company delivers apps optimized for each platform."
       },
       {
         title: "Cross-Platform Development",
-        content: "With tools like React Native and Flutter, we build cross-platform applications that provide a native-like experience on both iOS and Android. This approach reduces time-to-market while ensuring high-quality performance."
+        content: "Using powerful tools like React Native and Flutter, our custom mobile app development company creates cross-platform apps that provide the best experience on both iOS and Android. This approach improves development timelines while maintaining performance."
       },
       {
         title: "API Integration & Backend Development",
-        content: "Our expert developers handle API integrations and backend services to create mobile applications that sync flawlessly with web services and third-party platforms, ensuring a unified experience across devices."
+        content: "Our flutter mobile app development team specialize in API integrations and backend solutions that ensure smooth connectivity with third-party platforms. We create mobile apps that work flawlessly within your digital landscape."
       },
       {
         title: "Mobile App Testing",
-        content: "We conduct thorough testing across multiple devices and platforms to identify and fix any issues before deployment. Our comprehensive testing guarantees your app runs smoothly and is bug-free."
+        content: "Through proper testing across devices and platforms, our enterprise mobile app development company identifies and resolves any issues prior to launch. Our extensive quality assurance ensures your app delivers a smooth, reliable experience to every user."
       },
       {
         title: "Post-Launch Support & Updates",
-        content: "Our post-launch services include monitoring app performance, providing updates, and rolling out new features to keep your app relevant and fully functional as your business grows."
+        content: "Our ionic app development company provides continuous support after launch, monitoring performance and giving updates to keep your app advanced. Our team ensures your app stays updated with your business goals."
       }
     ],
-    imageUrl: "/assets/img_placeholder/th-1/mobile_app_leap.webp",
+    imageUrl: "/assets/img_placeholder/th-1/App-Sec.png",
     imageAlt: "App Development Mockup",
   },
   digitalmarket: {
-    title: "Expand Your Reach with Digital Marketing",
-    description1: "Our digital marketing services are designed to help your business connect with audiences across digital channels with engaging and strategic approaches.",
-    description2: "We create data-driven campaigns that improve brand visibility, drive user engagement, and generate conversions.",
+    title: "Maximize Your Impact with our Digital Marketing Consultant",
+    description1: 'Our local digital marketing services are created to connect your business with target audiences across digital platforms, using engaging, strategic approaches according to your goals.',
+    description2: 'XCon being one of the best digital marketing agencies develop data-driven campaigns that improve your brand visibility and make sure every interaction strengthens the digital presence and impact of your business.',
     buttonText: "Consult Digital Strategy",
     sections: [
       {
         title: "Search Engine Optimization (SEO)",
-        content: "We optimize your online presence to enhance search visibility, drive organic traffic, and improve SERP rankings. Our team applies the latest SEO strategies, including on-page, off-page, and technical SEO, to ensure long-term growth."
+        content: "We elevate your online presence to increase search visibility, attract organic traffic, and increase your SERP rankings. Our SEO services team implements cutting-edge SEO strategies including on-page, off-page, and technical SEO for long-term growth."
       },
       {
         title: "Social Media Marketing",
-        content: "We craft targeted social media strategies to engage audiences, build community, and drive brand loyalty. Our team handles content creation, scheduling, and analytics across platforms like Facebook, Instagram, LinkedIn, and Twitter."
+        content: "Our targeted social media marketing services are created to engage audiences and build brand loyalty. From content creation to in-depth analytics, our digital marketing strategy manage your presence across key platforms like Facebook, Instagram, etc."
       },
       {
         title: "Content Marketing",
-        content: "Our content marketing services involve creating valuable and relevant content that resonates with your target audience, building trust and authority in your industry. We produce blogs, videos, infographics, and more."
+        content: "At XCon, our content marketing services are focused on producing valuable, audience-centric content that builds trust and authority in your industry. Our digital marketing specialist create blogs, videos, and more to drive engagement and establish your brand as a leader."
       },
       {
         title: "Email Marketing Campaigns",
-        content: "We design and execute personalized email marketing campaigns to nurture leads and retain customers. Our campaigns are optimized for engagement and conversion, utilizing segmentation, A/B testing, and automation."
+        content: "We design and run personalized email marketing solutions that nurture leads and retain customers. Through segmentation, A/B testing, and automation, our full-service digital marketing agency ensures high engagement rates and optimized conversions."
       },
       {
         title: "Pay-Per-Click (PPC) Advertising",
-        content: "Our PPC experts manage targeted ad campaigns on Google, Bing, and social media platforms to maximize ROI. We focus on keyword optimization, ad copy, and bid management to deliver cost-effective results."
+        content: "Our PPC advertising specialists run targeted ad campaigns on Google, Bing, and social media to maximize return on investment. We emphasize strategic keyword selection, best ad copy, and effective bid management to accomplish cost-efficient results."
       },
       {
         title: "Analytics & Performance Tracking",
-        content: "We provide detailed analytics and performance reports to measure campaign effectiveness and make data-driven adjustments. Our approach ensures continuous improvement and alignment with business goals."
+        content: "Our digital marketing packages provide comprehensive analytics and performance tracking to assess campaign success. We support ongoing optimization to align with your business goals and ensure consistent growth, increasing chances of your brand success."
       }
     ],
-    imageUrl: "https://img.freepik.com/free-photo/social-media-marketing-concept-marketing-with-applications_23-2150063172.jpg?t=st=1729936722~exp=1729940322~hmac=51eb7103ff8486b039ab96d1fe440ee968d721d16c3d02bbd9ba5a38dd391ae7&w=1060",
+    imageUrl: "/assets/img_placeholder/th-1/digital2.png",
     imageAlt: "Digital Marketing Mockup",
   },
   videoEditing: {
-    title: "Bring Your Vision to Life with Professional Video Editing",
-    description1: "Transform raw footage into compelling visual stories with our expert video editing services. From social media content to promotional videos, we bring ideas to life with a focus on engagement and brand storytelling.",
-    description2: "Our team combines creativity with the latest software tools, including Adobe Premiere Pro, Final Cut Pro, and After Effects, to produce polished, professional results that captivate audiences.",
-    buttonText: "Get a Free Video Editing Consultation",
+    title: "Engage, Inspire, and Captivate with Expert Video Editing",
+    description1: "Transform your vision into captivating visual stories with our professional video editing services. Whether you’re producing social media content, promotional videos, or brand storytelling, we bring your ideas to life.",
+    description2: "Our best video editor for social media uses the best video editing software like Adobe Premiere Pro, Final Cut Pro, and After Effects to deliver engaging, professional videos. Grow your brand with videos that connect with your audience.",
     sections: [
       {
         title: "Corporate Video Editing",
-        content: "We craft corporate videos that communicate your brand’s message effectively, adding transitions, graphics, and color correction to enhance visual impact and brand presence."
+        content: "Deliver your brand’s message through our best corporate video editing services. We enhance each video with professional transitions and branded graphics to improve brand presence."
       },
       {
         title: "Social Media Content Editing",
-        content: "Create engaging, platform-optimized videos for social media. Our team edits short-form content that aligns with trends, captures attention, and enhances shareability on platforms like Instagram, TikTok, and YouTube."
+        content: "We use the best video editing software for social media shorts or reels. Boost your social media engagement with custom-edited, platform-ready videos that align with current trends."
       },
       {
-        title: "Promotional Videos",
-        content: "Our promotional video editing services are designed to highlight products, services, or events. We use dynamic cuts, effects, and sound design to create impactful videos that boost conversions and reach."
+        title: "Promotional Video Editing",
+        content: "Make your products, services, or events stand out with our high-quality promotional video editing. Using dynamic transitions, our good video editor creates compelling videos."
       },
       {
-        title: "Post-Production Services",
-        content: "We offer comprehensive post-production services, including color grading, sound mixing, and special effects. Our meticulous attention to detail ensures a professional finish for any type of project."
+        title: "Comprehensive post-production",
+        content: "From color grading and sound mixing to special effects, our post-production services cover every detail. Our approach ensures a polished, professional result that brings your vision to life."
       },
       {
         title: "Animation & Motion Graphics",
-        content: "Enhance your videos with animated elements and motion graphics. We create visuals that add depth and engagement to your content, from logo animations to explainer videos."
+        content: "Add depth to your videos with custom animations and motion graphics. Our video recording and editing services design engaging visuals that enhance viewer engagement with style."
       },
       {
         title: "Video Quality Optimization",
-        content: "Ensure your videos look their best across all devices. We focus on resolution, clarity, and format compatibility, optimizing videos for smooth playback and high-quality visuals."
+        content: "Ensure consistent, high-quality playback across devices. Our splice video editor optimizes resolution, clarity, and compatibility to make sure your brand videos look their best."
       },
       {
-        title: "Feedback & Revision Process",
-        content: "Our editing process includes multiple review stages to ensure your vision is fully realized. We collaborate closely with you, incorporating feedback until you’re satisfied with the final product."
+        title: "Detailed Feedback & Revision Process",
+        content: "Our editing process includes multiple review phases to guarantee you achieve your business goals. We work closely with you until you are satisfied with the final outcome."
       },
       {
         title: "Ongoing Support & Updates",
-        content: "Receive continued support for future edits or reformatting needs. We assist in keeping your video content relevant and up-to-date as your brand evolves."
+        content: "Keep your video content fresh with our ongoing support services. Our video maker and editor are here for future edits and updates, helping your videos evolve alongside your brand."
       }
     ],
-    imageUrl: "https://img.freepik.com/free-photo/empty-modern-creative-agency-office-with-dual-monitors-setup-with-processing-video-film-montage-vide_482257-3406.jpg?t=st=1730094138~exp=1730097738~hmac=8dc0a8a8c3956a5bbccf7bf1afb94b650287618766f90b41e29e40067256c448&w=1380",
+    imageUrl: "/assets/img_placeholder/th-1/Video2.png",
     imageAlt: "Video Editing Mockup",
   },
   graphicDesign: {
-    title: "Creative Graphic Design Services",
-    description1: "Boost your brand’s visual appeal with our expert graphic design services. From branding to marketing collateral, we create captivating designs that communicate your message effectively and leave a lasting impression.",
-    description2: "Our designers leverage creativity and strategic thinking to bring your ideas to life across both digital and print media.",
-    buttonText: "Discover Graphic Design",
+    title: "Innovative Graphic Design Services Agency for Your Brand",
+    description1: "Enhance your brand’s visual identity with our professional graphic design services. From eye-catching logos to dynamic marketing materials, our branding and graphic design services create striking visuals that effectively communicate your brand’s message.",
+    description2: "Our creative team combines innovative design techniques with strategic insight, ensuring your brand stands out in both digital and print media.",
     sections: [
       {
         title: "Brand Identity & Logo Design",
-        content: "We create memorable brand identities, including logos, color schemes, and visual guidelines that reflect your brand values and resonate with your target audience."
+        content: "Our subscription-based design services create unique brand identities, including logos, color schemes, and visual guidelines, that connect with your audience."
       },
       {
         title: "Marketing Collateral",
-        content: "From brochures and flyers to business cards and banners, we design cohesive marketing materials that support your brand message and engage potential clients."
+        content: "From brochures to business cards and banners, our cheap graphic design services design cohesive marketing materials that deliver your brand message."
       },
       {
         title: "Social Media Graphics",
-        content: "Enhance your social media presence with customized graphics designed to capture attention and convey your message on platforms like Instagram, Facebook, and LinkedIn."
+        content: "Boost your social media presence with customized brand design services that grab attention across various platforms like Instagram, Facebook, and LinkedIn."
       },
       {
         title: "Infographics & Data Visualization",
-        content: "Transform complex data into visually appealing infographics that communicate insights clearly and effectively, perfect for reports, presentations, and content marketing."
+        content: "Our infographic design company turns complex data into easy-to-understand, visually engaging infographics that convey your message in presentations, and marketing materials."
       },
       {
         title: "Illustrations & Icon Design",
-        content: "Our team creates unique illustrations and icons tailored to your brand's style, adding personality and a distinctive touch to your digital or print content."
+        content: "Our graphic design services for small businesses create custom-made illustrations and icons that give your brand a memorable touch, enhancing both digital and print content."
       },
       {
         title: "Packaging Design",
-        content: "Make a strong impression on your customers with packaging designs that blend aesthetics and functionality, ensuring your product stands out on the shelves."
+        content: "Create a lasting first impression with packaging designs that balance aesthetics and functionality, ensuring your product stands out in the market."
       },
       {
         title: "Print Design",
-        content: "We specialize in print-ready designs that maintain clarity and quality, from magazine layouts to posters and signage, ensuring your brand stands out offline."
+        content: "We specialize in high-quality, print-ready designs, from magazine layouts to posters and signage, helping your brand make an impact in the offline world."
       },
       {
         title: "UI Graphics for Digital Products",
-        content: "Complement your digital products with UI graphics that enhance user experience and align with the overall design, creating seamless, visually engaging interfaces."
+        content: "Elevate your digital products with intuitive UI graphics and artwork design services that improve user experience and ensure a seamless, visually appealing interface."
       }
     ],
-    imageUrl: "https://scontent.flhe3-2.fna.fbcdn.net/o1/v/t0/f1/m340/genai_m4_lla_eag_v3:upload_img_49181737_10_27_2024_23_42_42_990374_5177703766376322622.jpeg?_nc_ht=scontent.flhe3-2.fna.fbcdn.net&_nc_cat=104&ccb=9-4&oh=00_AYCkIx3EzRKQljyzCy-F7qho51BJe6mY77RHIDqznyub6A&oe=67210F25&_nc_sid=5b3566",
+    imageUrl: "/assets/img_placeholder/th-1/Graphic2.png",
     imageAlt: "Graphic Design Mockup",
   },
   uiUxDesign:{
-    title: "Transforming User Experiences with Expert UI/UX Design",
-    description1: "Our UI/UX design services focus on creating seamless, engaging user experiences that connect with your audience. We prioritize user-centered design principles to ensure every interaction is intuitive and satisfying.",
-    description2: "By utilizing research-driven methodologies and industry-leading design tools, we craft visually appealing interfaces that not only look great but also enhance functionality.",
+    title: "Elevate Your Brand with Exceptional UI & UX Design Services",
+    description1: "Our UI/UX design services are dedicated to building memorable and seamless user experiences that improve engagement. Through a combination of detailed research and advanced design tools, we use the best app for UI UX design that improve functionality and align with your brand’s vision.",
+    description2: "Whether it’s for web or mobile, our bespoke UI and UX design services help you make a powerful first impression that keeps users coming back.",
     buttonText: "Start Your UI/UX Project",
     sections: [
       {
         title: "User Research & Analysis",
-        content: "We conduct thorough user research to understand your target audience’s needs, preferences, and behaviors. This analysis informs our design process, ensuring we create solutions that resonate with users."
+        content: "We start by knowing about your target audience’s needs and preferences through comprehensive user research. This insight-driven approach helps us customize accessible UX design to resonate with users and meet their expectations."
       },
       {
         title: "Wireframing & Prototyping",
-        content: "Our team creates wireframes and prototypes to visualize the user journey and interface layout. These prototypes allow for early feedback and iterative design, ensuring a refined user experience."
+        content: "Our best UI UX design company creates detailed wireframes and interactive prototypes to map out user flows and layouts. Prototypes allow us to refine the mobile app UI UX design based on early feedback, ensuring a user-focused experience."
       },
       {
         title: "Visual Design",
-        content: "We develop stunning visual designs that align with your brand identity. Our aesthetic approach enhances usability and creates a lasting impression, combining color theory, typography, and imagery effectively."
+        content: "We being one of the top user interface design companies create visually compelling designs Using strategic color palettes, typography, and imagery, we enhance usability and create a memorable user experience."
       },
       {
         title: "Interaction Design",
-        content: "We focus on crafting intuitive interactions that engage users. Our interaction designs are aimed at providing seamless transitions, animations, and feedback to improve the overall user journey."
+        content: "Focused on creating seamless interactions, our best UI design agency designs intuitive transitions, animations, and feedback mechanisms. Each interaction is created to engage users and make navigation effortless."
       },
       {
         title: "Usability Testing",
-        content: "We conduct usability testing to gather real user feedback and identify areas for improvement. This ensures the final product is user-friendly, addressing any pain points before launch."
+        content: "At XCon, our usability testing process involves real user feedback to uncover areas of improvement. We audit UI UX and address potential challenges early, ensuring the final product is intuitive and easy to use."
       },
       {
         title: "Responsive Design",
-        content: "We ensure that your UI/UX designs are fully responsive, providing an optimal experience across all devices and screen sizes. Our designs adapt seamlessly from desktop to mobile."
+        content: "Our web or android app UI UX design services are optimized for all devices, ensuring that your users have a smooth experience whether they’re on desktop, tablet, or mobile. Each layout adapts to screen size for consistent usability."
       },
       {
         title: "Brand Integration",
-        content: "Our designs are aligned with your brand strategy, ensuring consistent messaging and aesthetics across all platforms. We create a cohesive brand experience that resonates with users."
+        content: "We add your brand identity into every aspect of the angular UI UX design, from visuals to interactions. This ensures that your brand’s message is communicated consistently across all digital and social media platforms."
       },
       {
         title: "Ongoing Support & Iteration",
-        content: "Post-launch, we offer ongoing support and iterative design improvements based on user feedback and analytics. This ensures your UI/UX continues to meet user needs as they evolve."
+        content: "After launch, our best enterprise UX design company provide ongoing support and improvements based on user analytics and feedback, ensuring your design stays aligned with growing user needs and industry trends."
       }
     ],
-    imageUrl: "https://img.freepik.com/free-vector/gradient-ui-ux-landing-page-template_23-2149053148.jpg?t=st=1730098946~exp=1730102546~hmac=11c77d99fbbabfc699aee3ff5030b64cb8871135af12db456ef8d1945b95000f&w=1380",
+    imageUrl: "/assets/img_placeholder/th-1/UI2.png",
     imageAlt: "UI/UX Design Mockup",
 
   }
@@ -312,11 +310,7 @@ const MultiChannel = ({ serviceType = "webDevelopment" }) => {
             </h2>
             <p className="text-lg text-[#273447]">{description1}</p>
             <p className="text-lg text-[#273447]">{description2}</p>
-            <Link href="/consultation">
-              <button className="button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-customGreen hover:border-customGreen hover:text-white">
-                {buttonText}
-              </button>
-            </Link>
+
           </div>
         </div>
 
@@ -327,12 +321,12 @@ const MultiChannel = ({ serviceType = "webDevelopment" }) => {
             <div className="md:w-1/2 lg:w-2/5 space-y-4 md:mr-10">
               <h2 className="text-4xl font-bold leading-tight text-[#273447]">
                 {serviceType === "webDevelopment" ? "What Custom Web Development Services We Offer?"
-                    : serviceType === "appDevelopment" ? "App Development Services for Engaging Mobile Experiences"
+                    : serviceType === "appDevelopment" ? "What Custom App Development Services We Offer?"
                         : serviceType === "softwareDevelopment" ? "What Custom Software Development Services We Offer?"
-                            : serviceType === "digitalmarket" ? "Digital Marketing Services to Amplify Your Online Presence"
-                                : serviceType === "videoEditing" ? "Video Editing Services to Amplify Your Brand’s Visual Presence"
-                                    : serviceType === "graphicDesign" ? "Graphic Design Services to Amplify Your Brand’s Visual Presence"
-                                    : serviceType === "uiUxDesign" ? "UI/UX Design Services to Amplify Your Brand’s Visual Presence"
+                            : serviceType === "digitalmarket" ? "What Digital Marketing Services We Offer?"
+                                : serviceType === "videoEditing" ? "What Video Editing Services We Offer at XCon?"
+                                    : serviceType === "graphicDesign" ? "What Graphic Design Services We Offer?"
+                                    : serviceType === "uiUxDesign" ? "What UI UX Design Services We Offer at XCon?"
                                             : "Our Services"}
               </h2>
 
@@ -343,7 +337,7 @@ const MultiChannel = ({ serviceType = "webDevelopment" }) => {
             <div className="md:w-1/2 lg:w-3/5 overflow-y-auto h-96 px-4 space-y-6">
               {sections.map((section, index) => (
                   <div className="space-y-4" key={index}>
-                    <h3 className="text-2xl font-semibold text-[#273447]">
+                    <h3 className="text-2xl font-semibold tracking-normal text-[#273447]">
                       {section.title}
                     </h3>
                     <p className="mt-2 text-lg text-[#273447]">{section.content}</p>

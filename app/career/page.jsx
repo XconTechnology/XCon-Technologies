@@ -2,201 +2,184 @@
 import Footer_01 from "@/components/footer/Footer_01";
 import Header_01 from "@/components/header/Header_01";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-import JoinUs from "@/components/Home/JoinUs";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 function Career() {
-    const [visibleCards, setVisibleCards] = useState([]);
-    const jobCardsRef = useRef([]);
+    const [visibleJobCount, setVisibleJobCount] = useState(5); // Initially show 5 jobs
+    const [filteredJobs, setFilteredJobs] = useState([]); // For storing filtered job results
+    const [searchKeyword, setSearchKeyword] = useState(""); // Store the search keyword
+    const [selectedField, setSelectedField] = useState(""); // Store the selected field
 
-    const handleIntersection = (entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                setVisibleCards((prev) => [...prev, entry.target.id]);
-            }
+    // Define the list of job postings
+    const jobs = [
+        { name: "Senior Web Developer", description: "Develop and maintain complex web applications. Work with cross-functional teams to deliver high-quality solutions.", mode: "Onsite", jobType: "Morning", salary: "30K - 40K", bgColor: "bg-green-500" },
+        { name: "Front End Developer", description: "Develop and maintain complex web applications. Work with cross-functional teams to deliver high-quality solutions.", mode: "Onsite", jobType: "Morning", salary: "25K - 30K", bgColor: "bg-green-500" },
+        { name: "Junior Web Developer", description: "Develop and maintain complex web applications. Work with cross-functional teams to deliver high-quality solutions.", mode: "Onsite", jobType: "Morning", salary: "15K - 20K", bgColor: "bg-green-500" },
+        { name: "Business Development Manager", description: "XCon Technologies is searching for a highly motivated, results-driven Commission-Based Business Development Sales Manager to drive client acquisition for our web development, IT solutions, and digital marketing services.", mode: "Remote", jobType: "Evening", salary: "$3000 - $4500", bgColor: "bg-gray-800" },
+        { name: "Content writer", description: "XCon Technologies is searching for a highly motivated, results-driven Commission-Based Business Development Sales Manager to drive client acquisition for our web development, IT solutions, and digital marketing services.", mode: "Remote", jobType: "Evening", salary: "$3000 - $4500", bgColor: "bg-gray-800" },
+        { name: "Content writer", description: "XCon Technologies is searching for a highly motivated, results-driven Commission-Based Business Development Sales Manager to drive client acquisition for our web development, IT solutions, and digital marketing services.", mode: "Remote", jobType: "Evening", salary: "$3000 - $4500", bgColor: "bg-gray-800" },
+    ];
+
+    // Set initial jobs to display
+    useEffect(() => {
+        setFilteredJobs(jobs.slice(0, visibleJobCount)); // Display only the initial visibleJobCount
+    }, [visibleJobCount]);
+
+    // Filter jobs based on search criteria
+    const handleSearch = () => {
+        const filtered = jobs.filter((job) => {
+            const matchesKeyword = job.name.toLowerCase().includes(searchKeyword.toLowerCase());
+            const matchesField = selectedField === "" || job.name.toLowerCase().includes(selectedField.toLowerCase());
+            return matchesKeyword && matchesField;
         });
+
+        setFilteredJobs(filtered.slice(0, visibleJobCount)); // Filter and reset to visibleJobCount
     };
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(handleIntersection, {
-            threshold: 0.1,
-        });
-
-        jobCardsRef.current.forEach((card) => {
-            if (card) {
-                observer.observe(card);
-            }
-        });
-
-        return () => {
-            jobCardsRef.current.forEach((card) => {
-                if (card) {
-                    observer.unobserve(card);
-                }
-            });
-        };
-    }, []);
-
-    // Define animation classes for each job card
-    const animationClasses = [
-        "animate-slide-in-left",
-        "animate-slide-in-right",
-        "animate-slide-in-up",
-        "animate-slide-in-down",
-        "animate-fade-in",
-    ];
+    // Function to load all jobs or collapse to initial 5 jobs
+    const toggleJobs = () => {
+        if (visibleJobCount >= jobs.length) {
+            setVisibleJobCount(5); // Reset to show first 5 jobs
+        } else {
+            setVisibleJobCount(jobs.length); // Show all jobs
+        }
+    };
 
     return (
         <>
             <Header_01 />
             <main className="main-wrapper relative overflow-hidden">
-                {/*...::: Breadcrumb Section Start :::... */}
                 <section
                     id="section-breadcrumb"
-                    className="relative "
+                    className="relative"
                     style={{
                         backgroundImage: "url('/assets/img_placeholder/th-1/Careers.jpg')",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
-                        height: "50vh",
+                        height: "70vh",
                     }}
                 >
                     <div className="relative z-[1] flex items-center justify-center w-full h-full">
-                        <div className="global-container text-white">
-                            <div className="breadcrumb-block text-center">
+                        <div className="global-container text-white text-center">
+                            <div className="breadcrumb-block">
                                 <h2 className="breadcrumb-title">Careers</h2>
-                                <p className="breadcrumb-nav text-2xl pb-2">
-                                    Join us and make an impact!
-                                </p>
-                                <ul className="breadcrumb-nav flex  text-white">
-
-                                    <Link href="/" style={{color: 'white'}}>Home</Link>
+                                <ul className="breadcrumb-nav flex text-white justify-center">
+                                    <Link href="/" style={{ color: "white" }}>Home</Link>
                                     <span className="">
                                         <Image
                                             src="/assets/img_placeholder/th-1/try.svg"
                                             alt="Background"
                                             height={10}
                                             width={10}
-
                                         />
-                                     </span>
+                                    </span>
                                     <div className="text-customGreen">Career</div>
                                 </ul>
+                            </div>
+                            <div
+                                className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-3/4 p-4 bg-white rounded-lg shadow-md">
+                                <div className="flex justify-evenly items-center">
+                                    <input
+                                        type="text"
+                                        placeholder="Enter Keyword"
+                                        value={searchKeyword}
+                                        onChange={(e) => setSearchKeyword(e.target.value)}
+                                        className="p-3 w-1/4 border border-gray-300 text-gray-800 rounded-md mr-2"
+                                    />
+                                    <select
+                                        value={selectedField}
+                                        onChange={(e) => setSelectedField(e.target.value)}
+                                        className="p-3 w-1/4 border border-gray-300 rounded-md mr-2 bg-gray-100 text-gray-800"
+                                    >
+                                        <option value="">Choose your field</option>
+                                        <option>WordPress Developer</option>
+                                        <option>Web Developer</option>
+                                        <option>Front End Developer</option>
+                                        <option>SEO</option>
+                                        <option>Content Writer</option>
+                                        <option>Graphic Designer</option>
+                                        <option>Video Editor</option>
+                                        <option>Business Developer</option>
+                                        <option>Digital Marketing</option>
+                                    </select>
+                                    <button
+                                        onClick={handleSearch}
+                                        className="bg-customGreen text-white py-3 px-6 rounded-md"
+                                    >
+                                        Job Search
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                {/*...::: Breadcrumb Section End :::... */}
 
-                {/*...::: Job Listings Section Start :::... */}
-                <section id="section-jobs" className="py-20 bg-gray-100">
-                    <div className="global-container">
-                        <div className="mb-10 text-center lg:mb-16 xl:mb-20">
-                            <h2 className="text-6xl font-bold text-gray-800 animate-fade-in">Job Openings</h2>
-                            <p className="text-lg text-gray-600 mt-4">
-                                Explore our current job opportunities and find your perfect fit.
-                            </p>
-                        </div>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {/* Job Item */}
-                            {["software-developer", "web-developer", "mobile-app-developer", "it-consultant", "digital-marketing-specialist"].map((job, index) => (
-                                <div
-                                    key={job}
-                                    id={job}
-                                    ref={(el) => (jobCardsRef.current[index] = el)}
-                                    className={`bg-white p-8 rounded-lg shadow-lg transition-transform transform ${visibleCards.includes(job) ? "scale-105 shadow-xl bg-gray-50" : "opacity-0"
-                                        } ${visibleCards.includes(job) ? animationClasses[index] : ""} duration-300 ease-in-out`}
-                                >
-                                    <h3 className="text-2xl font-semibold text-gray-800 mb-4 capitalize">{job.replace(/-/g, ' ')}</h3>
-                                    <p className="text-gray-600 mb-6">
-                                        {`We are looking for a skilled ${job.replace(/-/g, ' ')} to join our team.`}
-                                    </p>
-                                    <div className="text-center">
-                                        <Link href={`/job-details/${job}`} className="text-blue-600 font-semibold hover:underline">
-                                            View Details
-                                        </Link>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-                {/*...::: Job Listings Section End :::... */}
-
-                {/*...::: Apply Now Section Start :::... */}
-                <JoinUs/>
-                {/*...::: Apply Now Section End :::... */}
+                <div className="container mx-auto p-6">
+                    <table className="w-full text-left bg-white rounded-lg shadow-lg overflow-hidden">
+                        <thead>
+                        <tr className="bg-gray-100">
+                            <th className="p-4">Save</th>
+                            <th className="p-4">Name & Description</th>
+                            <th className="p-4">Mode</th>
+                            <th className="p-4">Job Type</th>
+                            <th className="p-4">Salary</th>
+                            <th className="p-4">Apply</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {filteredJobs.length > 0 ? (
+                            filteredJobs.map((job, index) => (
+                                <tr key={index} className="border-t hover:bg-gray-50">
+                                    <td className="p-4 text-center">
+                                        <button
+                                            className="text-gray-500 text-[30px] font-bold hover:text-red-500">&#9825;</button>
+                                    </td>
+                                    <td className="p-4 text-gray-800">
+                                        <div className="font-semibold">{job.name}</div>
+                                        <div className="text-gray-500 text-sm whitespace-normal break-words mt-1">
+                                            {job.description}
+                                        </div>
+                                    </td>
+                                    <td className="p-4">
+                                        <span className="px-3 py-1 rounded-full text-white bg-yellow-500 text-[14px]">
+                                            {job.mode}
+                                        </span>
+                                    </td>
+                                    <td className="p-4">
+                                        <span
+                                            className={`px-3 py-1 text-[14px] rounded-full text-white ${job.bgColor}`}>
+                                            {job.jobType}
+                                        </span>
+                                    </td>
+                                    <td className="p-4 text-[14px] text-gray-700">{job.salary}</td>
+                                    <td className="p-4 text-center">
+                                        <button
+                                            className="bg-white border text-[14px] border-gray-300 text-gray-800 px-14 py-2 rounded hover:bg-customGreen hover:text-white">
+                                            Apply
+                                        </button>
+                                    </td>
+                                </tr>
+                            ))
+                        ) : (
+                            <tr>
+                                <td colSpan="6" className="p-4 text-center text-gray-500">No jobs found</td>
+                            </tr>
+                        )}
+                        </tbody>
+                    </table>
+                </div>
+                <div className="flex justify-center mt-6 mb-8">
+                    <button
+                        onClick={toggleJobs}
+                        className="bg-white border border-gray-300 text-gray-800 px-4 py-2 rounded hover:text-white hover:bg-customGreen"
+                    >
+                        {visibleJobCount < jobs.length ? "Load More Jobs" : "Show Less Jobs"}
+                    </button>
+                </div>
 
                 <Footer_01 />
             </main>
-            <style jsx>{`
-                @keyframes slide-in-left {
-                    0% {
-                        opacity: 0;
-                        transform: translateX(-20px);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-                }
-                @keyframes slide-in-right {
-                    0% {
-                        opacity: 0;
-                        transform: translateX(20px);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-                }
-                @keyframes slide-in-up {
-                    0% {
-                        opacity: 0;
-                        transform: translateY(20px);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-                @keyframes slide-in-down {
-                    0% {
-                        opacity: 0;
-                        transform: translateY(-20px);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-                @keyframes fade-in {
-                    0% {
-                        opacity: 0;
-                        transform: translateY(20px);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-                .animate-slide-in-left {
-                    animation: slide-in-left 0.5s forwards;
-                }
-                .animate-slide-in-right {
-                    animation: slide-in-right 0.5s forwards;
-                }
-                .animate-slide-in-up {
-                    animation: slide-in-up 0.5s forwards;
-                }
-                .animate-slide-in-down {
-                    animation: slide-in-down 0.5s forwards;
-                }
-                .animate-fade-in {
-                    animation: fade-in 0.5s forwards;
-                }
-            `}</style>
         </>
     );
 }

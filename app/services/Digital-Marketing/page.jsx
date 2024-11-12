@@ -27,9 +27,8 @@ function Page() {
                 <MultiChannel serviceType="digitalmarket" />
                 <BusinessProspect serviceType="digitalmarket" />
                 <Solutions serviceType="digitalmarket" />
-                <Diversity serviceType="softwareDevelopment" />
-                <Growth serviceType="softwareDevelopment" />
-                <FaqS serviceType="softwareDevelopment" />
+                <Growth serviceType="digitalmarket" />
+                <FaqS serviceType="digitalmarket" />
 
                 <section className="contact-section mt-24">
                     <div className="pb-20 xl:pb-[150px]">

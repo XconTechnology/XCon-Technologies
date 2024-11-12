@@ -12,8 +12,8 @@ const servicesData = {
     imageAlt: "Website Mockup",
   },
   appDevelopment: {
-    title: "Innovative Mobile App Solutions",
-    description: "We build custom mobile applications that are user-friendly, responsive, and engaging across all platforms.",
+    title: "Get the Best Custom App Development Services!",
+    description: "Being the best custom app development company, our team creates customized apps according to your expectations. Our best app development software combines advanced technology with user-focused design.",
     buttonText: "Get a Free Consultation",
     imageUrl: "/assets/img_placeholder/th-1/app-mockup.png",
     imageAlt: "App Mockup",
@@ -26,31 +26,29 @@ const servicesData = {
     imageAlt: "csm Mockup",
   },
   digitalmarket: {
-    title: "Reach Further with  Digital Marketing",
-    description: "Our digital marketing agency helps businesses navigate growing modern online challenges with strategic engagement channel(s) selection, integrated marketing communications, and compelling brand building. We not only get your brand to win over the SERPs but also create a brand story that resonates with user personas and compels conversion at every stage.",
-    buttonText: "Consult Digital Strategy",
+    title: "Best Digital Marketing Agency in Charlotte NC!",
+    description: 'Our digital marketing agency allows businesses to overcome today’s evolving online challenges. We do not just improve your brand’s SERP ranking but our online marketing services develop a brand story according to your target audience and drives conversions at every stage of your business journey.',
     imageUrl:"/assets/img_placeholder/th-1/DigitalMarketing .png" ,
     imageAlt: "digital Mockup",
   },
   videoEditing: {
-    title: "Bring Your Vision to Life with Video Editing",
-    description: "Our video editing services transform raw footage into captivating visual stories that engage and inspire. Whether you're looking to promote a product, share a brand story, or capture an event, we employ dynamic editing techniques, compelling graphics, and seamless transitions to make your vision a reality.",
+    title: "Craft stories from your footage with our editing!",
+    description: "Our expert editors create engaging visuals that attract viewers and drive results for brands, businesses, and creators alike. By using the best editing tool for videos, we bring your vision to life and make every second worth-watching.",
     buttonText: "Explore Video Editing",
     imageUrl: "/assets/img_placeholder/th-1/videoediting.png",
     imageAlt: "video editing mockup",
   },
   graphicDesign: {
-    title: "Creative Graphic Design Services",
-    description: "Elevate your brand with visually compelling graphic design solutions tailored to capture your audience’s attention. From logos and branding to marketing materials, our team blends creativity with strategy to bring your vision to life across digital and print media.",
+    title: "Graphic Design Services to Grow Your Brand",
+    description: 'We specialize in providing all graphic design services that improve the identity of your brand. Whether you need logos, marketing materials, or web graphics, our custom graphic design services bring your ideas to life with strategy and creativity.',
     buttonText: "Discover Graphic Design",
     imageUrl: "/assets/img_placeholder/th-1/Graphic_design.png",
     imageAlt: "graphic design mockup",
   },
   uiUxDesign: {
-    title: "User-Centric UI/UX Design Solutions",
-    description: "At XCon, we focus on creating intuitive and engaging user interfaces and experiences that enhance user satisfaction. Our design approach combines research, usability testing, and innovative design to ensure your products not only look great but also provide seamless interactions.",
-    buttonText: "Start Your UI/UX Project",
-    imageUrl: "https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?t=st=1730098545~exp=1730102145~hmac=feee05dec2cd9d7c5372e6861ba906e44be803fe36ae7d88da214b6863594bc4&w=1380",
+    title: "Get Engaging Interfaces with UI UX Graphic Design!",
+    description: "At XCon, our UI UX design and development services specialize in designing intuitive, user-focused interfaces. Our approach uses in-depth user research, usability testing, and creative innovation to create products that deliver smooth, interactive UI design.",
+    imageUrl: "/assets/img_placeholder/th-1/ui ux.png",
     imageAlt: "UI/UX Design Mockup",
   },
 
@@ -70,7 +68,7 @@ const Header = ({ serviceType = "webDevelopment" }) => {
           <div className="md:w-1/2 lg:w-1/3 text-white">
             <p className="text-customGreen uppercase font-semibold">
               {serviceType === "webDevelopment" ? "Custom Web Development Services" :
-                serviceType === "appDevelopment" ? "Custom App Development Services" :
+                serviceType === "appDevelopment" ? "App Development Services" :
                     serviceType === "softwareDevelopment" ? "Custom Software Development Services":
                     serviceType === "digitalmarket" ? "Digital Marketing Services":
                         serviceType === "videoEditing" ? "video Editing Services" :
@@ -79,15 +77,13 @@ const Header = ({ serviceType = "webDevelopment" }) => {
 
                         "Service"}
             </p>
-            <h1 className="text-4xl md:text-4xl font-bold leading-tight mt-4">
+            <h1 className="text-4xl md:text-4xl font-bold tracking-normal mt-4">
               {title}
             </h1>
             <p className="text-[16px] mt-4">
               {description}
             </p>
-            <button className='button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-customGreen hover:border-customGreen hover:text-white'>
-              {buttonText}
-            </button>
+
           </div>
 
           {/* Right side image */}

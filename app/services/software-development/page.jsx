@@ -9,7 +9,6 @@ import TechStack from "@/components/OurServices/TechStack";
 import Projects from "@/components/OurServices/Projects";
 import Workflow from "@/components/OurServices/Workflow";
 import { useState } from "react";
-import Diversity from "@/components/OurServices/Diversity";
 import Growth from "@/components/OurServices/Growth";
 import Expertise from "@/components/OurServices/Expertise";
 import FaqS from "@/components/faq's/Faq";
@@ -27,11 +26,10 @@ function Page() {
                 <MultiChannel serviceType="softwareDevelopment" />
                 <BusinessProspect serviceType="softwareDevelopment" />
                 <Solutions serviceType="softwareDevelopment" />
-                <TechStack serviceType="softwareDevelopment" />
+                <TechStack serviceType="webDevelopment" />
                 <Workflow serviceType="softwareDevelopment" />
-                <OurAchievements serviceType="softwareDevelopment" />
+                <OurAchievements serviceType="webDevelopment" />
                 <Projects serviceType="softwareDevelopment" />
-                {/*<Diversity serviceType="softwareDevelopment" />*/}
                 <Growth serviceType="softwareDevelopment" />
                 <Expertise serviceType="softwareDevelopment" />
                 <FaqS serviceType="softwareDevelopment" />

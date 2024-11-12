@@ -21,7 +21,6 @@ function Page() {
                 <MultiChannel serviceType="graphicDesign"  />
                 <BusinessProspect serviceType="graphicDesign"  />
                 <Solutions  serviceType="graphicDesign" />
-                <Diversity   serviceType="graphicDesign"/>
                 <Growth  serviceType="graphicDesign" />
                 <FaqS serviceType="graphicDesign" />
 
