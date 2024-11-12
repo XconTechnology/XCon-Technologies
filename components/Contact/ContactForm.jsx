@@ -2,10 +2,11 @@ import React, { useState, useRef } from "react";
 import Image from "next/image";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import axios from "axios";
 
 const apiUrl =
   process.env.NODE_ENV === "production"
-    ? process.env.VERCEL_URL/api/contact
+    ? process.env.VERCEL_URL
     : "http://localhost:3000/api/contact";
 
 const initValues = {
@@ -54,16 +55,18 @@ const ContactForm = () => {
 
   const sendContactForm = async (values) => {
     console.log("Sending Contact Form Data:", values);
-    const response = await fetch(apiUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(values),
-    });
+    try {
+      const response = await axios.post("/api/contact", values, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
-    if (!response.ok) {
-      throw new Error("Failed to send the contact form.");
+      if (response.status !== 200) {
+        throw new Error("Failed to send the contact form.");
+      }
+    } catch (error) {
+      throw new Error(error.response?.data?.message || "An error occurred.");
     }
   };
 
