@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import Image from "next/image";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import axios from "axios";
 
 const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/api/contact`;
 
@@ -51,16 +52,18 @@ const ContactForm = () => {
 
   const sendContactForm = async (values) => {
     console.log("Sending Contact Form Data:", values);
-    const response = await fetch(apiUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(values),
-    });
+    try {
+      const response = await axios.post(apiUrl, values, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
-    if (!response.ok) {
-      throw new Error("Failed to send the contact form.");
+      if (response.status !== 200) {
+        throw new Error("Failed to send the contact form.");
+      }
+    } catch (error) {
+      throw new Error(error.response?.data?.message || "An error occurred.");
     }
   };
 
@@ -69,11 +72,7 @@ const ContactForm = () => {
     setState((prev) => ({ ...prev, isLoading: true, error: "" }));
 
     try {
-      // Log the values and recipient email
-      console.log("Form Data:", values);
-      console.log("Recipient Email:", values.email); // Log the recipient email
-
-      await sendContactForm(values); // Pass form values to API function
+      await sendContactForm(values);
       setTouched({});
       setState({ ...initState, showAlert: "success" });
     } catch (error) {
