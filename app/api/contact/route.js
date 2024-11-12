@@ -5,7 +5,7 @@ import Cors from "cors";
 // Initialize CORS middleware
 const cors = Cors({
   methods: ["GET", "POST"],
-  origin: process.env.NEXT_PUBLIC_API_URL, // Allow your frontend to make requests
+  origin: "*", // Allow your frontend to make requests
 });
 
 function runMiddleware(req, res, fn) {
