@@ -2,6 +2,15 @@ import React, { useState, useRef } from "react";
 import Image from "next/image";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+<<<<<<< HEAD
+=======
+import axios from "axios";
+
+const apiUrl =
+  process.env.NODE_ENV === "production"
+    ? process.env.VERCEL_URL
+    : "http://localhost:3000/api/contact";
+>>>>>>> origin/main
 
 const initValues = {
   name: "",
@@ -48,18 +57,20 @@ const ContactForm = () => {
   };
 
   const sendContactForm = async (values) => {
-    console.log("Sending Contact Form Data:", values); // Log all values
+    console.log("Sending Contact Form Data:", values);
+    try {
+      const response = await axios.post("/api/contact", values, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(values), // Send the entire values object
-    });
-
-    if (!response.ok) throw new Error("Failed to send message");
-    return response.json();
+      if (response.status !== 200) {
+        throw new Error("Failed to send the contact form.");
+      }
+    } catch (error) {
+      throw new Error(error.response?.data?.message || "An error occurred.");
+    }
   };
 
   const handleSubmit = async (e) => {
