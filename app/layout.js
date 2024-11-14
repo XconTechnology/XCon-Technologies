@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./styles/globals.css";
 import "./styles/vendors/menu.css"
+import {SpeedInsights} from "@vercel/speed-insights/next";
 
 
 const geistSans = localFont({
@@ -22,9 +23,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <SpeedInsights/>
         {children}
       </body>
     </html>

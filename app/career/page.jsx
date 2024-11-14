@@ -12,13 +12,9 @@ function Career() {
     const [selectedField, setSelectedField] = useState("");
 
     const jobs = [
-        { id:1 ,name: "Senior Web Developer", description: "Develop and maintain complex web applications. Work with cross-functional teams to deliver high-quality solutions.", mode: "Onsite", jobType: "Morning", salary: "30K - 40K", bgColor: "bg-green-500" },
-        {id:2, name: "Front End Developer", description: "Develop and maintain complex web applications. Work with cross-functional teams to deliver high-quality solutions.", mode: "Onsite", jobType: "Morning", salary: "25K - 30K", bgColor: "bg-green-500" },
-        {id:3, name: "Junior Web Developer", description: "Develop and maintain complex web applications. Work with cross-functional teams to deliver high-quality solutions.", mode: "Onsite", jobType: "Morning", salary: "15K - 20K", bgColor: "bg-green-500" },
-        {id:4, name: "Business Development Manager", description: "XCon Technologies is searching for a highly motivated, results-driven Commission-Based Business Development Sales Manager to drive client acquisition for our web development, IT solutions, and digital marketing services.", mode: "Remote", jobType: "Evening", salary: "$3000 - $4500", bgColor: "bg-gray-800" },
-        {id:5, name: "Content writer", description: "XCon Technologies is searching for a okkddad jaojsdoajsd highly motivated, results-driven Commission-Based Business Development Sales Manager to drive client acquisition for our web development, IT solutions, and digital marketing services.", mode: "Remote", jobType: "Evening", salary: "$3000 - $4500", bgColor: "bg-gray-800" },
-        {id:6, name: "Content writer", description: "XCon Technologies is searching for a highly motivated, results-driven Commission-Based Business Development Sales Manager to drive client acquisition for our web development, IT solutions, and digital marketing services.", mode: "Remote", jobType: "Evening", salary: "$200 - $300", bgColor: "bg-gray-800" },
-        {id:7, name: "Content writer", description: "XCon Technologies is searching for a highly motivated, results-driven Commission-Based Business Development Sales Manager to drive client acquisition for our web development, IT solutions, and digital marketing services.", mode: "Remote", jobType: "Evening", salary: "$000 - $500", bgColor: "bg-gray-800" },
+
+        {id:1, name: "Business Development Manager", description: "XCon Technologies is searching for a highly motivated, results-driven Commission-Based Business Development Sales Manager to drive client acquisition for our web development, IT solutions, and digital marketing services.", mode: "Remote", jobType: "Evening", salary: "$3000 - $4500", bgColor: "bg-gray-800" },
+
     ];
 
     // Set initial jobs to display
