@@ -2,15 +2,12 @@ import React, { useState, useRef } from "react";
 import Image from "next/image";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-<<<<<<< HEAD
-=======
 import axios from "axios";
 
 const apiUrl =
   process.env.NODE_ENV === "production"
     ? process.env.VERCEL_URL
     : "http://localhost:3000/api/contact";
->>>>>>> origin/main
 
 const initValues = {
   name: "",

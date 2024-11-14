@@ -5,8 +5,7 @@ import Image from "next/image";
 const PortfolioBreadCrumb = () => {
     return (
         <>
-            <section id="section-breadcrumb" className="relative mb-10 bg-cover bg-center h-[50vh]"
-                     style={{backgroundImage: "url('/assets/img_placeholder/th-1/Portfolio.jpg')",}}>
+            <section id="section-breadcrumb" className="relative mb-10 bg-cover bg-center h-[50vh]" style={{backgroundImage: "url('/assets/img_placeholder/th-1/Portfolio.jpg')",}}>
 
                 <div className="relative z-10 flex items-center justify-center w-full h-full">
                     {/* Section Container */}
