@@ -22,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         {/* Google Analytics Tag */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-N9QFNXZ3BQ"></script>
         <script
@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-      </Head>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
