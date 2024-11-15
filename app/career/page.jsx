@@ -6,19 +6,15 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 function Career() {
-    const [visibleJobCount, setVisibleJobCount] = useState(5); // Initially show 5 jobs
-    const [filteredJobs, setFilteredJobs] = useState([]); // For storing filtered job results
-    const [searchKeyword, setSearchKeyword] = useState(""); // Store the search keyword
-    const [selectedField, setSelectedField] = useState(""); // Store the selected field
+    const [visibleJobCount, setVisibleJobCount] = useState(5);
+    const [filteredJobs, setFilteredJobs] = useState([]);
+    const [searchKeyword, setSearchKeyword] = useState("");
+    const [selectedField, setSelectedField] = useState("");
 
-    // Define the list of job postings
     const jobs = [
-        { name: "Senior Web Developer", description: "Develop and maintain complex web applications. Work with cross-functional teams to deliver high-quality solutions.", mode: "Onsite", jobType: "Morning", salary: "30K - 40K", bgColor: "bg-green-500" },
-        { name: "Front End Developer", description: "Develop and maintain complex web applications. Work with cross-functional teams to deliver high-quality solutions.", mode: "Onsite", jobType: "Morning", salary: "25K - 30K", bgColor: "bg-green-500" },
-        { name: "Junior Web Developer", description: "Develop and maintain complex web applications. Work with cross-functional teams to deliver high-quality solutions.", mode: "Onsite", jobType: "Morning", salary: "15K - 20K", bgColor: "bg-green-500" },
-        { name: "Business Development Manager", description: "XCon Technologies is searching for a highly motivated, results-driven Commission-Based Business Development Sales Manager to drive client acquisition for our web development, IT solutions, and digital marketing services.", mode: "Remote", jobType: "Evening", salary: "$3000 - $4500", bgColor: "bg-gray-800" },
-        { name: "Content writer", description: "XCon Technologies is searching for a highly motivated, results-driven Commission-Based Business Development Sales Manager to drive client acquisition for our web development, IT solutions, and digital marketing services.", mode: "Remote", jobType: "Evening", salary: "$3000 - $4500", bgColor: "bg-gray-800" },
-        { name: "Content writer", description: "XCon Technologies is searching for a highly motivated, results-driven Commission-Based Business Development Sales Manager to drive client acquisition for our web development, IT solutions, and digital marketing services.", mode: "Remote", jobType: "Evening", salary: "$3000 - $4500", bgColor: "bg-gray-800" },
+
+        {id:1, name: "Business Development Manager", description: "XCon Technologies is searching for a highly motivated, results-driven Commission-Based Business Development Sales Manager to drive client acquisition for our web development, IT solutions, and digital marketing services.", mode: "Remote", jobType: "Evening", salary: "$3000 - $4500", bgColor: "bg-gray-800" },
+
     ];
 
     // Set initial jobs to display
@@ -130,7 +126,7 @@ function Career() {
                         <tbody>
                         {filteredJobs.length > 0 ? (
                             filteredJobs.map((job, index) => (
-                                <tr key={index} className="border-t hover:bg-gray-50">
+                                <tr key={job.id} className="border-t hover:bg-gray-50">
                                     <td className="p-4 text-center">
                                         <button
                                             className="text-gray-500 text-[30px] font-bold hover:text-red-500">&#9825;</button>
@@ -154,10 +150,11 @@ function Career() {
                                     </td>
                                     <td className="p-4 text-[14px] text-gray-700">{job.salary}</td>
                                     <td className="p-4 text-center">
-                                        <button
-                                            className="bg-white border text-[14px] border-gray-300 text-gray-800 px-14 py-2 rounded hover:bg-customGreen hover:text-white">
+                                        <Link href={`/career/${job.id}`}>
+                                            <button className="bg-white border text-[14px] border-gray-300 text-gray-800 px-14 py-2 rounded hover:bg-customGreen hover:text-white">
                                             Apply
                                         </button>
+                                        </Link>
                                     </td>
                                 </tr>
                             ))

@@ -105,7 +105,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                     </li>
 
                     <li onClick={(e) => handleSubMenu(e, 3)} className='nav-item nav-item-has-children'>
-                        <Link href='/services' className='nav-link-item drop-trigger text-lg'>
+                        <Link href='#' className='nav-link-item drop-trigger text-lg'>
                             Services
                             <Image
                                 className='dropdown-icon'
