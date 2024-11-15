@@ -1,4 +1,3 @@
-import Head from "next/head";
 import localFont from "next/font/local";
 import "./styles/globals.css";
 import "./styles/vendors/menu.css";
