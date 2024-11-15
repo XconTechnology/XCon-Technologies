@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-N9QFNXZ3BQ"></script>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-N9QFNXZ3BQ"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
               gtag('config', 'G-N9QFNXZ3BQ');
             `,
           }}
-        />
+        /> */}
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
