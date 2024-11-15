@@ -14,8 +14,6 @@ import Expertise from "@/components/Home/Expertise";
 import EngagmentModels from "@/components/Home/EngagmentModels";
 import ServicesData from "@/components/Home/ServicesData";
 
-
-
 const Splash = dynamic(() => import('@/components/splash/Splash'), { ssr: false });
 
 function Home() {
