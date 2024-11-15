@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        {/* Google Analytics Tag */}
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-N9QFNXZ3BQ"></script>
         <script
           dangerouslySetInnerHTML={{
